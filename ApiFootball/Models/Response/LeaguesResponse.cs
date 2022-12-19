@@ -1,4 +1,4 @@
-﻿namespace ApiFootball.Response; 
+﻿namespace ApiFootball.Models.Response;
 
 public class LeaguesResponse {
     public League League { get; private set; }

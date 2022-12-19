@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ApiFootball; 
+namespace ApiFootball.Models;
 
 public class Coverage {
     public Fixtures Fixtures { get; private set; }

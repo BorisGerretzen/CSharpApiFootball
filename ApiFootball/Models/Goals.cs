@@ -1,4 +1,4 @@
-﻿namespace ApiFootball; 
+﻿namespace ApiFootball.Models;
 
 public class Goals {
     public int? Home { get; private set; }

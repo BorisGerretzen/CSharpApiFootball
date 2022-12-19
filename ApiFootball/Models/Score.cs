@@ -1,4 +1,4 @@
-﻿namespace ApiFootball; 
+﻿namespace ApiFootball.Models;
 
 public class Score {
     public Goals Halftime { get; private set; }

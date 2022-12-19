@@ -1,4 +1,4 @@
-﻿namespace ApiFootball; 
+﻿namespace ApiFootball.Models;
 
 public class Country {
     public string Name { get; private set; }

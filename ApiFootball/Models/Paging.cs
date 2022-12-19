@@ -1,4 +1,4 @@
-﻿namespace ApiFootball; 
+﻿namespace ApiFootball.Models;
 
 public class Paging {
     public int Current { get; private set; }

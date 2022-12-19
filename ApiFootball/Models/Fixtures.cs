@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ApiFootball; 
+namespace ApiFootball.Models;
 
 public class Fixtures {
     public bool Events { get; private set; }

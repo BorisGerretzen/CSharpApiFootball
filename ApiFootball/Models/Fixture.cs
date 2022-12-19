@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ApiFootball; 
+namespace ApiFootball.Models;
 
 [JsonObject(MemberSerialization.OptOut)]
 public class Fixture {
