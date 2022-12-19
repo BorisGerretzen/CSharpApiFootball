@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball", "ApiFootball\ApiFootball.csproj", "{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
