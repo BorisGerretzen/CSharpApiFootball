@@ -6,7 +6,7 @@ jobs:
     env:
       BUILD_CONFIG: 'Release'
       SOLUTION: 'ApiFootball'
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
