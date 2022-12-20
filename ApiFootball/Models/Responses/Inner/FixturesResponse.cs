@@ -1,4 +1,4 @@
-﻿namespace ApiFootball.Models.Response; 
+﻿namespace ApiFootball.Models.Responses.Inner; 
 
 public class FixturesResponse {
     public Fixture Fixture { get; private set; }

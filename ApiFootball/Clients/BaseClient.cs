@@ -5,7 +5,8 @@ namespace ApiFootball;
 public abstract class BaseClient {
     protected readonly HttpClient HttpClient;
 
-    protected readonly JsonSerializerSettings SerializerSettings = new JsonSerializerSettings {
+    protected readonly JsonSerializerSettings SerializerSettings = new()
+    {
         ContractResolver = new PrivateResolver(),
         ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
     };
