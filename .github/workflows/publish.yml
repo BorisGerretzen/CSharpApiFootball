@@ -5,7 +5,7 @@ jobs:
   build:
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: 'MySolution.sln'
+      SOLUTION: 'ApiFootball'
     runs-on: windows-latest
     steps:
     - name: Checkout
@@ -27,7 +27,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Build
-      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=$BUILD_NUMBER
+      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.0.$BUILD_NUMBER
       
     - name: Publish
       if: startsWith(github.ref, 'refs/heads/release')
