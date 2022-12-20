@@ -1,10 +1,10 @@
+using ApiFootball.Clients.Implementation;
+using ApiFootball.Clients.Interface;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ApiFootball;
 
 public static class DependencyInjectionExtensions {
-    public const string HttpClientName = "ApiFootball";
-
     /// <summary>
     ///     Adds the ApiFootball api clients to the DI container.
     ///     <list type="bullet">
@@ -24,7 +24,7 @@ public static class DependencyInjectionExtensions {
         services.AddSingleton<ILeaguesClient, LeaguesClient>();
         services.AddSingleton<ITimezoneClient, TimezoneClient>();
 
-        return services.AddHttpClient(HttpClientName, client => {
+        return services.AddHttpClient(Globals.HttpClientName, client => {
             client.DefaultRequestHeaders.Add("x-rapidapi-key", apiKey);
             client.DefaultRequestHeaders.Add("x-rapidapi-host", apiUrl);
             client.BaseAddress = new Uri("https://v3.football.api-sports.io/");

@@ -1,9 +1,10 @@
-﻿using ApiFootball.Models;
+﻿using ApiFootball.Clients.Interface;
+using ApiFootball.Models;
+using ApiFootball.Models.Responses;
 using ApiFootball.Models.Responses.Inner;
-using ApiFootball.Models.Responses.Outer;
 using Newtonsoft.Json;
 
-namespace ApiFootball;
+namespace ApiFootball.Clients.Implementation;
 
 public class LeaguesClient : BaseClient, ILeaguesClient {
     public LeaguesClient(IHttpClientFactory factory) : base(factory) { }

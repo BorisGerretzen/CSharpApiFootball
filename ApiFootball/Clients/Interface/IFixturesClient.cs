@@ -1,7 +1,7 @@
+using ApiFootball.Models.Responses;
 using ApiFootball.Models.Responses.Inner;
-using ApiFootball.Models.Responses.Outer;
 
-namespace ApiFootball;
+namespace ApiFootball.Clients.Interface;
 
 public interface IFixturesClient {
     public Task<BaseResponse<string>> GetRounds(int league, int season, bool? current);

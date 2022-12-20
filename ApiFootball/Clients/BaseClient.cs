@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using Newtonsoft.Json;
 
-namespace ApiFootball;
+namespace ApiFootball.Clients;
 
 public abstract class BaseClient {
     protected readonly HttpClient HttpClient;
@@ -12,7 +12,7 @@ public abstract class BaseClient {
     };
 
     public BaseClient(IHttpClientFactory factory) {
-        HttpClient = factory.CreateClient(DependencyInjectionExtensions.HttpClientName);
+        HttpClient = factory.CreateClient(Globals.HttpClientName);
     }
 
     protected abstract string Route { get; }

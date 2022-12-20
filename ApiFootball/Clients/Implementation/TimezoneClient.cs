@@ -1,7 +1,8 @@
-﻿using ApiFootball.Models.Responses.Outer;
+﻿using ApiFootball.Clients.Interface;
+using ApiFootball.Models.Responses;
 using Newtonsoft.Json;
 
-namespace ApiFootball;
+namespace ApiFootball.Clients.Implementation;
 
 public class TimezoneClient : BaseClient, ITimezoneClient {
     public TimezoneClient(IHttpClientFactory factory) : base(factory) { }

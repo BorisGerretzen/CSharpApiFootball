@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ApiFootball.Models.Responses.Outer;
+namespace ApiFootball.Models.Responses;
 
 public class BaseResponse<T> {
     public string Get { get; private set; }

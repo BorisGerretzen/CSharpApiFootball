@@ -1,8 +1,9 @@
-﻿using ApiFootball.Models.Responses.Inner;
-using ApiFootball.Models.Responses.Outer;
+﻿using ApiFootball.Clients.Interface;
+using ApiFootball.Models.Responses;
+using ApiFootball.Models.Responses.Inner;
 using Newtonsoft.Json;
 
-namespace ApiFootball;
+namespace ApiFootball.Clients.Implementation;
 
 public class FixturesClient : BaseClient, IFixturesClient {
     public FixturesClient(IHttpClientFactory factory) : base(factory) { }
