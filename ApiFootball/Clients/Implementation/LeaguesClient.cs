@@ -40,7 +40,7 @@ public class LeaguesClient : BaseClient, ILeaguesClient {
     /// <exception cref="NullReferenceException">If unable to deserialize response</exception>
     public async Task<BaseResponse<int>> GetSeasons() {
         var queryString = BuildQueryString();
-        var response = await HttpClient.GetStringAsync(queryString + "/seasons");
+        var response = await HttpClient.GetStringAsync("/seasons" + queryString);
         var responseObject = JsonConvert.DeserializeObject<BaseResponse<int>>(response, SerializerSettings);
         if (responseObject is null) throw new NullReferenceException("Could not deserialize response.");
         return responseObject;
