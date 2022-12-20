@@ -27,4 +27,4 @@ jobs:
       run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.0.$BUILD_NUMBER
       
     - name: Publish
-      run: nuget push **\*.nupkg -Source 'https://int.nugettest.org' -ApiKey ${{secrets.NUGET_API_KEY}}
+      run: nuget push **\*.nupkg -Source 'https://int.nugettest.org' -ApiKey ${{secrets.NUGET_SANDBOX_KEY}}
