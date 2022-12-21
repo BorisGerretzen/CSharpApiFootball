@@ -23,6 +23,7 @@ public static class DependencyInjectionExtensions {
         services.AddSingleton<ICountriesClient, CountriesClient>();
         services.AddSingleton<ILeaguesClient, LeaguesClient>();
         services.AddSingleton<ITimezoneClient, TimezoneClient>();
+        services.AddSingleton<ITeamsClient, TeamsClient>();
 
         return services.AddHttpClient(Globals.HttpClientName, client => {
             client.DefaultRequestHeaders.Add("x-rapidapi-key", apiKey);
