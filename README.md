@@ -7,6 +7,7 @@ If you would like to help out, feel free to open a pull request!
 
 ## Example
 ```Csharp
+var key = "your api key";
 var host = Host
     .CreateDefaultBuilder(Array.Empty<string>())
     .ConfigureServices(services => {
