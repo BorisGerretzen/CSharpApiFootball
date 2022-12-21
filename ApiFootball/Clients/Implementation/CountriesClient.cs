@@ -1,4 +1,5 @@
 ﻿using ApiFootball.Clients.Interface;
+using ApiFootball.Models;
 using ApiFootball.Models.Responses;
 using Newtonsoft.Json;
 
@@ -15,10 +16,10 @@ public class CountriesClient : BaseClient, ICountriesClient {
     /// <param name="code">Alpha2 code of the country</param>
     /// <param name="search">Search for the name of a country</param>
     /// <exception cref="NullReferenceException">If unable to deserialize response</exception>
-    public async Task<BaseResponse<string>> GetCountries(string? name, string? code, string? search) {
+    public async Task<BaseResponse<Country>> GetCountries(string? name = null, string? code = null, string? search = null) {
         var queryString = BuildQueryString((nameof(name), name), (nameof(code), code), (nameof(search), search));
         var response = await HttpClient.GetStringAsync(queryString);
-        var responseObject = JsonConvert.DeserializeObject<BaseResponse<string>>(response, SerializerSettings);
+        var responseObject = JsonConvert.DeserializeObject<BaseResponse<Country>>(response, SerializerSettings);
         if (responseObject is null) throw new NullReferenceException("Could not deserialize response.");
         return responseObject;
     }

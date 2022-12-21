@@ -18,13 +18,24 @@ public abstract class BaseClient {
     protected abstract string Route { get; }
 
     protected string BuildQueryString(params (string key, object? value)[] args) {
-        var queryString = HttpUtility.ParseQueryString(string.Empty);
+        var queryString = BuildOnlyQueryString(args);
+        return string.IsNullOrEmpty(queryString) ? Route : $"{Route}?{queryString}";
+    }
+
+    protected string BuildQueryString(string path, params (string key, object? value)[] args) {
+        var queryString = BuildOnlyQueryString(args);
+        return string.IsNullOrEmpty(queryString) ? Route + path : $"{Route}{path}?{queryString}";
+    }
+
+    private static string BuildOnlyQueryString(params (string key, object? value)[] args) {
+        var queryStringBuilder = HttpUtility.ParseQueryString(string.Empty);
 
         foreach (var (key, value) in args) {
             if (value is null || string.IsNullOrEmpty(value.ToString())) continue;
-            queryString.Add(key, value.ToString());
+            queryStringBuilder.Add(key, value.ToString());
         }
 
-        return Route + "?" + (queryString ?? throw new InvalidOperationException("Unable to build query string"));
+        var queryString = queryStringBuilder.ToString() ?? throw new InvalidOperationException("Unable to build query string");
+        return queryString;
     }
 }

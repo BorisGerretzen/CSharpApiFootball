@@ -16,9 +16,9 @@ public class FixturesClient : BaseClient, IFixturesClient {
     /// <param name="season">The season of the league</param>
     /// <param name="current">Get the current round only</param>
     /// <exception cref="NullReferenceException">If unable to deserialize response</exception>
-    public async Task<BaseResponse<string>> GetRounds(int league, int season, bool? current) {
-        var queryString = BuildQueryString(("league", league), ("season", season), ("current", current));
-        var response = await HttpClient.GetStringAsync("/rounds" + queryString);
+    public async Task<BaseResponse<string>> GetRounds(int league, int season, bool? current = null) {
+        var queryString = BuildQueryString("/rounds", ("league", league), ("season", season), ("current", current));
+        var response = await HttpClient.GetStringAsync(queryString);
         var responseObject = JsonConvert.DeserializeObject<BaseResponse<string>>(response, SerializerSettings);
         if (responseObject is null) throw new NullReferenceException("Could not deserialize response.");
         return responseObject;

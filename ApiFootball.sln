@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball", "ApiFootball\ApiFootball.csproj", "{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp.csproj", "{6FA66613-30D6-4F5E-A5D3-6B93FFCF53E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball.Test", "ApiFootball.Test\ApiFootball.Test.csproj", "{C7ED897B-B463-4A5C-8088-DA9108F8880A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1A252E1-9CA0-4F36-BE7F-2DB73E5B1320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA66613-30D6-4F5E-A5D3-6B93FFCF53E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA66613-30D6-4F5E-A5D3-6B93FFCF53E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA66613-30D6-4F5E-A5D3-6B93FFCF53E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA66613-30D6-4F5E-A5D3-6B93FFCF53E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -14,11 +14,11 @@ public static class DependencyInjectionExtensions {
     ///         <item><see cref="ITimezoneClient" /> to consume from the timezone endpoint</item>
     ///     </list>
     /// </summary>
-    /// <param name="services"></param>
-    /// <param name="apiKey"></param>
-    /// <param name="apiUrl"></param>
+    /// <param name="services">DI service collection</param>
+    /// <param name="apiKey">Your api-football api key</param>
+    /// <param name="apiUrl">Base url of api-football, use the trailing slash</param>
     /// <returns></returns>
-    public static IHttpClientBuilder AddApiFootball(this IServiceCollection services, string apiKey, string apiUrl) {
+    public static IHttpClientBuilder AddApiFootball(this IServiceCollection services, string apiKey, string apiUrl = Globals.ApiUrl) {
         services.AddSingleton<IFixturesClient, FixturesClient>();
         services.AddSingleton<ICountriesClient, CountriesClient>();
         services.AddSingleton<ILeaguesClient, LeaguesClient>();
@@ -27,7 +27,7 @@ public static class DependencyInjectionExtensions {
         return services.AddHttpClient(Globals.HttpClientName, client => {
             client.DefaultRequestHeaders.Add("x-rapidapi-key", apiKey);
             client.DefaultRequestHeaders.Add("x-rapidapi-host", apiUrl);
-            client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
+            client.BaseAddress = new Uri(apiUrl);
         });
     }
 }

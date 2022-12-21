@@ -24,8 +24,9 @@ public class LeaguesClient : BaseClient, ILeaguesClient {
     /// <param name="search">The name or the country of the league</param>
     /// <param name="last">The X last leagues/cups added in the API</param>
     /// <exception cref="NullReferenceException">If unable to deserialize response</exception>
-    public async Task<BaseResponse<LeaguesResponse>> GetLeagues(int? id, string? name, string? country, string? code, int? season, int? team, LeagueType? type, bool? current, string? search,
-        int? last) {
+    public async Task<BaseResponse<LeaguesResponse>> GetLeagues(int? id = null, string? name = null, string? country = null, string? code = null, int? season = null, int? team = null,
+        LeagueType? type = null, bool? current = null, string? search = null,
+        int? last = null) {
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(country), country), (nameof(code), code), (nameof(season), season), (nameof(team), team),
             (nameof(type), type), (nameof(current), current), (nameof(search), search), (nameof(last), last));
         var response = await HttpClient.GetStringAsync(queryString);
@@ -39,8 +40,8 @@ public class LeaguesClient : BaseClient, ILeaguesClient {
     /// </summary>
     /// <exception cref="NullReferenceException">If unable to deserialize response</exception>
     public async Task<BaseResponse<int>> GetSeasons() {
-        var queryString = BuildQueryString();
-        var response = await HttpClient.GetStringAsync("/seasons" + queryString);
+        var queryString = BuildQueryString("/seasons");
+        var response = await HttpClient.GetStringAsync(queryString);
         var responseObject = JsonConvert.DeserializeObject<BaseResponse<int>>(response, SerializerSettings);
         if (responseObject is null) throw new NullReferenceException("Could not deserialize response.");
         return responseObject;
