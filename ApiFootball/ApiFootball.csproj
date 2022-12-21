@@ -6,7 +6,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/BorisGerretzen/CSharpApiFootball</RepositoryUrl>
-        <PackageTags>football;football-api;sports;sports-api</PackageTags>
+        <PackageTags>football;sports;soccer</PackageTags>
         <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
         <LangVersion>11</LangVersion>
     </PropertyGroup>
