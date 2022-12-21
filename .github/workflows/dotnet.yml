@@ -1,5 +1,4 @@
-name: Teston:
-
+name: Test
 
 on:
   push:
