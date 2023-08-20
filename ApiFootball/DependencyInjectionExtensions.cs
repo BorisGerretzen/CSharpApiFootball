@@ -24,11 +24,14 @@ public static class DependencyInjectionExtensions {
         services.AddSingleton<ILeaguesClient, LeaguesClient>();
         services.AddSingleton<ITimezoneClient, TimezoneClient>();
         services.AddSingleton<ITeamsClient, TeamsClient>();
+        services.AddSingleton<IVenuesClient, VenuesClient>();
+        services.AddSingleton<IStandingsClient, StandingsClient>();
 
+        var typedApiUri = new Uri(apiUrl);
         return services.AddHttpClient(Globals.HttpClientName, client => {
-            client.DefaultRequestHeaders.Add("x-rapidapi-key", apiKey);
-            client.DefaultRequestHeaders.Add("x-rapidapi-host", apiUrl);
-            client.BaseAddress = new Uri(apiUrl);
+            client.DefaultRequestHeaders.Add("X-Rapidapi-Key", apiKey);
+            client.DefaultRequestHeaders.Add("X-Rapidapi-Host", typedApiUri.Host);
+            client.BaseAddress = typedApiUri;
         });
     }
 }

@@ -8,6 +8,7 @@ public class League {
     public string? Flag { get; private set; }
     public string? Round { get; private set; }
     public int? Season { get; private set; }
+    public List<List<Standing>> Standings { get; private set; }
 }
 
 public enum LeagueType {
