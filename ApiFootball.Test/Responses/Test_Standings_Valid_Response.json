@@ -1,0 +1,839 @@
+{
+  "get": "standings",
+  "parameters": {
+    "league": "79",
+    "season": "2020"
+  },
+  "errors": [],
+  "results": 1,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "league": {
+        "id": 79,
+        "name": "2. Bundesliga",
+        "country": "Germany",
+        "logo": "https://media-1.api-sports.io/football/leagues/79.png",
+        "flag": "https://media-1.api-sports.io/flags/de.svg",
+        "season": 2020,
+        "standings": [
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 176,
+                "name": "VfL BOCHUM",
+                "logo": "https://media-1.api-sports.io/football/teams/176.png"
+              },
+              "points": 67,
+              "goalsDiff": 27,
+              "group": "2. Bundesliga",
+              "form": "WDWLW",
+              "status": "same",
+              "description": "Promotion - Bundesliga",
+              "all": {
+                "played": 34,
+                "win": 21,
+                "draw": 4,
+                "lose": 9,
+                "goals": {
+                  "for": 66,
+                  "against": 39
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 12,
+                "draw": 2,
+                "lose": 3,
+                "goals": {
+                  "for": 40,
+                  "against": 16
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 9,
+                "draw": 2,
+                "lose": 6,
+                "goals": {
+                  "for": 26,
+                  "against": 23
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 178,
+                "name": "SpVgg Greuther Furth",
+                "logo": "https://media-3.api-sports.io/football/teams/178.png"
+              },
+              "points": 64,
+              "goalsDiff": 25,
+              "group": "2. Bundesliga",
+              "form": "WWDWL",
+              "status": "same",
+              "description": "Promotion - Bundesliga",
+              "all": {
+                "played": 34,
+                "win": 18,
+                "draw": 10,
+                "lose": 6,
+                "goals": {
+                  "for": 69,
+                  "against": 44
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 9,
+                "draw": 4,
+                "lose": 4,
+                "goals": {
+                  "for": 34,
+                  "against": 23
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 9,
+                "draw": 6,
+                "lose": 2,
+                "goals": {
+                  "for": 35,
+                  "against": 21
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 191,
+                "name": "Holstein Kiel",
+                "logo": "https://media-2.api-sports.io/football/teams/191.png"
+              },
+              "points": 62,
+              "goalsDiff": 22,
+              "group": "2. Bundesliga",
+              "form": "LLWWW",
+              "status": "same",
+              "description": "Promotion - Bundesliga (Promotion)",
+              "all": {
+                "played": 34,
+                "win": 18,
+                "draw": 8,
+                "lose": 8,
+                "goals": {
+                  "for": 57,
+                  "against": 35
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 11,
+                "draw": 2,
+                "lose": 4,
+                "goals": {
+                  "for": 31,
+                  "against": 19
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 7,
+                "draw": 6,
+                "lose": 4,
+                "goals": {
+                  "for": 26,
+                  "against": 16
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 175,
+                "name": "Hamburger SV",
+                "logo": "https://media-2.api-sports.io/football/teams/175.png"
+              },
+              "points": 58,
+              "goalsDiff": 27,
+              "group": "2. Bundesliga",
+              "form": "WLWDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 16,
+                "draw": 10,
+                "lose": 8,
+                "goals": {
+                  "for": 71,
+                  "against": 44
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 10,
+                "draw": 4,
+                "lose": 3,
+                "goals": {
+                  "for": 40,
+                  "against": 16
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 6,
+                "draw": 6,
+                "lose": 5,
+                "goals": {
+                  "for": 31,
+                  "against": 28
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": 158,
+                "name": "Fortuna Dusseldorf",
+                "logo": "https://media-2.api-sports.io/football/teams/158.png"
+              },
+              "points": 56,
+              "goalsDiff": 9,
+              "group": "2. Bundesliga",
+              "form": "LWDWL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 16,
+                "draw": 8,
+                "lose": 10,
+                "goals": {
+                  "for": 55,
+                  "against": 46
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 11,
+                "draw": 4,
+                "lose": 2,
+                "goals": {
+                  "for": 32,
+                  "against": 20
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 5,
+                "draw": 4,
+                "lose": 8,
+                "goals": {
+                  "for": 23,
+                  "against": 26
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": 785,
+                "name": "Karlsruher SC",
+                "logo": "https://media-3.api-sports.io/football/teams/785.png"
+              },
+              "points": 52,
+              "goalsDiff": 7,
+              "group": "2. Bundesliga",
+              "form": "WWDLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 14,
+                "draw": 10,
+                "lose": 10,
+                "goals": {
+                  "for": 51,
+                  "against": 44
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 5,
+                "draw": 6,
+                "lose": 6,
+                "goals": {
+                  "for": 19,
+                  "against": 18
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 9,
+                "draw": 4,
+                "lose": 4,
+                "goals": {
+                  "for": 32,
+                  "against": 26
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": 181,
+                "name": "SV Darmstadt 98",
+                "logo": "https://media-3.api-sports.io/football/teams/181.png"
+              },
+              "points": 51,
+              "goalsDiff": 8,
+              "group": "2. Bundesliga",
+              "form": "WWWWW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 15,
+                "draw": 6,
+                "lose": 13,
+                "goals": {
+                  "for": 63,
+                  "against": 55
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 7,
+                "draw": 3,
+                "lose": 7,
+                "goals": {
+                  "for": 29,
+                  "against": 23
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 8,
+                "draw": 3,
+                "lose": 6,
+                "goals": {
+                  "for": 34,
+                  "against": 32
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": 180,
+                "name": "FC Heidenheim",
+                "logo": "https://media-1.api-sports.io/football/teams/180.png"
+              },
+              "points": 51,
+              "goalsDiff": 0,
+              "group": "2. Bundesliga",
+              "form": "LLWLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 15,
+                "draw": 6,
+                "lose": 13,
+                "goals": {
+                  "for": 49,
+                  "against": 49
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 10,
+                "draw": 3,
+                "lose": 4,
+                "goals": {
+                  "for": 28,
+                  "against": 16
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 5,
+                "draw": 3,
+                "lose": 9,
+                "goals": {
+                  "for": 21,
+                  "against": 33
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": 185,
+                "name": "SC Paderborn 07",
+                "logo": "https://media-2.api-sports.io/football/teams/185.png"
+              },
+              "points": 47,
+              "goalsDiff": 8,
+              "group": "2. Bundesliga",
+              "form": "DLWWD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 12,
+                "draw": 11,
+                "lose": 11,
+                "goals": {
+                  "for": 53,
+                  "against": 45
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 8,
+                "draw": 5,
+                "lose": 4,
+                "goals": {
+                  "for": 32,
+                  "against": 26
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 4,
+                "draw": 6,
+                "lose": 7,
+                "goals": {
+                  "for": 21,
+                  "against": 19
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": 186,
+                "name": "FC St. Pauli",
+                "logo": "https://media-2.api-sports.io/football/teams/186.png"
+              },
+              "points": 47,
+              "goalsDiff": -5,
+              "group": "2. Bundesliga",
+              "form": "LLLWL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 13,
+                "draw": 8,
+                "lose": 13,
+                "goals": {
+                  "for": 51,
+                  "against": 56
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 8,
+                "draw": 3,
+                "lose": 6,
+                "goals": {
+                  "for": 28,
+                  "against": 25
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 5,
+                "draw": 5,
+                "lose": 7,
+                "goals": {
+                  "for": 23,
+                  "against": 31
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": 171,
+                "name": "FC Nurnberg",
+                "logo": "https://media-3.api-sports.io/football/teams/171.png"
+              },
+              "points": 44,
+              "goalsDiff": -5,
+              "group": "2. Bundesliga",
+              "form": "WDLDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 11,
+                "draw": 11,
+                "lose": 12,
+                "goals": {
+                  "for": 46,
+                  "against": 51
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 5,
+                "draw": 7,
+                "lose": 5,
+                "goals": {
+                  "for": 22,
+                  "against": 23
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 6,
+                "draw": 4,
+                "lose": 7,
+                "goals": {
+                  "for": 24,
+                  "against": 28
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": 190,
+                "name": "Erzgebirge AUE",
+                "logo": "https://media-3.api-sports.io/football/teams/190.png"
+              },
+              "points": 44,
+              "goalsDiff": -9,
+              "group": "2. Bundesliga",
+              "form": "WLLDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 12,
+                "draw": 8,
+                "lose": 14,
+                "goals": {
+                  "for": 44,
+                  "against": 53
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 8,
+                "draw": 4,
+                "lose": 5,
+                "goals": {
+                  "for": 29,
+                  "against": 28
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 4,
+                "draw": 4,
+                "lose": 9,
+                "goals": {
+                  "for": 15,
+                  "against": 25
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": 166,
+                "name": "Hannover 96",
+                "logo": "https://media-1.api-sports.io/football/teams/166.png"
+              },
+              "points": 42,
+              "goalsDiff": 2,
+              "group": "2. Bundesliga",
+              "form": "LWLLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 12,
+                "draw": 6,
+                "lose": 16,
+                "goals": {
+                  "for": 53,
+                  "against": 51
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 7,
+                "draw": 4,
+                "lose": 6,
+                "goals": {
+                  "for": 30,
+                  "against": 22
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 5,
+                "draw": 2,
+                "lose": 10,
+                "goals": {
+                  "for": 23,
+                  "against": 29
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": 177,
+                "name": "Jahn Regensburg",
+                "logo": "https://media-3.api-sports.io/football/teams/177.png"
+              },
+              "points": 38,
+              "goalsDiff": -13,
+              "group": "2. Bundesliga",
+              "form": "WLLLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 9,
+                "draw": 11,
+                "lose": 14,
+                "goals": {
+                  "for": 37,
+                  "against": 50
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 6,
+                "draw": 6,
+                "lose": 5,
+                "goals": {
+                  "for": 23,
+                  "against": 21
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 3,
+                "draw": 5,
+                "lose": 9,
+                "goals": {
+                  "for": 14,
+                  "against": 29
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": 189,
+                "name": "SV Sandhausen",
+                "logo": "https://media-2.api-sports.io/football/teams/189.png"
+              },
+              "points": 34,
+              "goalsDiff": -19,
+              "group": "2. Bundesliga",
+              "form": "LWLLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 34,
+                "win": 10,
+                "draw": 4,
+                "lose": 20,
+                "goals": {
+                  "for": 41,
+                  "against": 60
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 9,
+                "draw": 4,
+                "lose": 4,
+                "goals": {
+                  "for": 29,
+                  "against": 21
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 1,
+                "draw": 0,
+                "lose": 16,
+                "goals": {
+                  "for": 12,
+                  "against": 39
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 16,
+              "team": {
+                "id": 1324,
+                "name": "VfL Osnabruck",
+                "logo": "https://media-1.api-sports.io/football/teams/1324.png"
+              },
+              "points": 33,
+              "goalsDiff": -23,
+              "group": "2. Bundesliga",
+              "form": "LWWLD",
+              "status": "same",
+              "description": "2. Bundesliga (Relegation)",
+              "all": {
+                "played": 34,
+                "win": 9,
+                "draw": 6,
+                "lose": 19,
+                "goals": {
+                  "for": 35,
+                  "against": 58
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 3,
+                "draw": 1,
+                "lose": 13,
+                "goals": {
+                  "for": 16,
+                  "against": 34
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 6,
+                "draw": 5,
+                "lose": 6,
+                "goals": {
+                  "for": 19,
+                  "against": 24
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 17,
+              "team": {
+                "id": 744,
+                "name": "Eintracht Braunschweig",
+                "logo": "https://media-3.api-sports.io/football/teams/744.png"
+              },
+              "points": 31,
+              "goalsDiff": -29,
+              "group": "2. Bundesliga",
+              "form": "LLDLL",
+              "status": "same",
+              "description": "Relegation - 3. Liga",
+              "all": {
+                "played": 34,
+                "win": 7,
+                "draw": 10,
+                "lose": 17,
+                "goals": {
+                  "for": 30,
+                  "against": 59
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 6,
+                "draw": 4,
+                "lose": 7,
+                "goals": {
+                  "for": 17,
+                  "against": 23
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 1,
+                "draw": 6,
+                "lose": 10,
+                "goals": {
+                  "for": 13,
+                  "against": 36
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            },
+            {
+              "rank": 18,
+              "team": {
+                "id": 784,
+                "name": "FC Wurzburger Kickers",
+                "logo": "https://media-2.api-sports.io/football/teams/784.png"
+              },
+              "points": 25,
+              "goalsDiff": -32,
+              "group": "2. Bundesliga",
+              "form": "DWLDL",
+              "status": "same",
+              "description": "Relegation - 3. Liga",
+              "all": {
+                "played": 34,
+                "win": 6,
+                "draw": 7,
+                "lose": 21,
+                "goals": {
+                  "for": 37,
+                  "against": 69
+                }
+              },
+              "home": {
+                "played": 17,
+                "win": 3,
+                "draw": 6,
+                "lose": 8,
+                "goals": {
+                  "for": 22,
+                  "against": 33
+                }
+              },
+              "away": {
+                "played": 17,
+                "win": 3,
+                "draw": 1,
+                "lose": 13,
+                "goals": {
+                  "for": 15,
+                  "against": 36
+                }
+              },
+              "update": "2021-05-26T00:00:00+00:00"
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}
