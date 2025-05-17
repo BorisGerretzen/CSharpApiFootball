@@ -1,7 +1,8 @@
 ﻿namespace ApiFootball.Models.Responses.Inner;
 
-public class LeaguesResponse {
-    public League League { get; private set; }
-    public Country Country { get; private set; }
-    public List<Season> Seasons { get; private set; }
+public sealed class LeaguesResponse
+{
+    public required League League { get; init; }
+    public required Country Country { get; init; }
+    public required List<Season> Seasons { get; init; }
 }

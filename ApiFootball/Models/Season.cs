@@ -1,9 +1,10 @@
 ﻿namespace ApiFootball.Models;
 
-public class Season {
-    public int Year { get; private set; }
-    public DateOnly Start { get; private set; }
-    public DateOnly End { get; private set; }
-    public bool Current { get; private set; }
-    public Coverage Coverage { get; private set; }
+public class Season
+{
+    public int Year { get; init; }
+    public DateOnly Start { get; init; }
+    public DateOnly End { get; init; }
+    public bool Current { get; init; }
+    public required Coverage Coverage { get; init; }
 }

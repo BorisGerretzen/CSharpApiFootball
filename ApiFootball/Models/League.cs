@@ -1,17 +1,22 @@
 ﻿namespace ApiFootball.Models;
 
-public class League {
-    public int Id { get; private set; }
-    public string Name { get; private set; }
-    public LeagueType Type { get; private set; }
-    public string Logo { get; private set; }
-    public string? Flag { get; private set; }
-    public string? Round { get; private set; }
-    public int? Season { get; private set; }
-    public List<List<Standing>> Standings { get; private set; }
+public class League
+{
+    public int Id { get; init; }
+    public required string Name { get; init; }
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public LeagueType Type { get; init; }
+
+    public required string Logo { get; init; }
+    public string? Flag { get; init; }
+    public string? Round { get; init; }
+    public int? Season { get; init; }
+    public List<List<Standing>>? Standings { get; init; }
 }
 
-public enum LeagueType {
+public enum LeagueType
+{
     League,
     Cup
 }

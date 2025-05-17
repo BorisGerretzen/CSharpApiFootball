@@ -1,10 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿namespace ApiFootball.Models;
 
-namespace ApiFootball.Models;
+public class Fixtures
+{
+    public bool Events { get; init; }
+    public bool Lineups { get; init; }
 
-public class Fixtures {
-    public bool Events { get; private set; }
-    public bool Lineups { get; private set; }
-    [JsonProperty("statistics_fixtures")] public bool StatisticsFixtures { get; private set; }
-    [JsonProperty("statistics_players")] public bool StatisticsPlayers { get; private set; }
+    [JsonPropertyName("statistics_fixtures")]
+    public bool StatisticsFixtures { get; init; }
+
+    [JsonPropertyName("statistics_players")]
+    public bool StatisticsPlayers { get; init; }
 }

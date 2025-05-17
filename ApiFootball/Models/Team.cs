@@ -1,12 +1,13 @@
 ﻿namespace ApiFootball.Models;
 
-public class Team {
-    public int Id { get; private set; }
-    public string Name { get; private set; }
-    public string? Code { get; private set; }
-    public string? Country { get; private set; }
-    public int? Founded { get; private set; }
-    public bool? National { get; private set; }
-    public bool? Winner { get; private set; }
-    public string Logo { get; private set; }
+public class Team
+{
+    public int Id { get; init; }
+    public required string Name { get; init; }
+    public string? Code { get; init; }
+    public string? Country { get; init; }
+    public int? Founded { get; init; }
+    public bool? National { get; init; }
+    public bool? Winner { get; init; }
+    public required string Logo { get; init; }
 }

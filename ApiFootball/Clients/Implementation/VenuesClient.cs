@@ -1,24 +1,14 @@
-using ApiFootball.Clients.Interface;
-using ApiFootball.Models;
-using ApiFootball.Models.Responses;
-using Newtonsoft.Json;
-
 namespace ApiFootball.Clients.Implementation;
 
-public class VenuesClient : BaseClient, IVenuesClient
+public class VenuesClient(IHttpClientFactory factory) : BaseClient(factory), IVenuesClient
 {
-    public VenuesClient(IHttpClientFactory factory) : base(factory)
-    {
-    }
-
     protected override string Route => "venues";
-    
-    public async Task<BaseResponse<Venue>> GetVenues(int? id, string? name, string? city, string? country, string? search)
+
+    public async Task<BaseResponse<Venue>> GetVenues(int? id, string? name, string? city, string? country, string? search, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(city), city), (nameof(country), country), (nameof(search), search));
-        var response = await HttpClient.GetStringAsync(queryString);
-        var responseObject = JsonConvert.DeserializeObject<BaseResponse<Venue>>(response, SerializerSettings);
-        if (responseObject is null) throw new NullReferenceException("Could not deserialize response.");
-        return responseObject;
+        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
+        return await JsonSerializer.DeserializeAsync<BaseResponse<Venue>>(response, SerializerOptions, cancellationToken)
+               ?? throw new NullReferenceException("Could not deserialize response.");
     }
 }

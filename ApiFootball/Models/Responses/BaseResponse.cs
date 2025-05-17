@@ -1,17 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿namespace ApiFootball.Models.Responses;
 
-namespace ApiFootball.Models.Responses;
-
-public class BaseResponse<T> {
-    public string Get { get; private set; }
-
-    [JsonConverter(typeof(DictionaryOrArrayConverter<string, string>))]
-    public Dictionary<string, string> Parameters { get; private set; }
+public class BaseResponse<T>
+{
+    public required string Get { get; init; }
 
     [JsonConverter(typeof(DictionaryOrArrayConverter<string, string>))]
-    public Dictionary<string, string> Errors { get; private set; }
+    public required Dictionary<string, string> Parameters { get; init; }
 
-    public int Results { get; private set; }
-    public Paging Paging { get; private set; }
-    public List<T> Response { get; private set; }
+    [JsonConverter(typeof(DictionaryOrArrayConverter<string, string>))]
+    public required Dictionary<string, string> Errors { get; init; }
+
+    public required int Results { get; init; }
+    public required Paging Paging { get; init; }
+    public required List<T> Response { get; init; }
 }

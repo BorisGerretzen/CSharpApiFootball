@@ -1,22 +1,15 @@
-﻿using ApiFootball.Clients.Interface;
-using ApiFootball.Models.Responses;
-using Newtonsoft.Json;
+﻿namespace ApiFootball.Clients.Implementation;
 
-namespace ApiFootball.Clients.Implementation;
-
-public class TimezoneClient : BaseClient, ITimezoneClient {
-    public TimezoneClient(IHttpClientFactory factory) : base(factory) { }
+public class TimezoneClient(IHttpClientFactory factory) : BaseClient(factory), ITimezoneClient
+{
     protected override string Route => "timezone";
 
-    /// <summary>
-    ///     Get the list of available timezones to be used in the fixtures endpoint.
-    /// </summary>
-    /// <exception cref="NullReferenceException">If unable to deserialize response</exception>
-    public async Task<BaseResponse<string>> GetTimezones() {
+    /// <inheritdoc />
+    public async Task<BaseResponse<string>> GetTimezones(CancellationToken cancellationToken = default)
+    {
         var queryString = BuildQueryString();
-        var response = await HttpClient.GetStringAsync(queryString);
-        var responseObject = JsonConvert.DeserializeObject<BaseResponse<string>>(response, SerializerSettings);
-        if (responseObject is null) throw new NullReferenceException("Could not deserialize response.");
-        return responseObject;
+        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
+        return await JsonSerializer.DeserializeAsync<BaseResponse<string>>(response, SerializerOptions, cancellationToken)
+               ?? throw new NullReferenceException("Could not deserialize response.");
     }
 }

@@ -1,29 +1,29 @@
-﻿using Newtonsoft.Json;
-
-namespace ApiFootball;
+﻿namespace ApiFootball;
 
 /// <summary>
-///     https://stackoverflow.com/questions/74762080/how-to-deserialize-json-which-is-sometimes-a-dictionary-and-sometimes-an-empty-a
+/// Inspired by the following StackOverflow post but modified for System.Text.Json.
+/// https://stackoverflow.com/questions/74762080/how-to-deserialize-json-which-is-sometimes-a-dictionary-and-sometimes-an-empty-a
 /// </summary>
-public class DictionaryOrArrayConverter<TKey, TValue> : JsonConverter
-    where TKey : notnull {
-    public override bool CanConvert(Type objectType) => true;
+public class DictionaryOrArrayConverter<TKey, TValue> : JsonConverter<Dictionary<TKey, TValue>>
+    where TKey : notnull
+{
+    public override Dictionary<TKey, TValue>? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    {
+        if (reader.TokenType == JsonTokenType.StartObject) return JsonSerializer.Deserialize<Dictionary<TKey, TValue>>(ref reader, options);
 
-    public override object? ReadJson(JsonReader reader, Type objectType, object? existingValue, JsonSerializer serializer) {
-        switch (reader.TokenType) {
-            case JsonToken.StartObject:
-                return (Dictionary<TKey, TValue>?)serializer.Deserialize(reader, objectType);
-            case JsonToken.StartArray:
-                reader.Read();
-                if (reader.TokenType != JsonToken.EndArray) throw new JsonReaderException("Empty array expected");
-
-                return new Dictionary<TKey, TValue>();
-            default:
-                throw new ArgumentOutOfRangeException();
+        if (reader.TokenType == JsonTokenType.StartArray)
+        {
+            reader.Read();
+            if (reader.TokenType != JsonTokenType.EndArray)
+                throw new JsonException("Expected an empty array to represent an empty dictionary.");
+            return new Dictionary<TKey, TValue>();
         }
+
+        throw new JsonException($"Unexpected token {reader.TokenType}, expected StartObject or StartArray.");
     }
 
-    public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer) {
-        serializer.Serialize(writer, value);
+    public override void Write(Utf8JsonWriter writer, Dictionary<TKey, TValue> value, JsonSerializerOptions options)
+    {
+        JsonSerializer.Serialize(writer, value, options);
     }
 }
