@@ -2,11 +2,13 @@
 
 namespace ApiFootball.Test.Clients.Implementation;
 
-public class FixturesClientTest : BaseEndpointTest {
+public class FixturesClientTest : BaseEndpointTest
+{
     private const string Route = "fixtures";
 
     [Test]
-    public async Task Test_Rounds_Valid_Response() {
+    public async Task Test_Rounds_Valid_Response()
+    {
         const string path = "/rounds";
         const string query = "?league=88&season=2022";
         var factory = MockFactory(Route + path + query, GetExpected(nameof(Test_Rounds_Valid_Response)));
@@ -23,7 +25,8 @@ public class FixturesClientTest : BaseEndpointTest {
     }
 
     [Test]
-    public async Task Test_Fixtures_Valid_Response() {
+    public async Task Test_Fixtures_Valid_Response()
+    {
         const string query = "?league=88&season=2022";
         var factory = MockFactory(Route + query, GetExpected(nameof(Test_Fixtures_Valid_Response)));
         var client = new FixturesClient(factory);

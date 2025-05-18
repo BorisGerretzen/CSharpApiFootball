@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Status
+public sealed class Status
 {
     public required string Long { get; init; }
     public required string Short { get; init; }

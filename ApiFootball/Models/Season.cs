@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Season
+public sealed class Season
 {
     public int Year { get; init; }
     public DateOnly Start { get; init; }

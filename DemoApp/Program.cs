@@ -7,7 +7,8 @@ var key = File.ReadAllText("key"); // put your api key in a file called 'key'
 
 var host = Host
     .CreateDefaultBuilder(Array.Empty<string>())
-    .ConfigureServices(services => {
+    .ConfigureServices(services =>
+    {
         services
             .AddApiFootball(key); // Configure ApiFootball clients
     }).Build();

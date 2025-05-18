@@ -2,11 +2,13 @@
 
 namespace ApiFootball.Test.Clients.Implementation;
 
-public class TimezoneClientTests : BaseEndpointTest {
+public class TimezoneClientTests : BaseEndpointTest
+{
     private const string Route = "timezone";
 
     [Test]
-    public async Task Test_Timezones_Valid_Response() {
+    public async Task Test_Timezones_Valid_Response()
+    {
         var factory = MockFactory(Route, GetExpected(nameof(Test_Timezones_Valid_Response)));
         var client = new TimezoneClient(factory);
         var response = await client.GetTimezones();

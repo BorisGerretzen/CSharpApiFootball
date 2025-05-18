@@ -45,7 +45,12 @@ timezones.Response.ForEach(Console.WriteLine);
 - /fixtures/rounds
 - /leagues
 - /leagues/seasons
+- /standings
+- /teams
+- /teams/seasons
+- /teams/countries
 - /timezone
+- /venues
 
 ## Todo
 

@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Venue
+public sealed class Venue
 {
     public int? Id { get; init; }
     public string? Name { get; init; }

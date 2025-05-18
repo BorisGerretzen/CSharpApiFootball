@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Score
+public sealed class Score
 {
     public required Goals Halftime { get; init; }
     public required Goals Fulltime { get; init; }

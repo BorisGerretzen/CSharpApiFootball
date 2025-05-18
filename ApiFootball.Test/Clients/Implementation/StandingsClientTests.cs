@@ -24,6 +24,7 @@ public class StandingsClientTests : BaseEndpointTest
         Assert.That(item.League.Type, Is.EqualTo(LeagueType.League));
         Assert.That(item.League.Season, Is.EqualTo(2020));
 
+        Assert.That(item.League.Standings, Is.Not.Null);
         var standingItem = item.League.Standings[0][0];
         Assert.That(standingItem.Rank, Is.EqualTo(1));
         Assert.That(standingItem.Team.Id, Is.EqualTo(176));

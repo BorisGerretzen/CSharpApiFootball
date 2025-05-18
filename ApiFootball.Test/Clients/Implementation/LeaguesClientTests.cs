@@ -3,11 +3,13 @@ using ApiFootball.Models;
 
 namespace ApiFootball.Test.Clients.Implementation;
 
-public class LeaguesClientTests : BaseEndpointTest {
+public class LeaguesClientTests : BaseEndpointTest
+{
     private const string Route = "leagues";
 
     [Test]
-    public async Task Test_Leagues_Valid_Response() {
+    public async Task Test_Leagues_Valid_Response()
+    {
         var factory = MockFactory(Route, GetExpected(nameof(Test_Leagues_Valid_Response)));
         var client = new LeaguesClient(factory);
         var response = await client.GetLeagues();
@@ -30,7 +32,8 @@ public class LeaguesClientTests : BaseEndpointTest {
     }
 
     [Test]
-    public async Task Test_Seasons_Valid_Response() {
+    public async Task Test_Seasons_Valid_Response()
+    {
         const string path = "/seasons";
         var factory = MockFactory(Route + path, GetExpected(nameof(Test_Seasons_Valid_Response)));
         var client = new LeaguesClient(factory);

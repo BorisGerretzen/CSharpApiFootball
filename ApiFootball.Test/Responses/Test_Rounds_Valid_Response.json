@@ -1,25 +1,25 @@
 ﻿{
-  "get": "fixtures/rounds",
-  "parameters": {
-    "league": "88",
-    "season": "2022"
-  },
-  "errors": [],
-  "results": 10,
-  "paging": {
-    "current": 1,
-    "total": 1
-  },
-  "response": [
-    "Regular Season - 1",
-    "Regular Season - 2",
-    "Regular Season - 3",
-    "Regular Season - 4",
-    "Regular Season - 5",
-    "Regular Season - 6",
-    "Regular Season - 7",
-    "Regular Season - 8",
-    "Regular Season - 9",
-    "Regular Season - 10"
-  ]
+    "get": "fixtures/rounds",
+    "parameters": {
+        "league": "88",
+        "season": "2022"
+    },
+    "errors": [],
+    "results": 10,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        "Regular Season - 1",
+        "Regular Season - 2",
+        "Regular Season - 3",
+        "Regular Season - 4",
+        "Regular Season - 5",
+        "Regular Season - 6",
+        "Regular Season - 7",
+        "Regular Season - 8",
+        "Regular Season - 9",
+        "Regular Season - 10"
+    ]
 }

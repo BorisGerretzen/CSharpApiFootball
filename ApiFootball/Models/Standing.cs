@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Standing
+public sealed class Standing
 {
     public int Rank { get; init; }
     public required Team Team { get; init; }
@@ -13,7 +13,7 @@ public class Standing
     public required StandingGames All { get; init; }
     public required StandingGames Home { get; init; }
     public required StandingGames Away { get; init; }
-    public DateTime Update { get; init; }
+    public DateTimeOffset Update { get; init; }
 }
 
 public class StandingGames
