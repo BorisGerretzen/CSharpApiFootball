@@ -11,7 +11,7 @@
         <RepositoryType>git</RepositoryType>
         <Authors>Boris Gerretzen</Authors>
         <Description>DI compatible C# API client for api-football.com. This project is not affiliated with api-football or api-sports.</Description>
-        <PackageTags>football;sports;soccer;api;apifootball</PackageTags>
+        <PackageTags>football;sports;soccer;api;api-football;api-sports</PackageTags>
         <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
         <LangVersion>latest</LangVersion>
 
