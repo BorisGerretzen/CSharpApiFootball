@@ -1,5 +1,6 @@
 ﻿namespace ApiFootball.Models.Responses.Inner;
-public class StandingsResponse
+
+public sealed class StandingsResponse
 {
-    public League League { get; private set; }
+    public required League League { get; init; }
 }

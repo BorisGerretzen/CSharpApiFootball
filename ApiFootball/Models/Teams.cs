@@ -1,6 +1,7 @@
 ﻿namespace ApiFootball.Models;
 
-public class Teams {
-    public Team Home { get; private set; }
-    public Team Away { get; private set; }
+public class Teams
+{
+    public required Team Home { get; init; }
+    public required Team Away { get; init; }
 }

@@ -1,0 +1,32 @@
+﻿name: Integration tests
+on:
+  push:
+    branches: [ "master" ]
+    paths-ignore:
+      - '*.md'
+      - '.gitignore'
+  pull_request:
+    branches: [ "master" ]
+    paths-ignore:
+      - '*.md'
+      - '.gitignore'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Test
+        env:
+          ApiFootball__ApiKey: ${{ secrets.ApiFootball_ApiKey }}
+        run: dotnet test --verbosity normal ApiFootball.IntegrationTests

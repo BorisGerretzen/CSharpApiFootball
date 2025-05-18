@@ -1,7 +1,7 @@
 namespace ApiFootball.Models.Responses.Inner;
 
-public class TeamInformationResponse
+public sealed class TeamInformationResponse
 {
-    public Team Team { get; private set; }
-    public Venue Venue { get; private set; }
+    public required Team Team { get; init; }
+    public required Venue Venue { get; init; }
 }

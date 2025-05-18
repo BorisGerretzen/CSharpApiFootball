@@ -1,15 +1,14 @@
-﻿using Newtonsoft.Json;
+﻿namespace ApiFootball.Models;
 
-namespace ApiFootball.Models;
-
-public class Coverage {
-    public Fixtures Fixtures { get; private set; }
-    public bool Standings { get; private set; }
-    public bool Players { get; private set; }
-    [JsonProperty("top_scorers")] public bool TopScorers { get; private set; }
-    [JsonProperty("top_assists")] public bool TopAssists { get; private set; }
-    [JsonProperty("top_cards")] public bool TopCards { get; private set; }
-    public bool Injuries { get; private set; }
-    public bool Predictions { get; private set; }
-    public bool Odds { get; private set; }
+public class Coverage
+{
+    public required Fixtures Fixtures { get; init; }
+    public bool Standings { get; init; }
+    public bool Players { get; init; }
+    [JsonPropertyName("top_scorers")] public bool TopScorers { get; init; }
+    [JsonPropertyName("top_assists")] public bool TopAssists { get; init; }
+    [JsonPropertyName("top_cards")] public bool TopCards { get; init; }
+    public bool Injuries { get; init; }
+    public bool Predictions { get; init; }
+    public bool Odds { get; init; }
 }

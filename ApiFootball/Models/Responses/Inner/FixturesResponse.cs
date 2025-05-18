@@ -1,9 +1,10 @@
-﻿namespace ApiFootball.Models.Responses.Inner; 
+﻿namespace ApiFootball.Models.Responses.Inner;
 
-public class FixturesResponse {
-    public Fixture Fixture { get; private set; }
-    public League League { get; private set; }
-    public Teams Teams { get; private set; }
-    public Goals Goals { get; private set; }
-    public Score Score { get; private set; }
+public sealed class FixturesResponse
+{
+    public required Fixture Fixture { get; init; }
+    public required FixturesLeague League { get; init; }
+    public required Teams Teams { get; init; }
+    public required Goals Goals { get; init; }
+    public required Score Score { get; init; }
 }

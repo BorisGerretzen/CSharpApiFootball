@@ -1,7 +1,8 @@
 ﻿namespace ApiFootball.Models;
 
-public class Status {
-    public string Long { get; private set; }
-    public string Short { get; private set; }
-    public double? Elapsed { get; private set; }
+public class Status
+{
+    public required string Long { get; init; }
+    public required string Short { get; init; }
+    public double? Elapsed { get; init; }
 }
