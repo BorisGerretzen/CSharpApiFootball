@@ -5,6 +5,7 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.jpg</PackageIcon>
         <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/BorisGerretzen/CSharpApiFootball</PackageProjectUrl>
         <RepositoryUrl>https://github.com/BorisGerretzen/CSharpApiFootball</RepositoryUrl>
@@ -25,5 +26,6 @@
         <PackageReference Include="Microsoft.Extensions.Http" Version="[6.0.0,)"/>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
         <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="icon.jpg" Pack="true" PackagePath="\"/>
     </ItemGroup>
 </Project>
