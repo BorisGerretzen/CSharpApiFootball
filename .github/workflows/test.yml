@@ -20,10 +20,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       
-    - name: Setup .NET 9
+    - name: Install .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 9.0.x
+        dotnet-version: |
+          9.x
+          8.x
+          7.x
       
     - name: Test
       run: dotnet test --verbosity normal ApiFootball.Test
