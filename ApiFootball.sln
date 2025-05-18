@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball.Test", "ApiFootball.Test\ApiFootball.Test.csproj", "{C7ED897B-B463-4A5C-8088-DA9108F8880A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball.IntegrationTests", "ApiFootball.IntegrationTests\ApiFootball.IntegrationTests.csproj", "{F88B1562-4DF0-4F43-9228-CFFCAC86C516}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7ED897B-B463-4A5C-8088-DA9108F8880A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88B1562-4DF0-4F43-9228-CFFCAC86C516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88B1562-4DF0-4F43-9228-CFFCAC86C516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88B1562-4DF0-4F43-9228-CFFCAC86C516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88B1562-4DF0-4F43-9228-CFFCAC86C516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

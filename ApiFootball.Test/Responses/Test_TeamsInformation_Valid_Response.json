@@ -1,0 +1,34 @@
+﻿{
+    "get": "teams",
+    "parameters": {
+        "id": "69"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "team": {
+                "id": 69,
+                "name": "Derby",
+                "code": "DER",
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/69.png"
+            },
+            "venue": {
+                "id": 527,
+                "name": "Pride Park Stadium",
+                "address": "Pride Park, Royal Way",
+                "city": "Derby",
+                "capacity": 33597,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/527.png"
+            }
+        }
+    ]
+}

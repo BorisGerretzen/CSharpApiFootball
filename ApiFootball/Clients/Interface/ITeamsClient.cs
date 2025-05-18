@@ -25,8 +25,8 @@ public interface ITeamsClient
     /// </summary>
     /// <param name="team">The team id.</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<Season>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default);
-    
+    public Task<BaseResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default);
+
     /// <summary>
     /// Get the list of countries available for the teams endpoint.
     /// Recommended Calls: 1 call per day.

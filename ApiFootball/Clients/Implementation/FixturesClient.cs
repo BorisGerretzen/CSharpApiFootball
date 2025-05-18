@@ -22,8 +22,8 @@ public class FixturesClient(IHttpClientFactory factory) : BaseClient(factory), I
         var queryString = BuildQueryString((nameof(id), id), (nameof(ids), string.Join("-", ids ?? Array.Empty<string>())), (nameof(live), live), (nameof(date), date), (nameof(league), league),
             (nameof(season), season), (nameof(team), team), (nameof(last), last), (nameof(next), next), (nameof(from), from), (nameof(to), to), (nameof(round), round), (nameof(status), status),
             (nameof(venue), venue), (nameof(timezone), timezone));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<FixturesResponse>>(response, SerializerOptions, cancellationToken)
+        var response = await HttpClient.GetStringAsync(queryString, cancellationToken);
+        return JsonSerializer.Deserialize<BaseResponse<FixturesResponse>>(response, SerializerOptions)
                ?? throw new NullReferenceException("Could not deserialize response.");
     }
 }

@@ -16,11 +16,11 @@ public class TeamsClient(IHttpClientFactory factory) : BaseClient(factory), ITea
     }
 
     /// <inheritdoc />
-    public async Task<BaseResponse<Season>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default)
+    public async Task<BaseResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("/seasons", (nameof(team), team));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<Season>>(response, SerializerOptions, cancellationToken)
+        return await JsonSerializer.DeserializeAsync<BaseResponse<int>>(response, SerializerOptions, cancellationToken)
                ?? throw new NullReferenceException("Could not deserialize response.");
     }
 

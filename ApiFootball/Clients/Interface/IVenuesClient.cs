@@ -13,5 +13,5 @@ public interface IVenuesClient
     /// <param name="country">The country of the venue.</param>
     /// <param name="search">The name, city or the country of the venue (>= 3 characters).</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<Venue>> GetVenues(int? id, string? name, string? city, string? country, string? search, CancellationToken cancellationToken = default);
+    public Task<BaseResponse<Venue>> GetVenues(int? id = null, string? name = null, string? city = null, string? country = null, string? search = null, CancellationToken cancellationToken = default);
 }
