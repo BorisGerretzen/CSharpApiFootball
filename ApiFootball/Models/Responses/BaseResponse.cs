@@ -10,6 +10,8 @@ public class BaseResponse<T>
     [JsonConverter(typeof(DictionaryOrArrayConverter<string, string>))]
     public required Dictionary<string, string> Errors { get; init; }
 
+    [JsonIgnore] public bool IsSuccess => Errors.Count == 0;
+
     public required int Results { get; init; }
     public required Paging Paging { get; init; }
     public required List<T> Response { get; init; }
@@ -20,6 +22,6 @@ public class BaseResponse<T>
     /// <exception cref="ApiFootballException">If <see cref="Errors" /> is populated.</exception>
     public void EnsureSuccess()
     {
-        if (Errors.Count > 0) throw new ApiFootballException(Errors.Select(kvp => new ApiFootballError(kvp.Key, kvp.Value)).ToList());
+        if (!IsSuccess) throw new ApiFootballException(Errors.Select(kvp => new ApiFootballError(kvp.Key, kvp.Value)).ToList());
     }
 }
