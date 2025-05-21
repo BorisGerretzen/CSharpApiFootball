@@ -2,11 +2,13 @@
 
 namespace ApiFootball.Test.Clients.Implementation;
 
-public class CountriesClientTests : BaseEndpointTest {
+public class CountriesClientTests : BaseEndpointTest
+{
     private const string Route = "countries";
 
     [Test]
-    public async Task Test_Countries_Valid_Response() {
+    public async Task Test_Countries_Valid_Response()
+    {
         var factory = MockFactory(Route, GetExpected(nameof(Test_Countries_Valid_Response)));
 
         var client = new CountriesClient(factory);
@@ -18,7 +20,8 @@ public class CountriesClientTests : BaseEndpointTest {
         Assert.That(response.Results, Is.EqualTo(2));
         Assert.That(response.Response, Has.Count.EqualTo(2));
 
-        foreach (var responseItem in response.Response) {
+        foreach (var responseItem in response.Response)
+        {
             Assert.That(responseItem.Name, Is.Not.Null.Or.Empty);
             Assert.That(responseItem.Code, Is.Not.Null.Or.Empty);
             Assert.That(responseItem.Flag, Is.Not.Null.Or.Empty);
@@ -27,7 +30,8 @@ public class CountriesClientTests : BaseEndpointTest {
     }
 
     [Test]
-    public async Task Test_Invalid_Search_Param() {
+    public async Task Test_Invalid_Search_Param()
+    {
         const string query = "?search=ab";
         var factory = MockFactory(Route + query, GetExpected(nameof(Test_Invalid_Search_Param)));
         var client = new CountriesClient(factory);

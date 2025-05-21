@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Country
+public sealed class Country
 {
     public required string Name { get; init; }
     public required string Code { get; init; }

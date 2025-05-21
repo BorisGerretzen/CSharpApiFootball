@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Team
+public sealed class Team
 {
     public int Id { get; init; }
     public required string Name { get; init; }

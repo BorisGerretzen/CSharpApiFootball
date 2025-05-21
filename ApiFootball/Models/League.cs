@@ -1,9 +1,10 @@
 ﻿namespace ApiFootball.Models;
 
-public class League
+public sealed class League
 {
     public int Id { get; init; }
     public required string Name { get; init; }
+    public string? Country { get; init; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public LeagueType Type { get; init; }

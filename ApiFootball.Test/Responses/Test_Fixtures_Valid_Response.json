@@ -1,151 +1,151 @@
 ﻿{
-  "get": "fixtures",
-  "parameters": {
-    "season": "2022",
-    "league": "88"
-  },
-  "errors": [],
-  "results": 2,
-  "paging": {
-    "current": 1,
-    "total": 1
-  },
-  "response": [
-    {
-      "fixture": {
-        "id": 872224,
-        "referee": "Paulus van Boekel, Netherlands",
-        "timezone": "UTC",
-        "date": "2022-08-05T18:00:00+00:00",
-        "timestamp": 1659722400,
-        "periods": {
-          "first": 1659722400,
-          "second": 1659726000
-        },
-        "venue": {
-          "id": 1132,
-          "name": "Abe Lenstra Stadion",
-          "city": "Heerenveen"
-        },
-        "status": {
-          "long": "Match Finished",
-          "short": "FT",
-          "elapsed": 90
-        }
-      },
-      "league": {
-        "id": 88,
-        "name": "Eredivisie",
-        "country": "Netherlands",
-        "logo": "https://media-6.api-sports.io/football/leagues/88.png",
-        "flag": "https://media-4.api-sports.io/flags/nl.svg",
-        "season": 2022,
-        "round": "Regular Season - 1"
-      },
-      "teams": {
-        "home": {
-          "id": 210,
-          "name": "Heerenveen",
-          "logo": "https://media-5.api-sports.io/football/teams/210.png",
-          "winner": null
-        },
-        "away": {
-          "id": 426,
-          "name": "Sparta Rotterdam",
-          "logo": "https://media-5.api-sports.io/football/teams/426.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "score": {
-        "halftime": {
-          "home": 0,
-          "away": 0
-        },
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
+    "get": "fixtures",
+    "parameters": {
+        "season": "2022",
+        "league": "88"
     },
-    {
-      "fixture": {
-        "id": 872529,
-        "referee": null,
-        "timezone": "UTC",
-        "date": "2023-05-28T12:30:00+00:00",
-        "timestamp": 1685277000,
-        "periods": {
-          "first": null,
-          "second": null
+    "errors": [],
+    "results": 2,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "fixture": {
+                "id": 872224,
+                "referee": "Paulus van Boekel, Netherlands",
+                "timezone": "UTC",
+                "date": "2022-08-05T18:00:00+00:00",
+                "timestamp": 1659722400,
+                "periods": {
+                    "first": 1659722400,
+                    "second": 1659726000
+                },
+                "venue": {
+                    "id": 1132,
+                    "name": "Abe Lenstra Stadion",
+                    "city": "Heerenveen"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 88,
+                "name": "Eredivisie",
+                "country": "Netherlands",
+                "logo": "https://media-6.api-sports.io/football/leagues/88.png",
+                "flag": "https://media-4.api-sports.io/flags/nl.svg",
+                "season": 2022,
+                "round": "Regular Season - 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 210,
+                    "name": "Heerenveen",
+                    "logo": "https://media-5.api-sports.io/football/teams/210.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 426,
+                    "name": "Sparta Rotterdam",
+                    "logo": "https://media-5.api-sports.io/football/teams/426.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
         },
-        "venue": {
-          "id": 1156,
-          "name": "Kras Stadion",
-          "city": "Volendam"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null
+        {
+            "fixture": {
+                "id": 872529,
+                "referee": null,
+                "timezone": "UTC",
+                "date": "2023-05-28T12:30:00+00:00",
+                "timestamp": 1685277000,
+                "periods": {
+                    "first": null,
+                    "second": null
+                },
+                "venue": {
+                    "id": 1156,
+                    "name": "Kras Stadion",
+                    "city": "Volendam"
+                },
+                "status": {
+                    "long": "Not Started",
+                    "short": "NS",
+                    "elapsed": null
+                }
+            },
+            "league": {
+                "id": 88,
+                "name": "Eredivisie",
+                "country": "Netherlands",
+                "logo": "https://media-6.api-sports.io/football/leagues/88.png",
+                "flag": "https://media-4.api-sports.io/flags/nl.svg",
+                "season": 2022,
+                "round": "Regular Season - 34"
+            },
+            "teams": {
+                "home": {
+                    "id": 416,
+                    "name": "FC Volendam",
+                    "logo": "https://media-4.api-sports.io/football/teams/416.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 196,
+                    "name": "Excelsior",
+                    "logo": "https://media-4.api-sports.io/football/teams/196.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": null,
+                "away": null
+            },
+            "score": {
+                "halftime": {
+                    "home": null,
+                    "away": null
+                },
+                "fulltime": {
+                    "home": null,
+                    "away": null
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
         }
-      },
-      "league": {
-        "id": 88,
-        "name": "Eredivisie",
-        "country": "Netherlands",
-        "logo": "https://media-6.api-sports.io/football/leagues/88.png",
-        "flag": "https://media-4.api-sports.io/flags/nl.svg",
-        "season": 2022,
-        "round": "Regular Season - 34"
-      },
-      "teams": {
-        "home": {
-          "id": 416,
-          "name": "FC Volendam",
-          "logo": "https://media-4.api-sports.io/football/teams/416.png",
-          "winner": null
-        },
-        "away": {
-          "id": 196,
-          "name": "Excelsior",
-          "logo": "https://media-4.api-sports.io/football/teams/196.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    }
-  ]
+    ]
 }

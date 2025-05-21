@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Coverage
+public sealed class Coverage
 {
     public required Fixtures Fixtures { get; init; }
     public bool Standings { get; init; }

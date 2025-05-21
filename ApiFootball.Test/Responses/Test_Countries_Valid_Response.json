@@ -1,22 +1,22 @@
 ﻿{
-  "get": "countries",
-  "parameters": [],
-  "errors": [],
-  "results": 2,
-  "paging": {
-    "current": 1,
-    "total": 1
-  },
-  "response": [
-    {
-      "name": "Albania",
-      "code": "AL",
-      "flag": "https://media-6.api-sports.io/flags/al.svg"
+    "get": "countries",
+    "parameters": [],
+    "errors": [],
+    "results": 2,
+    "paging": {
+        "current": 1,
+        "total": 1
     },
-    {
-      "name": "Algeria",
-      "code": "DZ",
-      "flag": "https://media-4.api-sports.io/flags/dz.svg"
-    }
-  ]
+    "response": [
+        {
+            "name": "Albania",
+            "code": "AL",
+            "flag": "https://media-6.api-sports.io/flags/al.svg"
+        },
+        {
+            "name": "Algeria",
+            "code": "DZ",
+            "flag": "https://media-4.api-sports.io/flags/dz.svg"
+        }
+    ]
 }

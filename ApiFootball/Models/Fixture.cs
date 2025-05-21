@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Fixture
+public sealed class Fixture
 {
     public int Id { get; init; }
     public string? Referee { get; init; }

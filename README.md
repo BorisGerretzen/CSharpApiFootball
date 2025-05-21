@@ -18,7 +18,7 @@ var host = Host
     .CreateDefaultBuilder(Array.Empty<string>())
     .ConfigureServices(services => {
         services
-            .AddApiFootball(key); // Configure ApiFootball clients
+            .AddApiFootball(key); // Configure ApiFootball client
     }).Build();
 
 var serviceScope = host.Services.CreateScope();
@@ -35,8 +35,17 @@ fixtures.Response
 // Print all timezones
 var timezoneClient = provider.GetRequiredService<ITimezoneClient>();
 var timezones = await timezoneClient.GetTimezones();
+
+// To throw an exception in case of errors
+timezones.EnsureSuccess();
+
 timezones.Response.ForEach(Console.WriteLine);
 ```
+
+> [!IMPORTANT]  
+> Free API keys are limited to 10 requests per minute at the time of writing.
+> Use the `EnsureSuccess()` method to throw an `ApiFootballException` in case of errors or handle them yourself through
+> the `Errors` object on the response.
 
 ## Supported endpoints
 
@@ -45,8 +54,10 @@ timezones.Response.ForEach(Console.WriteLine);
 - /fixtures/rounds
 - /leagues
 - /leagues/seasons
+- /standings
+- /teams
+- /teams/seasons
+- /teams/countries
 - /timezone
+- /venues
 
-## Todo
-
-- More endpoints

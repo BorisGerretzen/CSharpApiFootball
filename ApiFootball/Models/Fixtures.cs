@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.Models;
 
-public class Fixtures
+public sealed class Fixtures
 {
     public bool Events { get; init; }
     public bool Lineups { get; init; }

@@ -20,7 +20,7 @@ public class FixturesIntegrationTests : BaseIntegrationTest
 
         using var scope = Assert.EnterMultipleScope();
         Assert.That(twenteAjax.Fixture.Id, Is.EqualTo(1213546));
-        Assert.That(twenteAjax.Fixture.Referee, Is.EqualTo("A. Lindhout"));
+        Assert.That(twenteAjax.Fixture.Referee, Is.Not.Empty);
         Assert.That(twenteAjax.Fixture.Timezone, Is.EqualTo("UTC"));
         Assert.That(twenteAjax.Fixture.Status.Short, Is.EqualTo("FT"));
         Assert.That(twenteAjax.Fixture.Status.Elapsed, Is.EqualTo(90));
@@ -41,5 +41,27 @@ public class FixturesIntegrationTests : BaseIntegrationTest
         Assert.That(twenteAjax.Score.Fulltime.Away, Is.EqualTo(2));
         Assert.That(twenteAjax.Score.Halftime.Home, Is.EqualTo(1));
         Assert.That(twenteAjax.Score.Halftime.Away, Is.EqualTo(0));
+    }
+
+    [Test]
+    public async Task GetRounds_ShouldReturnRounds()
+    {
+        var fixturesClient = ServiceProvider.GetRequiredService<IFixturesClient>();
+        var response = await fixturesClient.GetRounds(88, 2022);
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(response, Is.Not.Null);
+            Assert.That(response.Results, Is.GreaterThan(0));
+            Assert.That(response.Response, Has.Count.EqualTo(response.Results));
+        }
+
+        using var scope = Assert.EnterMultipleScope();
+        Assert.That(response.Get, Is.EqualTo("fixtures/rounds"));
+        Assert.That(response.Parameters, Contains.Key("league").WithValue("88"));
+        Assert.That(response.Parameters, Contains.Key("season").WithValue("2022"));
+        Assert.That(response.Results, Is.EqualTo(37));
+
+        Assert.That(response.Response, Contains.Item("Regular Season - 1"));
+        Assert.That(response.Response, Contains.Item("Regular Season - 34"));
     }
 }

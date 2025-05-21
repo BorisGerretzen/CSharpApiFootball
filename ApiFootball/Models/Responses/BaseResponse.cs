@@ -13,4 +13,13 @@ public class BaseResponse<T>
     public required int Results { get; init; }
     public required Paging Paging { get; init; }
     public required List<T> Response { get; init; }
+
+    /// <summary>
+    ///     Throws an exception if there are any errors in the response.
+    /// </summary>
+    /// <exception cref="ApiFootballException">If <see cref="Errors" /> is populated.</exception>
+    public void EnsureSuccess()
+    {
+        if (Errors.Count > 0) throw new ApiFootballException(Errors.Select(kvp => new ApiFootballError(kvp.Key, kvp.Value)).ToList());
+    }
 }

@@ -51,4 +51,22 @@ public class LeaguesIntegrationTests : BaseIntegrationTest
         Assert.That(season2023.Coverage.Predictions, Is.True);
         Assert.That(season2023.Coverage.Odds, Is.False);
     }
+
+    [Test]
+    public async Task GetLeaguesSeasons_ShouldReturnLeaguesSeasons()
+    {
+        var leaguesClient = ServiceProvider.GetRequiredService<ILeaguesClient>();
+        var response = await leaguesClient.GetSeasons();
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(response, Is.Not.Null);
+            Assert.That(response.Results, Is.GreaterThan(0));
+            Assert.That(response.Response, Has.Count.EqualTo(response.Results));
+        }
+
+        var seasons = response.Response;
+        Assert.That(seasons, Is.Not.Null);
+        Assert.That(seasons.Count, Is.GreaterThan(0));
+        Assert.That(seasons, Has.All.GreaterThan(2000));
+    }
 }

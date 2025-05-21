@@ -5,13 +5,14 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.jpg</PackageIcon>
         <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/BorisGerretzen/CSharpApiFootball</PackageProjectUrl>
         <RepositoryUrl>https://github.com/BorisGerretzen/CSharpApiFootball</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Authors>Boris Gerretzen</Authors>
         <Description>DI compatible C# API client for api-football.com. This project is not affiliated with api-football or api-sports.</Description>
-        <PackageTags>football;sports;soccer;api;apifootball</PackageTags>
+        <PackageTags>football;sports;soccer;api;api-football;api-sports</PackageTags>
         <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
         <LangVersion>latest</LangVersion>
 
@@ -25,5 +26,6 @@
         <PackageReference Include="Microsoft.Extensions.Http" Version="[6.0.0,)"/>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
         <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="icon.jpg" Pack="true" PackagePath="\"/>
     </ItemGroup>
 </Project>
