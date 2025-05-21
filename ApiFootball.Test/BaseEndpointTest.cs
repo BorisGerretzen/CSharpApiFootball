@@ -11,12 +11,12 @@ public class BaseEndpointTest
     {
         var handlerMock = new MockHttpMessageHandler();
         handlerMock
-            .When(HttpMethod.Get, $"{Globals.ApiUrl}{route}")
+            .When(HttpMethod.Get, $"{ApiFootballGlobals.ApiUrl}{route}")
             .With(x =>
             {
                 return
                     x.Headers.Any(h => h.Key == "x-rapidapi-key" && h.Value.First() == ApiKey) &&
-                    x.Headers.Any(h => h.Key == "x-rapidapi-host" && h.Value.First() == Globals.ApiUrl);
+                    x.Headers.Any(h => h.Key == "x-rapidapi-host" && h.Value.First() == ApiFootballGlobals.ApiUrl);
             })
             .Respond("application/json", expectedResponse);
         var httpClient = new HttpClient(handlerMock)
@@ -24,12 +24,12 @@ public class BaseEndpointTest
             DefaultRequestHeaders =
             {
                 { "x-rapidapi-key", ApiKey },
-                { "x-rapidapi-host", Globals.ApiUrl }
+                { "x-rapidapi-host", ApiFootballGlobals.ApiUrl }
             },
-            BaseAddress = new Uri(Globals.ApiUrl)
+            BaseAddress = new Uri(ApiFootballGlobals.ApiUrl)
         };
         var factory = Mock.Of<IHttpClientFactory>();
-        Mock.Get(factory).Setup(x => x.CreateClient(Globals.HttpClientName)).Returns(httpClient);
+        Mock.Get(factory).Setup(x => x.CreateClient(ApiFootballGlobals.HttpClientName)).Returns(httpClient);
         return factory;
     }
 

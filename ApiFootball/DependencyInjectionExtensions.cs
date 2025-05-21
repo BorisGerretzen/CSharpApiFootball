@@ -20,7 +20,7 @@ public static class DependencyInjectionExtensions
     /// <param name="services">DI service collection</param>
     /// <param name="apiKey">Your api-football api key</param>
     /// <param name="apiUrl">Base url of api-football, use the trailing slash</param>
-    public static IHttpClientBuilder AddApiFootball(this IServiceCollection services, string apiKey, string apiUrl = Globals.ApiUrl)
+    public static IHttpClientBuilder AddApiFootball(this IServiceCollection services, string apiKey, string apiUrl = ApiFootballGlobals.ApiUrl)
     {
         services.AddSingleton<IFixturesClient, FixturesClient>();
         services.AddSingleton<ICountriesClient, CountriesClient>();
@@ -31,7 +31,7 @@ public static class DependencyInjectionExtensions
         services.AddSingleton<IStandingsClient, StandingsClient>();
 
         var typedApiUri = new Uri(apiUrl);
-        return services.AddHttpClient(Globals.HttpClientName, client =>
+        return services.AddHttpClient(ApiFootballGlobals.HttpClientName, client =>
         {
             client.DefaultRequestHeaders.Add("X-Rapidapi-Key", apiKey);
             client.DefaultRequestHeaders.Add("X-Rapidapi-Host", typedApiUri.Host);

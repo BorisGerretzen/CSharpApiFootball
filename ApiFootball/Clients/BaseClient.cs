@@ -4,7 +4,7 @@ namespace ApiFootball.Clients;
 
 public abstract class BaseClient(IHttpClientFactory factory)
 {
-    protected readonly HttpClient HttpClient = factory.CreateClient(Globals.HttpClientName);
+    protected readonly HttpClient HttpClient = factory.CreateClient(ApiFootballGlobals.HttpClientName);
 
     protected readonly JsonSerializerOptions SerializerOptions = new()
     {
