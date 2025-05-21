@@ -49,15 +49,18 @@ timezones.Response.ForEach(Console.WriteLine);
 
 ## Supported endpoints
 
-- /countries
-- /fixtures
-- /fixtures/rounds
-- /leagues
-- /leagues/seasons
-- /standings
-- /teams
-- /teams/seasons
-- /teams/countries
-- /timezone
-- /venues
+Here you can find a list of all the endpoints that are currently supported and which interface to use to call them.
 
+| Endpoint           | C#                                 |
+|--------------------|------------------------------------|
+| `/countries`       | `ICountriesClient.GetCountries`    |
+| `/fixtures`        | `IFixturesClient.GetFixtures`      |
+| `/fixtures/rounds` | `IFixturesClient.GetRounds`        |
+| `/leagues`         | `ILeaguesClient.GetLeagues`        |
+| `/leagues/seasons` | `ILeaguesClient.GetSeasons`        |
+| `/standings`       | `IStandingsClient.GetStandings`    |
+| `/teams`           | `ITeamsClient.GetTeamsInformation` |
+| `/teams/seasons`   | `ITeamsClient.GetTeamsSeasons`     |
+| `/teams/countries` | `ITeamsClient.GetTeamsCountries`   |
+| `/timezone`        | `ITimezoneClient.GetTimezones`     |
+| `/venues`          | `IVenuesClient.GetVenues`          |
