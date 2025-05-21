@@ -17,7 +17,8 @@ public abstract class BaseIntegrationTest
         if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("API key is not set. Please set the ApiFootball:ApiKey in the environment variables or appsettings.development.json.");
 
         var services = new ServiceCollection();
-        services.AddApiFootball(apiKey);
+        services.AddTransient<RateLimitingHandler>();
+        services.AddApiFootball(apiKey).AddHttpMessageHandler<RateLimitingHandler>();
         ServiceProvider = services.BuildServiceProvider();
     }
 

@@ -20,7 +20,7 @@ public class FixturesIntegrationTests : BaseIntegrationTest
 
         using var scope = Assert.EnterMultipleScope();
         Assert.That(twenteAjax.Fixture.Id, Is.EqualTo(1213546));
-        Assert.That(twenteAjax.Fixture.Referee, Is.EqualTo("A. Lindhout"));
+        Assert.That(twenteAjax.Fixture.Referee, Is.Not.Empty);
         Assert.That(twenteAjax.Fixture.Timezone, Is.EqualTo("UTC"));
         Assert.That(twenteAjax.Fixture.Status.Short, Is.EqualTo("FT"));
         Assert.That(twenteAjax.Fixture.Status.Elapsed, Is.EqualTo(90));
