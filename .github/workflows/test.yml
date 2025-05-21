@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
     paths-ignore:
       - '*.md'
+      - '*.yml'
       - '.gitignore'
   pull_request:
     branches: [ "master" ]
