@@ -1,6 +1,8 @@
-﻿namespace ApiFootball.Clients.Implementation;
+﻿using Microsoft.Extensions.Options;
 
-public class StandingsClient(IHttpClientFactory factory) : BaseClient(factory), IStandingsClient
+namespace ApiFootball.Clients.Implementation;
+
+public class StandingsClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), IStandingsClient
 {
     protected override string Route => "standings";
 
@@ -9,7 +11,6 @@ public class StandingsClient(IHttpClientFactory factory) : BaseClient(factory), 
     {
         var queryString = BuildQueryString("", ("season", season), ("league", league), ("team", team));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<StandingsResponse>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<StandingsResponse>(response, cancellationToken);
     }
 }

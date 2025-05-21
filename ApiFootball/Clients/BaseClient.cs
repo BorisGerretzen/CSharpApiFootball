@@ -1,8 +1,9 @@
 ﻿using System.Web;
+using Microsoft.Extensions.Options;
 
 namespace ApiFootball.Clients;
 
-public abstract class BaseClient(IHttpClientFactory factory)
+public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options)
 {
     protected readonly HttpClient HttpClient = factory.CreateClient(ApiFootballGlobals.HttpClientName);
 
@@ -13,6 +14,14 @@ public abstract class BaseClient(IHttpClientFactory factory)
     };
 
     protected abstract string Route { get; }
+
+    protected async Task<BaseResponse<T>> DeserializeAsync<T>(Stream stream, CancellationToken cancellationToken = default)
+    {
+        var deserialized = await JsonSerializer.DeserializeAsync<BaseResponse<T>>(stream, SerializerOptions, cancellationToken);
+        if (deserialized is null) throw new NullReferenceException("Could not deserialize response.");
+        if (options.Value.ThrowOnError) deserialized.EnsureSuccess();
+        return deserialized;
+    }
 
     protected string BuildQueryString(params (string key, object? value)[] args)
     {

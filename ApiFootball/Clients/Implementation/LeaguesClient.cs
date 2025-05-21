@@ -1,6 +1,8 @@
-﻿namespace ApiFootball.Clients.Implementation;
+﻿using Microsoft.Extensions.Options;
 
-public class LeaguesClient(IHttpClientFactory factory) : BaseClient(factory), ILeaguesClient
+namespace ApiFootball.Clients.Implementation;
+
+public class LeaguesClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), ILeaguesClient
 {
     protected override string Route => "leagues";
 
@@ -12,8 +14,7 @@ public class LeaguesClient(IHttpClientFactory factory) : BaseClient(factory), IL
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(country), country), (nameof(code), code), (nameof(season), season), (nameof(team), team),
             (nameof(type), type), (nameof(current), current), (nameof(search), search), (nameof(last), last));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return JsonSerializer.Deserialize<BaseResponse<LeaguesResponse>>(response, SerializerOptions)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<LeaguesResponse>(response, cancellationToken);
     }
 
     /// <inheritdoc />
@@ -21,7 +22,6 @@ public class LeaguesClient(IHttpClientFactory factory) : BaseClient(factory), IL
     {
         var queryString = BuildQueryString("/seasons");
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<int>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<int>(response, cancellationToken);
     }
 }

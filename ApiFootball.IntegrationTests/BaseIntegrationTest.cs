@@ -18,7 +18,11 @@ public abstract class BaseIntegrationTest
 
         var services = new ServiceCollection();
         services.AddTransient<RateLimitingHandler>();
-        services.AddApiFootball(apiKey).AddHttpMessageHandler<RateLimitingHandler>();
+        services.AddApiFootball(o =>
+        {
+            o.ApiKey = apiKey;
+            o.ThrowOnError = true;
+        }).AddHttpMessageHandler<RateLimitingHandler>();
         ServiceProvider = services.BuildServiceProvider();
     }
 

@@ -11,7 +11,7 @@ public class CountriesClientTests : BaseEndpointTest
     {
         var factory = MockFactory(Route, GetExpected(nameof(Test_Countries_Valid_Response)));
 
-        var client = new CountriesClient(factory);
+        var client = new CountriesClient(factory, MockOptions());
         var response = await client.GetCountries();
 
         Assert.That(response.Get, Is.EqualTo(Route));
@@ -34,7 +34,7 @@ public class CountriesClientTests : BaseEndpointTest
     {
         const string query = "?search=ab";
         var factory = MockFactory(Route + query, GetExpected(nameof(Test_Invalid_Search_Param)));
-        var client = new CountriesClient(factory);
+        var client = new CountriesClient(factory, MockOptions());
         var response = await client.GetCountries(search: "ab");
         Assert.That(response.Get, Is.EqualTo(Route));
         Assert.That(response.Errors, Has.Count.EqualTo(1));
@@ -43,5 +43,16 @@ public class CountriesClientTests : BaseEndpointTest
         Assert.That(response.Parameters["search"], Is.EqualTo("ab"));
         Assert.That(response.Results, Is.EqualTo(0));
         Assert.That(response.Response, Has.Count.EqualTo(0));
+    }
+
+    [Test]
+    public void GetCountries_WhenError_ThrowsIfEnabled()
+    {
+        const string query = "?search=ab";
+        var factory = MockFactory(Route + query, GetExpected(DefaultErrorResponse));
+        var client = new CountriesClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetCountries(search: "ab"));
+        AssertDefaultException(exception);
     }
 }

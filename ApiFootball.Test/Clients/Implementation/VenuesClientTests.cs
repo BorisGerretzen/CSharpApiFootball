@@ -10,7 +10,7 @@ public class VenuesClientTests : BaseEndpointTest
     public async Task Test_GetVenues_Valid_Response()
     {
         var factory = MockFactory(Route, GetExpected(nameof(Test_GetVenues_Valid_Response)));
-        var client = new VenuesClient(factory);
+        var client = new VenuesClient(factory, MockOptions());
         var response = await client.GetVenues(country: "Netherlands");
 
         Assert.Multiple(() =>
@@ -36,5 +36,15 @@ public class VenuesClientTests : BaseEndpointTest
             Assert.That(grolschVeste.Surface, Is.EqualTo("grass"));
             Assert.That(grolschVeste.Image, Is.EqualTo("https://media.api-sports.io/football/venues/1153.png"));
         });
+    }
+
+    [Test]
+    public void GetVenues_WhenError_ThrowsIfEnabled()
+    {
+        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var client = new VenuesClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetVenues(country: "Netherlands"));
+        AssertDefaultException(exception);
     }
 }

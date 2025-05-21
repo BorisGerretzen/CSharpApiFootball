@@ -10,7 +10,7 @@ public class TeamsClientTests : BaseEndpointTest
     public async Task Test_TeamsInformation_Valid_Response()
     {
         var factory = MockFactory(Route, GetExpected(nameof(Test_TeamsInformation_Valid_Response)));
-        var client = new TeamsClient(factory);
+        var client = new TeamsClient(factory, MockOptions());
         var response = await client.GetTeamsInformation(69);
 
         Assert.Multiple(() =>
@@ -44,11 +44,21 @@ public class TeamsClientTests : BaseEndpointTest
     }
 
     [Test]
+    public void GetTeamsInformation_WhenError_ThrowsIfEnabled()
+    {
+        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsInformation(69));
+        AssertDefaultException(exception);
+    }
+
+    [Test]
     public async Task Test_TeamsSeasons_Valid_Response()
     {
         const string route = "teams/seasons";
         var factory = MockFactory(route, GetExpected(nameof(Test_TeamsSeasons_Valid_Response)));
-        var client = new TeamsClient(factory);
+        var client = new TeamsClient(factory, MockOptions());
         var response = await client.GetTeamsSeasons(69);
 
         Assert.Multiple(() =>
@@ -65,11 +75,22 @@ public class TeamsClientTests : BaseEndpointTest
     }
 
     [Test]
+    public void GetTeamsSeasons_WhenError_ThrowsIfEnabled()
+    {
+        const string route = "teams/seasons";
+        var factory = MockFactory(route, GetExpected(DefaultErrorResponse));
+        var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsSeasons(69));
+        AssertDefaultException(exception);
+    }
+
+    [Test]
     public async Task Test_TeamsCountries_Valid_Response()
     {
         const string route = "teams/countries";
         var factory = MockFactory(route, GetExpected(nameof(Test_TeamsCountries_Valid_Response)));
-        var client = new TeamsClient(factory);
+        var client = new TeamsClient(factory, MockOptions());
         var response = await client.GetTeamsCountries();
 
         Assert.Multiple(() =>
@@ -86,5 +107,16 @@ public class TeamsClientTests : BaseEndpointTest
 
         var netherlands = response.Response.FirstOrDefault(c => c.Name == "Netherlands");
         Assert.That(netherlands?.Flag, Is.EqualTo("https://media.api-sports.io/flags/nl.svg"));
+    }
+
+    [Test]
+    public void GetTeamsCountries_WhenError_ThrowsIfEnabled()
+    {
+        const string route = "teams/countries";
+        var factory = MockFactory(route, GetExpected(DefaultErrorResponse));
+        var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsCountries());
+        AssertDefaultException(exception);
     }
 }

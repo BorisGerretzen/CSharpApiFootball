@@ -12,7 +12,7 @@ public class FixturesClientTest : BaseEndpointTest
         const string path = "/rounds";
         const string query = "?league=88&season=2022";
         var factory = MockFactory(Route + path + query, GetExpected(nameof(Test_Rounds_Valid_Response)));
-        var client = new FixturesClient(factory);
+        var client = new FixturesClient(factory, MockOptions());
         var response = await client.GetRounds(88, 2022);
         Assert.That(response.Get, Is.EqualTo(Route + path));
         Assert.That(response.Errors, Has.Count.EqualTo(0));
@@ -25,11 +25,23 @@ public class FixturesClientTest : BaseEndpointTest
     }
 
     [Test]
+    public void GetRounds_WhenError_ThrowsIfEnabled()
+    {
+        const string path = "/rounds";
+        const string query = "?league=88&season=2022";
+        var factory = MockFactory(Route + path + query, GetExpected(DefaultErrorResponse));
+        var client = new FixturesClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetRounds(88, 2022));
+        AssertDefaultException(exception);
+    }
+
+    [Test]
     public async Task Test_Fixtures_Valid_Response()
     {
         const string query = "?league=88&season=2022";
         var factory = MockFactory(Route + query, GetExpected(nameof(Test_Fixtures_Valid_Response)));
-        var client = new FixturesClient(factory);
+        var client = new FixturesClient(factory, MockOptions());
         var response = await client.GetFixtures(league: 88, season: 2022);
         Assert.That(response.Get, Is.EqualTo(Route));
         Assert.That(response.Errors, Has.Count.EqualTo(0));
@@ -40,7 +52,7 @@ public class FixturesClientTest : BaseEndpointTest
         Assert.That(response.Response, Has.Count.EqualTo(2));
 
         var item = response.Response[0];
-        Assert.That(item.Fixture.Date, Is.EqualTo("2022-08-05T18:00:00+00:00"));
+        Assert.That(item.Fixture.Date, Is.EqualTo(new DateTimeOffset(2022, 8, 5, 18, 0, 0, TimeSpan.FromHours(0))));
         Assert.That(item.League.Id, Is.EqualTo(88));
         Assert.That(item.League.Name, Is.EqualTo("Eredivisie"));
         Assert.That(item.Teams.Home.Name, Is.EqualTo("Heerenveen"));
@@ -55,7 +67,7 @@ public class FixturesClientTest : BaseEndpointTest
         Assert.That(item.Goals.Away, Is.EqualTo(0));
 
         item = response.Response[1];
-        Assert.That(item.Fixture.Date, Is.EqualTo("2023-05-28T12:30:00+00:00"));
+        Assert.That(item.Fixture.Date, Is.EqualTo(new DateTimeOffset(2023, 5, 28, 12, 30, 0, TimeSpan.FromHours(0))));
         Assert.That(item.League.Id, Is.EqualTo(88));
         Assert.That(item.League.Name, Is.EqualTo("Eredivisie"));
         Assert.That(item.Teams.Home.Name, Is.EqualTo("FC Volendam"));
@@ -68,5 +80,16 @@ public class FixturesClientTest : BaseEndpointTest
         Assert.That(item.Score.Extratime.Away, Is.Null);
         Assert.That(item.Goals.Home, Is.Null);
         Assert.That(item.Goals.Away, Is.Null);
+    }
+
+    [Test]
+    public void GetFixtures_WhenError_ThrowsIfEnabled()
+    {
+        const string query = "?league=88&season=2022";
+        var factory = MockFactory(Route + query, GetExpected(DefaultErrorResponse));
+        var client = new FixturesClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetFixtures(league: 88, season: 2022));
+        AssertDefaultException(exception);
     }
 }
