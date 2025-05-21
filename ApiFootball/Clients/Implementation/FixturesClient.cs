@@ -1,6 +1,8 @@
-﻿namespace ApiFootball.Clients.Implementation;
+﻿using Microsoft.Extensions.Options;
 
-public class FixturesClient(IHttpClientFactory factory) : BaseClient(factory), IFixturesClient
+namespace ApiFootball.Clients.Implementation;
+
+public class FixturesClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), IFixturesClient
 {
     protected override string Route => "fixtures";
 
@@ -8,10 +10,8 @@ public class FixturesClient(IHttpClientFactory factory) : BaseClient(factory), I
     public async Task<BaseResponse<string>> GetRounds(int league, int season, bool? current = null, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("/rounds", ("league", league), ("season", season), ("current", current));
-
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<string>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<string>(response, cancellationToken);
     }
 
     /// <inheritdoc />
@@ -22,8 +22,7 @@ public class FixturesClient(IHttpClientFactory factory) : BaseClient(factory), I
         var queryString = BuildQueryString((nameof(id), id), (nameof(ids), string.Join("-", ids ?? Array.Empty<string>())), (nameof(live), live), (nameof(date), date), (nameof(league), league),
             (nameof(season), season), (nameof(team), team), (nameof(last), last), (nameof(next), next), (nameof(from), from), (nameof(to), to), (nameof(round), round), (nameof(status), status),
             (nameof(venue), venue), (nameof(timezone), timezone));
-        var response = await HttpClient.GetStringAsync(queryString, cancellationToken);
-        return JsonSerializer.Deserialize<BaseResponse<FixturesResponse>>(response, SerializerOptions)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
+        return await DeserializeAsync<FixturesResponse>(response, cancellationToken);
     }
 }

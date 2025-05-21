@@ -1,6 +1,8 @@
-﻿namespace ApiFootball.Clients.Implementation;
+﻿using Microsoft.Extensions.Options;
 
-public class CountriesClient(IHttpClientFactory factory) : BaseClient(factory), ICountriesClient
+namespace ApiFootball.Clients.Implementation;
+
+public class CountriesClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), ICountriesClient
 {
     protected override string Route => "countries";
 
@@ -9,7 +11,6 @@ public class CountriesClient(IHttpClientFactory factory) : BaseClient(factory), 
     {
         var queryString = BuildQueryString((nameof(name), name), (nameof(code), code), (nameof(search), search));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<Country>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<Country>(response, cancellationToken);
     }
 }

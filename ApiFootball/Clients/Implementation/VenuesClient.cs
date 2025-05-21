@@ -1,6 +1,8 @@
+using Microsoft.Extensions.Options;
+
 namespace ApiFootball.Clients.Implementation;
 
-public class VenuesClient(IHttpClientFactory factory) : BaseClient(factory), IVenuesClient
+public class VenuesClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), IVenuesClient
 {
     protected override string Route => "venues";
 
@@ -9,7 +11,6 @@ public class VenuesClient(IHttpClientFactory factory) : BaseClient(factory), IVe
     {
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(city), city), (nameof(country), country), (nameof(search), search));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<Venue>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<Venue>(response, cancellationToken);
     }
 }

@@ -1,6 +1,8 @@
-﻿namespace ApiFootball.Clients.Implementation;
+﻿using Microsoft.Extensions.Options;
 
-public class TimezoneClient(IHttpClientFactory factory) : BaseClient(factory), ITimezoneClient
+namespace ApiFootball.Clients.Implementation;
+
+public class TimezoneClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), ITimezoneClient
 {
     protected override string Route => "timezone";
 
@@ -9,7 +11,6 @@ public class TimezoneClient(IHttpClientFactory factory) : BaseClient(factory), I
     {
         var queryString = BuildQueryString();
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<string>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<string>(response, cancellationToken);
     }
 }

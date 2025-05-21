@@ -11,7 +11,7 @@ public class LeaguesClientTests : BaseEndpointTest
     public async Task Test_Leagues_Valid_Response()
     {
         var factory = MockFactory(Route, GetExpected(nameof(Test_Leagues_Valid_Response)));
-        var client = new LeaguesClient(factory);
+        var client = new LeaguesClient(factory, MockOptions());
         var response = await client.GetLeagues();
         Assert.That(response.Get, Is.EqualTo(Route));
         Assert.That(response.Errors, Has.Count.EqualTo(0));
@@ -32,16 +32,37 @@ public class LeaguesClientTests : BaseEndpointTest
     }
 
     [Test]
+    public void GetLeagues_WhenError_ThrowsIfEnabled()
+    {
+        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var client = new LeaguesClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetLeagues());
+        AssertDefaultException(exception);
+    }
+
+    [Test]
     public async Task Test_Seasons_Valid_Response()
     {
         const string path = "/seasons";
         var factory = MockFactory(Route + path, GetExpected(nameof(Test_Seasons_Valid_Response)));
-        var client = new LeaguesClient(factory);
+        var client = new LeaguesClient(factory, MockOptions());
         var response = await client.GetSeasons();
         Assert.That(response.Get, Is.EqualTo(Route + path));
         Assert.That(response.Errors, Has.Count.EqualTo(0));
         Assert.That(response.Parameters, Has.Count.EqualTo(0));
         Assert.That(response.Results, Is.EqualTo(16));
         Assert.That(response.Response, Has.Count.EqualTo(16));
+    }
+
+    [Test]
+    public void GetSeasons_WhenError_ThrowsIfEnabled()
+    {
+        const string path = "/seasons";
+        var factory = MockFactory(Route + path, GetExpected(DefaultErrorResponse));
+        var client = new LeaguesClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetSeasons());
+        AssertDefaultException(exception);
     }
 }

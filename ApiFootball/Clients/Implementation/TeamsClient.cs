@@ -1,6 +1,8 @@
+using Microsoft.Extensions.Options;
+
 namespace ApiFootball.Clients.Implementation;
 
-public class TeamsClient(IHttpClientFactory factory) : BaseClient(factory), ITeamsClient
+public class TeamsClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), ITeamsClient
 {
     protected override string Route => "teams";
 
@@ -11,8 +13,7 @@ public class TeamsClient(IHttpClientFactory factory) : BaseClient(factory), ITea
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(league), league), (nameof(season), season), (nameof(country), country), (nameof(code), code),
             (nameof(venue), venue), (nameof(search), search));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<TeamInformationResponse>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<TeamInformationResponse>(response, cancellationToken);
     }
 
     /// <inheritdoc />
@@ -20,8 +21,7 @@ public class TeamsClient(IHttpClientFactory factory) : BaseClient(factory), ITea
     {
         var queryString = BuildQueryString("/seasons", (nameof(team), team));
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<int>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<int>(response, cancellationToken);
     }
 
     /// <inheritdoc />
@@ -29,7 +29,6 @@ public class TeamsClient(IHttpClientFactory factory) : BaseClient(factory), ITea
     {
         var queryString = BuildQueryString("/countries");
         await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await JsonSerializer.DeserializeAsync<BaseResponse<Country>>(response, SerializerOptions, cancellationToken)
-               ?? throw new NullReferenceException("Could not deserialize response.");
+        return await DeserializeAsync<Country>(response, cancellationToken);
     }
 }

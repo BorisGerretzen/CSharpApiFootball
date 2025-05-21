@@ -11,7 +11,7 @@ public class StandingsClientTests : BaseEndpointTest
     public async Task Test_Standings_Valid_Response()
     {
         var factory = MockFactory(Route, GetExpected(nameof(Test_Standings_Valid_Response)));
-        var client = new StandingsClient(factory);
+        var client = new StandingsClient(factory, MockOptions());
         var response = await client.GetStandings(2022, 79);
         Assert.That(response.Get, Is.EqualTo(Route));
         Assert.That(response.Errors, Has.Count.EqualTo(0));
@@ -40,5 +40,15 @@ public class StandingsClientTests : BaseEndpointTest
         Assert.That(standingItem.All.Lose, Is.EqualTo(9));
         Assert.That(standingItem.All.Goals.For, Is.EqualTo(66));
         Assert.That(standingItem.All.Goals.Against, Is.EqualTo(39));
+    }
+
+    [Test]
+    public void GetStandings_WhenError_ThrowsIfEnabled()
+    {
+        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var client = new StandingsClient(factory, MockOptions(o => o.ThrowOnError = true));
+
+        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetStandings(2022, 79));
+        AssertDefaultException(exception);
     }
 }
