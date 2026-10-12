@@ -1,7 +1,7 @@
 ﻿namespace ApiFootball.IntegrationTests.Tests;
 
 [TestFixture]
-public class StandingsIntegrationTests : BaseIntegrationTest
+public class StandingsLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetStandings_ShouldReturnStandings()

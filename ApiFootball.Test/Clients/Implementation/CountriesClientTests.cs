@@ -46,13 +46,13 @@ public class CountriesClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetCountries_WhenError_ThrowsIfEnabled()
+    public async Task GetCountries_WhenError_ThrowsIfEnabled()
     {
         const string query = "?search=ab";
         var factory = MockFactory(Route + query, GetExpected(DefaultErrorResponse));
         var client = new CountriesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetCountries(search: "ab"));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetCountries(search: "ab"));
         AssertDefaultException(exception);
     }
 }

@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball.Test", "ApiFootball.Test\ApiFootball.Test.csproj", "{C7ED897B-B463-4A5C-8088-DA9108F8880A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball.IntegrationTests", "ApiFootball.IntegrationTests\ApiFootball.IntegrationTests.csproj", "{F88B1562-4DF0-4F43-9228-CFFCAC86C516}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFootball.LiveTests", "ApiFootball.LiveTests\ApiFootball.LiveTests.csproj", "{F88B1562-4DF0-4F43-9228-CFFCAC86C516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

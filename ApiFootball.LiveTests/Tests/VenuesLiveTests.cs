@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.IntegrationTests.Tests;
 
-public class VenuesIntegrationTests : BaseIntegrationTest
+public class VenuesLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetVenues_ShouldReturnVenues()

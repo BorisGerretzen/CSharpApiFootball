@@ -1,7 +1,7 @@
 ﻿namespace ApiFootball.IntegrationTests.Tests;
 
 [TestFixture]
-public class FixturesIntegrationTests : BaseIntegrationTest
+public class FixturesLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetFixtures_ShouldReturnFixtures()

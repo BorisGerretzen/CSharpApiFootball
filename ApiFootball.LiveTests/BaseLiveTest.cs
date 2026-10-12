@@ -2,7 +2,7 @@
 
 namespace ApiFootball.IntegrationTests;
 
-public abstract class BaseIntegrationTest
+public abstract class BaseLiveTest
 {
     protected IServiceProvider ServiceProvider { get; private set; } = null!;
 
@@ -17,12 +17,12 @@ public abstract class BaseIntegrationTest
         if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("API key is not set. Please set the ApiFootball:ApiKey in the environment variables or appsettings.development.json.");
 
         var services = new ServiceCollection();
-        services.AddTransient<RateLimitingHandler>();
         services.AddApiFootball(o =>
         {
             o.ApiKey = apiKey;
             o.ThrowOnError = true;
-        }).AddHttpMessageHandler<RateLimitingHandler>();
+            o.RateLimiterOptions = ApiFootballRateLimiterOptions.FreePlan;
+        });
         ServiceProvider = services.BuildServiceProvider();
     }
 

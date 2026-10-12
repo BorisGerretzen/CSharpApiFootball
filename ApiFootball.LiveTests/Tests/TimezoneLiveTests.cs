@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.IntegrationTests.Tests;
 
-public class TimezoneIntegrationTests : BaseIntegrationTest
+public class TimezoneLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetTimezones_ShouldReturnTimezones()

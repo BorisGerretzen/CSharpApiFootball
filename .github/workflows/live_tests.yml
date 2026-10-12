@@ -1,16 +1,5 @@
 ﻿name: Integration tests
 on:
-  push:
-    branches: [ "master" ]
-    paths-ignore:
-      - '*.md'
-      - '*.yml'
-      - '.gitignore'
-  pull_request:
-    branches: [ "master" ]
-    paths-ignore:
-      - '*.md'
-      - '.gitignore'
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
@@ -25,9 +14,9 @@ jobs:
       - name: Setup .NET 9
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 10.0.x
 
       - name: Test
         env:
           ApiFootball__ApiKey: ${{ secrets.ApiFootball_ApiKey }}
-        run: dotnet test --verbosity normal ApiFootball.IntegrationTests
+        run: dotnet test --verbosity normal ApiFootball.LiveTests

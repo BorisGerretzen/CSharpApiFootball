@@ -1,6 +1,6 @@
 ﻿namespace ApiFootball.IntegrationTests.Tests;
 
-public class TeamsIntegrationTests : BaseIntegrationTest
+public class TeamsLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetTeamsInformation_ShouldReturnTeamInformation()

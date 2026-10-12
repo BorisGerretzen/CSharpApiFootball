@@ -1,7 +1,7 @@
 ﻿namespace ApiFootball.IntegrationTests.Tests;
 
 [TestFixture]
-public class CountriesIntegrationTests : BaseIntegrationTest
+public class CountriesLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetCountries_ShouldReturnCountries()

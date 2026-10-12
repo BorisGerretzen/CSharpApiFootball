@@ -25,14 +25,14 @@ public class FixturesClientTest : BaseEndpointTest
     }
 
     [Test]
-    public void GetRounds_WhenError_ThrowsIfEnabled()
+    public async Task GetRounds_WhenError_ThrowsIfEnabled()
     {
         const string path = "/rounds";
         const string query = "?league=88&season=2022";
         var factory = MockFactory(Route + path + query, GetExpected(DefaultErrorResponse));
         var client = new FixturesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetRounds(88, 2022));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetRounds(88, 2022));
         AssertDefaultException(exception);
     }
 
@@ -83,13 +83,13 @@ public class FixturesClientTest : BaseEndpointTest
     }
 
     [Test]
-    public void GetFixtures_WhenError_ThrowsIfEnabled()
+    public async Task GetFixtures_WhenError_ThrowsIfEnabled()
     {
         const string query = "?league=88&season=2022";
         var factory = MockFactory(Route + query, GetExpected(DefaultErrorResponse));
         var client = new FixturesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetFixtures(league: 88, season: 2022));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetFixtures(league: 88, season: 2022));
         AssertDefaultException(exception);
     }
 }

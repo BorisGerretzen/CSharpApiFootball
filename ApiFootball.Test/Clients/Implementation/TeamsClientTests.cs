@@ -44,12 +44,12 @@ public class TeamsClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetTeamsInformation_WhenError_ThrowsIfEnabled()
+    public async Task GetTeamsInformation_WhenError_ThrowsIfEnabled()
     {
         var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
         var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsInformation(69));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsInformation(69));
         AssertDefaultException(exception);
     }
 
@@ -75,13 +75,13 @@ public class TeamsClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetTeamsSeasons_WhenError_ThrowsIfEnabled()
+    public async Task GetTeamsSeasons_WhenError_ThrowsIfEnabled()
     {
         const string route = "teams/seasons";
         var factory = MockFactory(route, GetExpected(DefaultErrorResponse));
         var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsSeasons(69));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsSeasons(69));
         AssertDefaultException(exception);
     }
 
@@ -110,13 +110,13 @@ public class TeamsClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetTeamsCountries_WhenError_ThrowsIfEnabled()
+    public async Task GetTeamsCountries_WhenError_ThrowsIfEnabled()
     {
         const string route = "teams/countries";
         var factory = MockFactory(route, GetExpected(DefaultErrorResponse));
         var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsCountries());
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsCountries());
         AssertDefaultException(exception);
     }
 }

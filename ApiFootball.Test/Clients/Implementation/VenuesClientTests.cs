@@ -39,12 +39,12 @@ public class VenuesClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetVenues_WhenError_ThrowsIfEnabled()
+    public async Task GetVenues_WhenError_ThrowsIfEnabled()
     {
         var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
         var client = new VenuesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetVenues(country: "Netherlands"));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetVenues(country: "Netherlands"));
         AssertDefaultException(exception);
     }
 }

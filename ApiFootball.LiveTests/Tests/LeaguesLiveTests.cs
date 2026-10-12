@@ -3,7 +3,7 @@
 namespace ApiFootball.IntegrationTests.Tests;
 
 [TestFixture]
-public class LeaguesIntegrationTests : BaseIntegrationTest
+public class LeaguesLiveTests : BaseLiveTest
 {
     [Test]
     public async Task GetLeagues_ShouldReturnLeagues()

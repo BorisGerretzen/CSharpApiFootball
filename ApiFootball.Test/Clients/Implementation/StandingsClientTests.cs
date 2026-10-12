@@ -43,12 +43,12 @@ public class StandingsClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetStandings_WhenError_ThrowsIfEnabled()
+    public async Task GetStandings_WhenError_ThrowsIfEnabled()
     {
         var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
         var client = new StandingsClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetStandings(2022, 79));
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetStandings(2022, 79));
         AssertDefaultException(exception);
     }
 }

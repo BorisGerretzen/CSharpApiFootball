@@ -20,12 +20,12 @@ public class TimezoneClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetTimezones_WhenError_ThrowsIfEnabled()
+    public async Task GetTimezones_WhenError_ThrowsIfEnabled()
     {
         var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
         var client = new TimezoneClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTimezones());
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTimezones());
         AssertDefaultException(exception);
     }
 }

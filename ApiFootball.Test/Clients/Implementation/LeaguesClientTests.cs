@@ -32,12 +32,12 @@ public class LeaguesClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetLeagues_WhenError_ThrowsIfEnabled()
+    public async Task GetLeagues_WhenError_ThrowsIfEnabled()
     {
         var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
         var client = new LeaguesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetLeagues());
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetLeagues());
         AssertDefaultException(exception);
     }
 
@@ -56,13 +56,13 @@ public class LeaguesClientTests : BaseEndpointTest
     }
 
     [Test]
-    public void GetSeasons_WhenError_ThrowsIfEnabled()
+    public async Task GetSeasons_WhenError_ThrowsIfEnabled()
     {
         const string path = "/seasons";
         var factory = MockFactory(Route + path, GetExpected(DefaultErrorResponse));
         var client = new LeaguesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetSeasons());
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetSeasons());
         AssertDefaultException(exception);
     }
 }
