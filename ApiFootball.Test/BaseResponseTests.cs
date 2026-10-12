@@ -3,6 +3,7 @@ using ApiFootball.Models.Responses;
 
 namespace ApiFootball.Test;
 
+[Parallelizable(ParallelScope.All)]
 public class BaseResponseTests
 {
     [Test]

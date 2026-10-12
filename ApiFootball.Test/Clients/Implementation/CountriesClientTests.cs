@@ -2,6 +2,7 @@
 
 namespace ApiFootball.Test.Clients.Implementation;
 
+[Parallelizable(ParallelScope.All)]
 public class CountriesClientTests : BaseEndpointTest
 {
     private const string Route = "countries";
