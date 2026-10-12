@@ -10,8 +10,7 @@ public class FixturesClient(IHttpClientFactory factory, IOptions<ApiFootballOpti
     public async Task<BaseResponse<string>> GetRounds(int league, int season, bool? current = null, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("/rounds", ("league", league), ("season", season), ("current", current));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<string>(response, cancellationToken);
+        return await GetAsync<string>(queryString, cancellationToken);
     }
 
     /// <inheritdoc />
@@ -22,7 +21,6 @@ public class FixturesClient(IHttpClientFactory factory, IOptions<ApiFootballOpti
         var queryString = BuildQueryString((nameof(id), id), (nameof(ids), string.Join("-", ids ?? Array.Empty<string>())), (nameof(live), live), (nameof(date), date), (nameof(league), league),
             (nameof(season), season), (nameof(team), team), (nameof(last), last), (nameof(next), next), (nameof(from), from), (nameof(to), to), (nameof(round), round), (nameof(status), status),
             (nameof(venue), venue), (nameof(timezone), timezone));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<FixturesResponse>(response, cancellationToken);
+        return await GetAsync<FixturesResponse>(queryString, cancellationToken);
     }
 }

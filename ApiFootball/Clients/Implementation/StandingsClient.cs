@@ -10,7 +10,6 @@ public class StandingsClient(IHttpClientFactory factory, IOptions<ApiFootballOpt
     public async Task<BaseResponse<StandingsResponse>> GetStandings(int season, int? league = null, int? team = null, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("", ("season", season), ("league", league), ("team", team));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<StandingsResponse>(response, cancellationToken);
+        return await GetAsync<StandingsResponse>(queryString, cancellationToken);
     }
 }

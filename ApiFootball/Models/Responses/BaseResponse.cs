@@ -1,4 +1,6 @@
-﻿namespace ApiFootball.Models.Responses;
+﻿using ApiFootball.RateLimiting;
+
+namespace ApiFootball.Models.Responses;
 
 public class BaseResponse<T>
 {
@@ -16,6 +18,9 @@ public class BaseResponse<T>
     public required Paging Paging { get; init; }
     public required List<T> Response { get; init; }
 
+    [JsonIgnore]
+    public ApiFootballQuota? Quota { get; internal set; }
+    
     /// <summary>
     ///     Throws an exception if there are any errors in the response.
     /// </summary>

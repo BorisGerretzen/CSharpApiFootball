@@ -1,4 +1,7 @@
+using System.Threading.RateLimiting;
+using ApiFootball.Clients;
 using ApiFootball.Clients.Implementation;
+using ApiFootball.RateLimiting;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ApiFootball;
@@ -48,6 +51,7 @@ public static class DependencyInjectionExtensions
     {
         var options = new ApiFootballOptions();
         configureOptions(options);
+        
         services.Configure(configureOptions);
         services.AddSingleton<IFixturesClient, FixturesClient>();
         services.AddSingleton<ICountriesClient, CountriesClient>();
@@ -56,13 +60,29 @@ public static class DependencyInjectionExtensions
         services.AddSingleton<ITeamsClient, TeamsClient>();
         services.AddSingleton<IVenuesClient, VenuesClient>();
         services.AddSingleton<IStandingsClient, StandingsClient>();
-
+        
         var typedApiUri = new Uri(options.ApiUrl);
-        return services.AddHttpClient(ApiFootballGlobals.HttpClientName, client =>
+        var httpClient = services.AddHttpClient(ApiFootballGlobals.HttpClientName, client =>
         {
             client.DefaultRequestHeaders.Add("X-Rapidapi-Key", options.ApiKey);
             client.DefaultRequestHeaders.Add("X-Rapidapi-Host", typedApiUri.Host);
             client.BaseAddress = typedApiUri;
         });
+
+        options.ConfigureHttpClient?.Invoke(httpClient);
+        
+        if (options.RateLimiterOptions != null)
+        {
+            services.AddSingleton<ApiFootballRateLimiter>(_ => new ApiFootballRateLimiter(options.RateLimiterOptions));
+            services.AddTransient<ApiFootballRateLimitHandler>();
+            httpClient.AddHttpMessageHandler<ApiFootballRateLimitHandler>();
+        }
+
+        services.AddSingleton<ApiFootballQuotaMonitor>();
+        services.AddSingleton<IApiFootballQuotaMonitor>(sp => sp.GetRequiredService<ApiFootballQuotaMonitor>());
+        services.AddTransient<ApiFootballQuotaHandler>();
+        httpClient.AddHttpMessageHandler<ApiFootballQuotaHandler>();
+        
+        return httpClient;
     }
 }

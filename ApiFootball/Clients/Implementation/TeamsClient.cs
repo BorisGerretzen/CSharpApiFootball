@@ -12,23 +12,20 @@ public class TeamsClient(IHttpClientFactory factory, IOptions<ApiFootballOptions
     {
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(league), league), (nameof(season), season), (nameof(country), country), (nameof(code), code),
             (nameof(venue), venue), (nameof(search), search));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<TeamInformationResponse>(response, cancellationToken);
+        return await GetAsync<TeamInformationResponse>(queryString, cancellationToken);
     }
 
     /// <inheritdoc />
     public async Task<BaseResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("/seasons", (nameof(team), team));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<int>(response, cancellationToken);
+        return await GetAsync<int>(queryString, cancellationToken);
     }
 
     /// <inheritdoc />
     public async Task<BaseResponse<Country>> GetTeamsCountries(CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("/countries");
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<Country>(response, cancellationToken);
+        return await GetAsync<Country>(queryString, cancellationToken);
     }
 }

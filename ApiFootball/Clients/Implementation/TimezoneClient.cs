@@ -10,7 +10,6 @@ public class TimezoneClient(IHttpClientFactory factory, IOptions<ApiFootballOpti
     public async Task<BaseResponse<string>> GetTimezones(CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString();
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<string>(response, cancellationToken);
+        return await GetAsync<string>(queryString, cancellationToken);
     }
 }

@@ -10,7 +10,6 @@ public class VenuesClient(IHttpClientFactory factory, IOptions<ApiFootballOption
         CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(city), city), (nameof(country), country), (nameof(search), search));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<Venue>(response, cancellationToken);
+        return await GetAsync<Venue>(queryString, cancellationToken);
     }
 }

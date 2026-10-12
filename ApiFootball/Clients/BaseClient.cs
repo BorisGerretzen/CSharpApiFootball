@@ -1,11 +1,12 @@
 ﻿using System.Web;
+using ApiFootball.RateLimiting;
 using Microsoft.Extensions.Options;
 
 namespace ApiFootball.Clients;
 
 public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options)
 {
-    protected readonly HttpClient HttpClient = factory.CreateClient(ApiFootballGlobals.HttpClientName);
+    private readonly HttpClient HttpClient = factory.CreateClient(ApiFootballGlobals.HttpClientName);
 
     protected readonly JsonSerializerOptions SerializerOptions = new()
     {
@@ -21,6 +22,26 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
         if (deserialized is null) throw new NullReferenceException("Could not deserialize response.");
         if (options.Value.ThrowOnError) deserialized.EnsureSuccess();
         return deserialized;
+    }
+    
+    protected async Task<BaseResponse<T>> GetAsync<T>(string url, CancellationToken cancellationToken = default)
+    {
+        using var response = await HttpClient.GetAsync(
+            url,
+            HttpCompletionOption.ResponseHeadersRead,
+            cancellationToken);
+
+        var quota = ApiFootballQuota.FromHeaders(
+            response.Headers);
+
+        response.EnsureSuccessStatusCode();
+
+        await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
+
+        var result = await DeserializeAsync<T>(stream, cancellationToken);
+        result.Quota = quota;
+         
+        return result;
     }
 
     protected string BuildQueryString(params (string key, object? value)[] args)
@@ -41,11 +62,24 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
 
         foreach (var (key, value) in args)
         {
-            if (value is null || string.IsNullOrEmpty(value.ToString())) continue;
-            queryStringBuilder.Add(key, value.ToString());
+            var formattedValue = FormatQueryValue(value);
+            if (string.IsNullOrEmpty(formattedValue)) continue;
+            queryStringBuilder.Add(key, formattedValue);
         }
 
         var queryString = queryStringBuilder.ToString() ?? throw new InvalidOperationException("Unable to build query string");
         return queryString;
+    }
+    
+    private static string FormatQueryValue(object? value)
+    {
+        return value switch
+        {
+            null => string.Empty,
+            DateOnly dateOnly => dateOnly.ToString("yyyy-MM-dd"),
+            bool boolean => boolean ? "true" : "false",
+            IFormattable formattable => formattable.ToString(null, System.Globalization.CultureInfo.InvariantCulture),
+            _ => value.ToString() ?? string.Empty
+        };
     }
 }

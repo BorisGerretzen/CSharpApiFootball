@@ -10,7 +10,6 @@ public class CountriesClient(IHttpClientFactory factory, IOptions<ApiFootballOpt
     public async Task<BaseResponse<Country>> GetCountries(string? name = null, string? code = null, string? search = null, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString((nameof(name), name), (nameof(code), code), (nameof(search), search));
-        await using var response = await HttpClient.GetStreamAsync(queryString, cancellationToken);
-        return await DeserializeAsync<Country>(response, cancellationToken);
+        return await GetAsync<Country>(queryString, cancellationToken);
     }
 }
