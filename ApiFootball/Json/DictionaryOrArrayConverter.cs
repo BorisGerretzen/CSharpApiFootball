@@ -1,4 +1,4 @@
-﻿namespace ApiFootball;
+﻿namespace ApiFootball.Json;
 
 /// <summary>
 /// Inspired by the following StackOverflow post but modified for System.Text.Json.

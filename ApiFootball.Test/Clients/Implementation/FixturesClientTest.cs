@@ -92,4 +92,12 @@ public class FixturesClientTest : BaseEndpointTest
         var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetFixtures(league: 88, season: 2022));
         AssertDefaultException(exception);
     }
+
+    [Test]
+    public async Task GetFixtures_IndividualResponse()
+    {
+        const string query = "?id=1552176";
+        const int id = 1552176;
+        var factory = MockFactory(Route + query, GetExpected(nameof(GetFixtures_IndividualResponse)));
+    }
 }

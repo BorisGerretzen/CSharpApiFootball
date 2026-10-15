@@ -1,3 +1,4 @@
+using ApiFootball.Json;
 using ApiFootball.Quota;
 
 namespace ApiFootball.Models.Responses;

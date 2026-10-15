@@ -5,4 +5,5 @@ public sealed class Status
     public required string Long { get; init; }
     public required string Short { get; init; }
     public double? Elapsed { get; init; }
+    public int? Extra { get; init; }
 }
