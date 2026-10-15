@@ -8,9 +8,9 @@ public class StandingsClient(IHttpClientFactory factory, IOptions<ApiFootballOpt
     protected override string Route => "standings";
 
     /// <inheritdoc />
-    public async Task<BaseResponse<StandingsResponse>> GetStandings(int season, int? league = null, int? team = null, CancellationToken cancellationToken = default)
+    public async Task<PagedResponse<StandingsResponse>> GetStandings(int season, int? league = null, int? team = null, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("", ("season", season), ("league", league), ("team", team));
-        return await GetAsync<StandingsResponse>(queryString, cancellationToken);
+        return await GetAsync<PagedResponse<StandingsResponse>>(queryString, cancellationToken);
     }
 }

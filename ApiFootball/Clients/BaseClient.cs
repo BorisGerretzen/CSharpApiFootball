@@ -17,15 +17,25 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
 
     protected abstract string Route { get; }
 
-    protected async Task<BaseResponse<T>> DeserializeAsync<T>(Stream stream, CancellationToken cancellationToken = default)
+    protected async Task<TResponse> DeserializeAsync<TResponse>(
+        Stream stream, 
+        CancellationToken cancellationToken = default)
+        where TResponse : BaseResponse
     {
-        var deserialized = await JsonSerializer.DeserializeAsync<BaseResponse<T>>(stream, SerializerOptions, cancellationToken);
-        if (deserialized is null) throw new NullReferenceException("Could not deserialize response.");
-        if (options.Value.ThrowOnError) deserialized.EnsureSuccess();
-        return deserialized;
+        var result = await JsonSerializer.DeserializeAsync<TResponse>(
+            stream, SerializerOptions, cancellationToken);
+
+        if (result is null)
+            throw new JsonException("Could not deserialize API response.");
+
+        if (options.Value.ThrowOnError)
+            result.EnsureSuccess();
+
+        return result;
     }
     
-    protected async Task<BaseResponse<T>> GetAsync<T>(string url, CancellationToken cancellationToken = default)
+    protected async Task<TResponse> GetAsync<TResponse>(string url, CancellationToken cancellationToken = default)
+        where TResponse : BaseResponse
     {
         using var response = await HttpClient.GetAsync(
             url,
@@ -39,7 +49,7 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
 
         await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
 
-        var result = await DeserializeAsync<T>(stream, cancellationToken);
+        var result = await DeserializeAsync<TResponse>(stream, cancellationToken);
         result.Quota = quota;
         
         return result;

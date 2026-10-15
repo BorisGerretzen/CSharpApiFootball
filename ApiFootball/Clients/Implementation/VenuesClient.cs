@@ -7,10 +7,10 @@ public class VenuesClient(IHttpClientFactory factory, IOptions<ApiFootballOption
 {
     protected override string Route => "venues";
 
-    public async Task<BaseResponse<Venue>> GetVenues(int? id = null, string? name = null, string? city = null, string? country = null, string? search = null,
+    public async Task<PagedResponse<Venue>> GetVenues(int? id = null, string? name = null, string? city = null, string? country = null, string? search = null,
         CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(city), city), (nameof(country), country), (nameof(search), search));
-        return await GetAsync<Venue>(queryString, cancellationToken);
+        return await GetAsync<PagedResponse<Venue>>(queryString, cancellationToken);
     }
 }

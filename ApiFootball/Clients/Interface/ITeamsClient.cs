@@ -16,7 +16,7 @@ public interface ITeamsClient
     /// <param name="venue">The id of the venue.</param>
     /// <param name="search">The name or the country of the team (>= 3 characters).</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null, int? league = null, int? season = null, string? country = null, string? code = null,
+    public Task<PagedResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null, int? league = null, int? season = null, string? country = null, string? code = null,
         int? venue = null, string? search = null, CancellationToken cancellationToken = default);
 
     /// <summary>
@@ -25,12 +25,12 @@ public interface ITeamsClient
     /// </summary>
     /// <param name="team">The team id.</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default);
+    public Task<PagedResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default);
 
     /// <summary>
     /// Get the list of countries available for the teams endpoint.
     /// Recommended Calls: 1 call per day.
     /// </summary>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<Country>> GetTeamsCountries(CancellationToken cancellationToken = default);
+    public Task<PagedResponse<Country>> GetTeamsCountries(CancellationToken cancellationToken = default);
 }

@@ -8,9 +8,9 @@ public class TimezoneClient(IHttpClientFactory factory, IOptions<ApiFootballOpti
     protected override string Route => "timezone";
 
     /// <inheritdoc />
-    public async Task<BaseResponse<string>> GetTimezones(CancellationToken cancellationToken = default)
+    public async Task<PagedResponse<string>> GetTimezones(CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString();
-        return await GetAsync<string>(queryString, cancellationToken);
+        return await GetAsync<PagedResponse<string>>(queryString, cancellationToken);
     }
 }

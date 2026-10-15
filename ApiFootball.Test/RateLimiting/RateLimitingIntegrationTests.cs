@@ -425,13 +425,13 @@ public sealed class RateLimitingIntegrationTests
         return new TestHost(services.BuildServiceProvider(), handler);
     }
 
-    private static StartedRequest<BaseResponse<string>> StartTimezones(TestHost host, CancellationToken cancellationToken = default)
+    private static StartedRequest<PagedResponse<string>> StartTimezones(TestHost host, CancellationToken cancellationToken = default)
     {
         var client = host.Get<ITimezoneClient>();
         return host.Start(client.GetTimezones, cancellationToken);
     }
 
-    private static StartedRequest<BaseResponse<Country>> StartCountries(TestHost host, CancellationToken cancellationToken = default)
+    private static StartedRequest<PagedResponse<Country>> StartCountries(TestHost host, CancellationToken cancellationToken = default)
     {
         var client = host.Get<ICountriesClient>();
         return host.Start(token => client.GetCountries(cancellationToken: token), cancellationToken);

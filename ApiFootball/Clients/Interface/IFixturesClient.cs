@@ -10,7 +10,7 @@ public interface IFixturesClient
     /// <param name="season">The season of the league</param>
     /// <param name="current">Get the current round only</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<string>> GetRounds(int league, int season, bool? current = null, CancellationToken cancellationToken = default);
+    public Task<PagedResponse<string>> GetRounds(int league, int season, bool? current = null, CancellationToken cancellationToken = default);
 
     /// <summary>
     /// Gets a list of fixtures.
@@ -32,7 +32,7 @@ public interface IFixturesClient
     /// <param name="venue">The venue id of the fixture</param>
     /// <param name="timezone">A valid timezone from <see cref="ITimezoneClient.GetTimezones"/></param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<FixturesResponse>> GetFixtures(int? id = null, IEnumerable<string>? ids = null, string? live = null, DateOnly? date = null, int? league = null, int? season = null,
+    public Task<PagedResponse<FixturesResponse>> GetFixtures(int? id = null, IEnumerable<string>? ids = null, string? live = null, DateOnly? date = null, int? league = null, int? season = null,
         int? team = null, int? last = null, int? next = null, DateOnly? from = null, DateOnly? to = null, string? round = null, string? status = null, int? venue = null, string? timezone = null,
         CancellationToken cancellationToken = default);
 }

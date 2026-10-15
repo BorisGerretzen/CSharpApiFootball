@@ -10,7 +10,7 @@ public interface IStandingsClient
     /// <param name="league">The ID of the league</param>
     /// <param name="team">The ID of the team</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    Task<BaseResponse<StandingsResponse>> GetStandings(
+    Task<PagedResponse<StandingsResponse>> GetStandings(
         int season,
         int? league = null,
         int? team = null,

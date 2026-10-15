@@ -4,12 +4,12 @@ using ApiFootball.Models.Responses;
 namespace ApiFootball.Test;
 
 [Parallelizable(ParallelScope.All)]
-public class BaseResponseTests
+public class PagedResponseTests
 {
     [Test]
     public void IsSuccess_WhenNoErrors_True()
     {
-        var response = new BaseResponse<string>
+        var response = new PagedResponse<string>
         {
             Get = "test",
             Parameters = new Dictionary<string, string>(),
@@ -25,7 +25,7 @@ public class BaseResponseTests
     [Test]
     public void IsSuccess_WhenErrors_False()
     {
-        var response = new BaseResponse<string>
+        var response = new PagedResponse<string>
         {
             Get = "test",
             Parameters = new Dictionary<string, string>(),
@@ -41,7 +41,7 @@ public class BaseResponseTests
     [Test]
     public void EnsureSuccess_WhenNoErrors_DoesNotThrow()
     {
-        var response = new BaseResponse<string>
+        var response = new PagedResponse<string>
         {
             Get = "test",
             Parameters = new Dictionary<string, string>(),
@@ -60,7 +60,7 @@ public class BaseResponseTests
         const string message = "MESSAGE";
         const string code = "CODE";
 
-        var response = new BaseResponse<string>
+        var response = new PagedResponse<string>
         {
             Get = "test",
             Parameters = new Dictionary<string, string>(),
