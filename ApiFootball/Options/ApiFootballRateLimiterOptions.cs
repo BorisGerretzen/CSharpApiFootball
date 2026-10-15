@@ -1,4 +1,4 @@
-namespace ApiFootball;
+namespace ApiFootball.Options;
 
 public class ApiFootballRateLimiterOptions
 {

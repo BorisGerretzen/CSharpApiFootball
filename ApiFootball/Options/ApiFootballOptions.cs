@@ -1,7 +1,6 @@
-﻿using System.Threading.RateLimiting;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace ApiFootball;
+namespace ApiFootball.Options;
 
 public class ApiFootballOptions
 {

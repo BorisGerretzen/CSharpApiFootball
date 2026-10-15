@@ -1,3 +1,4 @@
+using ApiFootball.Options;
 using Microsoft.Extensions.Options;
 
 namespace ApiFootball.Clients.Implementation;

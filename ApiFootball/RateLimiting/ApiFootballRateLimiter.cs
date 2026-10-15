@@ -1,4 +1,5 @@
 using System.Threading.RateLimiting;
+using ApiFootball.Options;
 
 namespace ApiFootball.RateLimiting;
 

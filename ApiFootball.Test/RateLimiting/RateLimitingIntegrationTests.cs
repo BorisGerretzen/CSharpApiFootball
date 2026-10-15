@@ -2,6 +2,7 @@ using System.Net;
 using ApiFootball.Clients.Interface;
 using ApiFootball.Models;
 using ApiFootball.Models.Responses;
+using ApiFootball.Options;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ApiFootball.Test.RateLimiting;

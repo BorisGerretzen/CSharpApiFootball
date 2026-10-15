@@ -1,5 +1,6 @@
 ﻿using System.Web;
-using ApiFootball.RateLimiting;
+using ApiFootball.Options;
+using ApiFootball.Quota;
 using Microsoft.Extensions.Options;
 
 namespace ApiFootball.Clients;
@@ -40,7 +41,7 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
 
         var result = await DeserializeAsync<T>(stream, cancellationToken);
         result.Quota = quota;
-         
+        
         return result;
     }
 

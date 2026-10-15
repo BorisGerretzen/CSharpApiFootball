@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using ApiFootball.Options;
+using Microsoft.Extensions.Options;
 using Moq;
 using RichardSzalay.MockHttp;
 

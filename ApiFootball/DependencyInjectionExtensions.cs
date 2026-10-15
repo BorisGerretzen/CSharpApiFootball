@@ -1,6 +1,6 @@
-using System.Threading.RateLimiting;
-using ApiFootball.Clients;
 using ApiFootball.Clients.Implementation;
+using ApiFootball.Options;
+using ApiFootball.Quota;
 using ApiFootball.RateLimiting;
 using Microsoft.Extensions.DependencyInjection;
 

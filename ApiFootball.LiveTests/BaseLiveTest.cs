@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using ApiFootball.Options;
+using Microsoft.Extensions.Configuration;
 
 namespace ApiFootball.IntegrationTests;
 

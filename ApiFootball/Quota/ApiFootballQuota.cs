@@ -1,6 +1,6 @@
 using System.Net.Http.Headers;
 
-namespace ApiFootball.RateLimiting;
+namespace ApiFootball.Quota;
 
 public sealed record ApiFootballQuota(
     int? DailyLimit,

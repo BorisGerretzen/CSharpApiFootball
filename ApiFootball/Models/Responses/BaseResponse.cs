@@ -1,4 +1,4 @@
-﻿using ApiFootball.RateLimiting;
+﻿using ApiFootball.Quota;
 
 namespace ApiFootball.Models.Responses;
 

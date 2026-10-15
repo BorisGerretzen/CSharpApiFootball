@@ -1,4 +1,4 @@
-namespace ApiFootball.RateLimiting;
+namespace ApiFootball.Quota;
 
 public interface IApiFootballQuotaMonitor
 {
