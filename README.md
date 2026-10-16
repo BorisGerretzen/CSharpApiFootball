@@ -3,10 +3,8 @@
 [![Test](https://github.com/BorisGerretzen/CSharpApiFootball/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/BorisGerretzen/CSharpApiFootball/actions/workflows/test.yml)
 [![NuGet](https://img.shields.io/nuget/v/ApiFootball.svg)](https://www.nuget.org/packages/ApiFootball/)
 
-DI compatible C# API client for [api-football.com](https://www.api-football.com/). Only v3 endpoints will be supported.
-A list of availble endpoints can be found below, not a lot of them are there yet but this is a work in progress. It
-should work with both api-sports and rapidapi keys, but because I do not have a rapidapi key I cannot test this.
-If you would like to help out, feel free to open a pull request!
+DI compatible C# API client for [api-football.com](https://www.api-football.com/). It supports the documented v3 data and widget endpoints.
+It supports API-SPORTS and RapidAPI accounts; the configured base URL selects the corresponding authentication headers.
 
 This project is not affiliated with api-football or api-sports.
 
@@ -69,16 +67,47 @@ services.AddApiFootball(options =>
 
 Here you can find a list of all the endpoints that are currently supported and which interface to use to call them.
 
-| Endpoint           | C#                                 |
-|--------------------|------------------------------------|
-| `/countries`       | `ICountriesClient.GetCountries`    |
-| `/fixtures`        | `IFixturesClient.GetFixtures`      |
-| `/fixtures/rounds` | `IFixturesClient.GetRounds`        |
-| `/leagues`         | `ILeaguesClient.GetLeagues`        |
-| `/leagues/seasons` | `ILeaguesClient.GetSeasons`        |
-| `/standings`       | `IStandingsClient.GetStandings`    |
-| `/teams`           | `ITeamsClient.GetTeamsInformation` |
-| `/teams/seasons`   | `ITeamsClient.GetTeamsSeasons`     |
-| `/teams/countries` | `ITeamsClient.GetTeamsCountries`   |
-| `/timezone`        | `ITimezoneClient.GetTimezones`     |
-| `/venues`          | `IVenuesClient.GetVenues`          |
+| Endpoint | C# method |
+|---|---|
+| `/coachs` | `ICoachesClient.GetCoachs` |
+| `/countries` | `ICountriesClient.GetCountries` |
+| `/fixtures` | `IFixturesClient.GetFixtures` |
+| `/fixtures/events` | `IFixturesClient.GetFixtureEvents` |
+| `/fixtures/headtohead` | `IFixturesClient.GetHeadToHead` |
+| `/fixtures/lineups` | `IFixturesClient.GetFixtureLineups` |
+| `/fixtures/players` | `IFixturesClient.GetFixturePlayers` |
+| `/fixtures/rounds` | `IFixturesClient.GetRounds`, `GetRoundsWithDates`, `GetRoundsInTimezone` |
+| `/fixtures/statistics` | `IFixturesClient.GetFixtureStatistics` |
+| `/injuries` | `IInjuriesClient.GetInjuries` |
+| `/leagues` | `ILeaguesClient.GetLeagues` |
+| `/leagues/seasons` | `ILeaguesClient.GetSeasons` |
+| `/odds` | `IOddsClient.GetOdds` |
+| `/odds/bets` | `IOddsClient.GetBets` |
+| `/odds/bookmakers` | `IOddsClient.GetBookmakers` |
+| `/odds/live` | `IOddsClient.GetLiveOdds` |
+| `/odds/live/bets` | `IOddsClient.GetLiveBets` |
+| `/odds/mapping` | `IOddsClient.GetOddsMapping` |
+| `/players` | `IPlayersClient.GetPlayerStatistics` |
+| `/players/profiles` | `IPlayersClient.GetProfiles` |
+| `/players/seasons` | `IPlayersClient.GetSeasons` |
+| `/players/squads` | `IPlayersClient.GetSquads` |
+| `/players/teams` | `IPlayersClient.GetTeams` |
+| `/players/topassists` | `IPlayersClient.GetTopAssists` |
+| `/players/topredcards` | `IPlayersClient.GetTopRedCards` |
+| `/players/topscorers` | `IPlayersClient.GetTopScorers` |
+| `/players/topyellowcards` | `IPlayersClient.GetTopYellowCards` |
+| `/predictions` | `IPredictionsClient.GetPredictions` |
+| `/sidelined` | `ISidelinedClient.GetSidelined` |
+| `/standings` | `IStandingsClient.GetStandings` |
+| `/status` | `IStatusClient.GetStatus` |
+| `/teams` | `ITeamsClient.GetTeamsInformation` |
+| `/teams/countries` | `ITeamsClient.GetTeamsCountries` |
+| `/teams/seasons` | `ITeamsClient.GetTeamsSeasons` |
+| `/teams/statistics` | `ITeamsClient.GetTeamStatistics` |
+| `/timezone` | `ITimezoneClient.GetTimezones` |
+| `/transfers` | `ITransfersClient.GetTransfers` |
+| `/trophies` | `ITrophiesClient.GetTrophies` |
+| `/venues` | `IVenuesClient.GetVenues` |
+| `/widgets/Games` | `IWidgetsClient.GetGames` |
+| `/widgets/game` | `IWidgetsClient.GetGame` |
+| `/widgets/standings` | `IWidgetsClient.GetStandings` |

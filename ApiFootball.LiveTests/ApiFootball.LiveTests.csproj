@@ -35,10 +35,4 @@
         <ProjectReference Include="..\ApiFootball\ApiFootball.csproj"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <None Update="appsettings.development.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-
 </Project>

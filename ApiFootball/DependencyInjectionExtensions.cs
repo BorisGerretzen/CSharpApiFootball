@@ -16,9 +16,19 @@ public static class DependencyInjectionExtensions
     ///         <item><see cref="IFixturesClient" /> to consume from the fixtures endpoint</item>
     ///         <item><see cref="ILeaguesClient" /> to consume from the leagues endpoint</item>
     ///         <item><see cref="IStandingsClient" /> to consume from the standings endpoint</item>
+    ///         <item><see cref="IStatusClient" /> to consume from the status endpoint</item>
     ///         <item><see cref="ITeamsClient" /> to consume from the teams endpoint</item>
     ///         <item><see cref="ITimezoneClient" /> to consume from the timezone endpoint</item>
     ///         <item><see cref="IVenuesClient" /> to consume from the venues endpoint</item>
+    ///         <item><see cref="IPlayersClient" /> to consume from the players endpoints</item>
+    ///         <item><see cref="ICoachesClient" /> to consume from the coach endpoint</item>
+    ///         <item><see cref="IInjuriesClient" /> to consume from the injuries endpoint</item>
+    ///         <item><see cref="IPredictionsClient" /> to consume from the predictions endpoint</item>
+    ///         <item><see cref="ITransfersClient" /> to consume from the transfers endpoint</item>
+    ///         <item><see cref="ITrophiesClient" /> to consume from the trophies endpoint</item>
+    ///         <item><see cref="ISidelinedClient" /> to consume from the sidelined endpoint</item>
+    ///         <item><see cref="IOddsClient" /> to consume from the odds endpoints</item>
+    ///         <item><see cref="IWidgetsClient" /> to consume from the widgets endpoints</item>
     ///     </list>
     /// </summary>
     /// <param name="services">DI service collection</param>
@@ -40,9 +50,19 @@ public static class DependencyInjectionExtensions
     ///         <item><see cref="IFixturesClient" /> to consume from the fixtures endpoint</item>
     ///         <item><see cref="ILeaguesClient" /> to consume from the leagues endpoint</item>
     ///         <item><see cref="IStandingsClient" /> to consume from the standings endpoint</item>
+    ///         <item><see cref="IStatusClient" /> to consume from the status endpoint</item>
     ///         <item><see cref="ITeamsClient" /> to consume from the teams endpoint</item>
     ///         <item><see cref="ITimezoneClient" /> to consume from the timezone endpoint</item>
     ///         <item><see cref="IVenuesClient" /> to consume from the venues endpoint</item>
+    ///         <item><see cref="IPlayersClient" /> to consume from the players endpoints</item>
+    ///         <item><see cref="ICoachesClient" /> to consume from the coach endpoint</item>
+    ///         <item><see cref="IInjuriesClient" /> to consume from the injuries endpoint</item>
+    ///         <item><see cref="IPredictionsClient" /> to consume from the predictions endpoint</item>
+    ///         <item><see cref="ITransfersClient" /> to consume from the transfers endpoint</item>
+    ///         <item><see cref="ITrophiesClient" /> to consume from the trophies endpoint</item>
+    ///         <item><see cref="ISidelinedClient" /> to consume from the sidelined endpoint</item>
+    ///         <item><see cref="IOddsClient" /> to consume from the odds endpoints</item>
+    ///         <item><see cref="IWidgetsClient" /> to consume from the widgets endpoints</item>
     ///     </list>
     /// </summary>
     /// <param name="services">DI service collection</param>
@@ -60,12 +80,30 @@ public static class DependencyInjectionExtensions
         services.AddSingleton<ITeamsClient, TeamsClient>();
         services.AddSingleton<IVenuesClient, VenuesClient>();
         services.AddSingleton<IStandingsClient, StandingsClient>();
+        services.AddSingleton<IStatusClient, StatusClient>();
+        services.AddSingleton<IPlayersClient, PlayersClient>();
+        services.AddSingleton<ICoachesClient, CoachesClient>();
+        services.AddSingleton<IInjuriesClient, InjuriesClient>();
+        services.AddSingleton<IPredictionsClient, PredictionsClient>();
+        services.AddSingleton<ITransfersClient, TransfersClient>();
+        services.AddSingleton<ITrophiesClient, TrophiesClient>();
+        services.AddSingleton<ISidelinedClient, SidelinedClient>();
+        services.AddSingleton<IOddsClient, OddsClient>();
+        services.AddSingleton<IWidgetsClient, WidgetsClient>();
         
         var typedApiUri = new Uri(options.ApiUrl);
         var httpClient = services.AddHttpClient(ApiFootballGlobals.HttpClientName, client =>
         {
-            client.DefaultRequestHeaders.Add("X-Rapidapi-Key", options.ApiKey);
-            client.DefaultRequestHeaders.Add("X-Rapidapi-Host", typedApiUri.Host);
+            if (typedApiUri.Host.EndsWith(".rapidapi.com", StringComparison.OrdinalIgnoreCase))
+            {
+                client.DefaultRequestHeaders.Add("X-Rapidapi-Key", options.ApiKey);
+                client.DefaultRequestHeaders.Add("X-Rapidapi-Host", typedApiUri.Host);
+            }
+            else
+            {
+                client.DefaultRequestHeaders.Add("x-apisports-key", options.ApiKey);
+            }
+
             client.BaseAddress = typedApiUri;
         });
 

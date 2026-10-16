@@ -9,7 +9,7 @@ public class VenuesClientTests : BaseEndpointTest
     [Test]
     public async Task Test_GetVenues_Valid_Response()
     {
-        var factory = MockFactory(Route, GetExpected(nameof(Test_GetVenues_Valid_Response)));
+        var factory = MockFactory(Route + "?country=Netherlands", GetExpected(nameof(Test_GetVenues_Valid_Response)));
         var client = new VenuesClient(factory, MockOptions());
         var response = await client.GetVenues(country: "Netherlands");
 
@@ -41,7 +41,7 @@ public class VenuesClientTests : BaseEndpointTest
     [Test]
     public async Task GetVenues_WhenError_ThrowsIfEnabled()
     {
-        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var factory = MockFactory(Route + "?country=Netherlands", GetExpected(DefaultErrorResponse));
         var client = new VenuesClient(factory, MockOptions(o => o.ThrowOnError = true));
 
         var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetVenues(country: "Netherlands"));

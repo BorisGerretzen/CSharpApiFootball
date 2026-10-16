@@ -1,0 +1,1 @@
+{"get":"venues","parameters":{"search":"Twente"},"errors":[],"results":1,"paging":{"current":1,"total":1},"response":[{"id":12543,"name":"FC Twente-trainingscentrum TC veld 1","address":"Kuipersdijk 40","city":"Hengelo","country":"Netherlands","capacity":1000,"surface":"grass","image":"https:\/\/media.api-sports.io\/football\/venues\/12543.png"}]}

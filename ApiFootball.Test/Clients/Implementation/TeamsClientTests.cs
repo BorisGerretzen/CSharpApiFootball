@@ -9,7 +9,7 @@ public class TeamsClientTests : BaseEndpointTest
     [Test]
     public async Task Test_TeamsInformation_Valid_Response()
     {
-        var factory = MockFactory(Route, GetExpected(nameof(Test_TeamsInformation_Valid_Response)));
+        var factory = MockFactory(Route + "?id=69", GetExpected(nameof(Test_TeamsInformation_Valid_Response)));
         var client = new TeamsClient(factory, MockOptions());
         var response = await client.GetTeamsInformation(69);
 
@@ -46,7 +46,7 @@ public class TeamsClientTests : BaseEndpointTest
     [Test]
     public async Task GetTeamsInformation_WhenError_ThrowsIfEnabled()
     {
-        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var factory = MockFactory(Route + "?id=69", GetExpected(DefaultErrorResponse));
         var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
 
         var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTeamsInformation(69));
@@ -57,7 +57,7 @@ public class TeamsClientTests : BaseEndpointTest
     public async Task Test_TeamsSeasons_Valid_Response()
     {
         const string route = "teams/seasons";
-        var factory = MockFactory(route, GetExpected(nameof(Test_TeamsSeasons_Valid_Response)));
+        var factory = MockFactory(route + "?team=69", GetExpected(nameof(Test_TeamsSeasons_Valid_Response)));
         var client = new TeamsClient(factory, MockOptions());
         var response = await client.GetTeamsSeasons(69);
 
@@ -77,7 +77,7 @@ public class TeamsClientTests : BaseEndpointTest
     [Test]
     public async Task GetTeamsSeasons_WhenError_ThrowsIfEnabled()
     {
-        const string route = "teams/seasons";
+        const string route = "teams/seasons?team=69";
         var factory = MockFactory(route, GetExpected(DefaultErrorResponse));
         var client = new TeamsClient(factory, MockOptions(o => o.ThrowOnError = true));
 

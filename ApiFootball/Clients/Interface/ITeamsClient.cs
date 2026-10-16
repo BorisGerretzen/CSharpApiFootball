@@ -19,6 +19,9 @@ public interface ITeamsClient
     public Task<PagedResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null, int? league = null, int? season = null, string? country = null, string? code = null,
         int? venue = null, string? search = null, CancellationToken cancellationToken = default);
 
+    /// <summary>Get a team's statistics for a league season.</summary>
+    public Task<ObjectResponse<TeamStatisticsResponse>> GetTeamStatistics(int league, int season, int team, DateOnly? date = null, CancellationToken cancellationToken = default);
+
     /// <summary>
     /// Get the list of seasons available for a team.
     /// Recommended Calls: 1 call per day.

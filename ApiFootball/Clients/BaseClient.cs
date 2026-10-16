@@ -55,6 +55,13 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
         return result;
     }
 
+    protected async Task<string> GetContentAsync(string url, CancellationToken cancellationToken = default)
+    {
+        using var response = await HttpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadAsStringAsync(cancellationToken);
+    }
+
     protected string BuildQueryString(params (string key, object? value)[] args)
     {
         var queryString = BuildOnlyQueryString(args);

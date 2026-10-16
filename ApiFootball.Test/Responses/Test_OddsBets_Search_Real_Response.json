@@ -1,0 +1,1 @@
+{"get":"odds\/bets","parameters":{"search":"Winner"},"errors":[],"results":4,"paging":{"current":1,"total":1},"response":[{"id":1,"name":"Match Winner"},{"id":3,"name":"Second Half Winner"},{"id":13,"name":"First Half Winner"},{"id":54,"name":"First 10 min Winner"}]}

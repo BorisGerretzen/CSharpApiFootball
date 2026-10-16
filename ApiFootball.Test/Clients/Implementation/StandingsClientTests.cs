@@ -10,12 +10,14 @@ public class StandingsClientTests : BaseEndpointTest
     [Test]
     public async Task Test_Standings_Valid_Response()
     {
-        var factory = MockFactory(Route, GetExpected(nameof(Test_Standings_Valid_Response)));
+        var factory = MockFactory(Route + "?season=2020&league=79", GetExpected(nameof(Test_Standings_Valid_Response)));
         var client = new StandingsClient(factory, MockOptions());
-        var response = await client.GetStandings(2022, 79);
+        var response = await client.GetStandings(2020, 79);
         Assert.That(response.Get, Is.EqualTo(Route));
         Assert.That(response.Errors, Has.Count.EqualTo(0));
         Assert.That(response.Parameters, Has.Count.EqualTo(2));
+        Assert.That(response.Parameters["season"], Is.EqualTo("2020"));
+        Assert.That(response.Parameters["league"], Is.EqualTo("79"));
         Assert.That(response.Results, Is.EqualTo(1));
         Assert.That(response.Response, Has.Count.EqualTo(1));
         var item = response.Response[0];
@@ -45,7 +47,7 @@ public class StandingsClientTests : BaseEndpointTest
     [Test]
     public async Task GetStandings_WhenError_ThrowsIfEnabled()
     {
-        var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
+        var factory = MockFactory(Route + "?season=2022&league=79", GetExpected(DefaultErrorResponse));
         var client = new StandingsClient(factory, MockOptions(o => o.ThrowOnError = true));
 
         var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetStandings(2022, 79));

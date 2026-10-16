@@ -13,21 +13,21 @@ public class BaseEndpointTest
     protected static IHttpClientFactory MockFactory(string route, string expectedResponse)
     {
         var handlerMock = new MockHttpMessageHandler();
+        var expectedPathAndQuery = new Uri($"{ApiFootballGlobals.ApiUrl}{route}").PathAndQuery;
+        var assertQuery = route.Contains('?', StringComparison.Ordinal);
         handlerMock
             .When(HttpMethod.Get, $"{ApiFootballGlobals.ApiUrl}{route}")
             .With(x =>
             {
-                return
-                    x.Headers.Any(h => h.Key == "x-rapidapi-key" && h.Value.First() == ApiKey) &&
-                    x.Headers.Any(h => h.Key == "x-rapidapi-host" && h.Value.First() == ApiFootballGlobals.ApiUrl);
+                return (!assertQuery || x.RequestUri?.PathAndQuery == expectedPathAndQuery) &&
+                       x.Headers.Any(h => h.Key == "x-apisports-key" && h.Value.First() == ApiKey);
             })
             .Respond("application/json", expectedResponse);
         var httpClient = new HttpClient(handlerMock)
         {
             DefaultRequestHeaders =
             {
-                { "x-rapidapi-key", ApiKey },
-                { "x-rapidapi-host", ApiFootballGlobals.ApiUrl }
+                { "x-apisports-key", ApiKey }
             },
             BaseAddress = new Uri(ApiFootballGlobals.ApiUrl)
         };

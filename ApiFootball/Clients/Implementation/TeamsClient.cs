@@ -17,6 +17,14 @@ public class TeamsClient(IHttpClientFactory factory, IOptions<ApiFootballOptions
     }
 
     /// <inheritdoc />
+    public async Task<ObjectResponse<TeamStatisticsResponse>> GetTeamStatistics(int league, int season, int team, DateOnly? date = null,
+        CancellationToken cancellationToken = default)
+    {
+        var queryString = BuildQueryString("/statistics", (nameof(league), league), (nameof(season), season), (nameof(team), team), (nameof(date), date));
+        return await GetAsync<ObjectResponse<TeamStatisticsResponse>>(queryString, cancellationToken);
+    }
+
+    /// <inheritdoc />
     public async Task<PagedResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default)
     {
         var queryString = BuildQueryString("/seasons", (nameof(team), team));

@@ -99,5 +99,27 @@ public class FixturesClientTest : BaseEndpointTest
         const string query = "?id=1552176";
         const int id = 1552176;
         var factory = MockFactory(Route + query, GetExpected(nameof(GetFixtures_IndividualResponse)));
+        var client = new FixturesClient(factory, MockOptions());
+        var response = await client.GetFixtures(id: id);
+
+        Assert.That(response.Get, Is.EqualTo(Route));
+        Assert.That(response.Errors, Is.Empty);
+        Assert.That(response.Parameters, Contains.Key("id").WithValue(id.ToString()));
+        Assert.That(response.Results, Is.EqualTo(1));
+        Assert.That(response.Response, Has.Count.EqualTo(1));
+
+        var fixture = response.Response[0];
+        Assert.Multiple(() =>
+        {
+            Assert.That(fixture.Fixture.Id, Is.EqualTo(id));
+            Assert.That(fixture.Teams.Home.Name, Is.EqualTo("Feyenoord"));
+            Assert.That(fixture.Teams.Away.Name, Is.EqualTo("Utrecht"));
+            Assert.That(fixture.Goals.Home, Is.EqualTo(5));
+            Assert.That(fixture.Goals.Away, Is.EqualTo(0));
+            Assert.That(fixture.Events, Is.Not.Empty);
+            Assert.That(fixture.Lineups, Has.Count.EqualTo(2));
+            Assert.That(fixture.Statistics, Has.Count.EqualTo(2));
+            Assert.That(fixture.Players, Has.Count.EqualTo(2));
+        });
     }
 }

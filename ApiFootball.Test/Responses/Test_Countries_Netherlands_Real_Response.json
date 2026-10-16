@@ -1,0 +1,1 @@
+{"get":"countries","parameters":{"name":"Netherlands"},"errors":[],"results":1,"paging":{"current":1,"total":1},"response":[{"name":"Netherlands","code":"NL","flag":"https:\/\/media.api-sports.io\/flags\/nl.svg"}]}
