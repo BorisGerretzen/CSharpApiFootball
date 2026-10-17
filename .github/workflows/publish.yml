@@ -8,6 +8,8 @@ on:
 
 jobs:
   publish:
+    permissions:
+      id-token: write
     env:
       BUILD_CONFIG: 'Release'
       SOLUTION: 'ApiFootball'
@@ -23,9 +25,15 @@ jobs:
         with:
           dotnet-version: |
             8.x
-
+            
+      - name: NuGet login (OIDC → temp API key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+          
       - name: Build
         run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=${{ github.event.inputs.PackageVersion }}
 
       - name: Publish
-        run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json'
+        run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json' --api-key ${{steps.login.outputs.NUGET_API_KEY}}
