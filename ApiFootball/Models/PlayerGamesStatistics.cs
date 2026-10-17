@@ -2,8 +2,8 @@ namespace ApiFootball.Models;
 
 public sealed class PlayerGamesStatistics
 {
-    [JsonPropertyName("appearences")]
-    public int? Appearances { get; init; }
+    [JsonPropertyName("appearences")] public int? Appearances { get; init; }
+
     public int? Lineups { get; init; }
     public int? Minutes { get; init; }
     public int? Number { get; init; }

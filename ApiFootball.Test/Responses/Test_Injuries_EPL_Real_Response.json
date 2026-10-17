@@ -1,1 +1,1752 @@
-{"get":"injuries","parameters":{"league":"39","season":"2026","team":"40"},"errors":[],"results":62,"paging":{"current":1,"total":1},"response":[{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557375,"timezone":"UTC","date":"2026-08-23T15:30:00+00:00","timestamp":1787499000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557375,"timezone":"UTC","date":"2026-08-23T15:30:00+00:00","timestamp":1787499000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":284,"name":"J. Gomez","photo":"https:\/\/media.api-sports.io\/football\/players\/284.png","type":"Missing Fixture","reason":"Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557375,"timezone":"UTC","date":"2026-08-23T15:30:00+00:00","timestamp":1787499000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557375,"timezone":"UTC","date":"2026-08-23T15:30:00+00:00","timestamp":1787499000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":310187,"name":"S. Bajcetic","photo":"https:\/\/media.api-sports.io\/football\/players\/310187.png","type":"Missing Fixture","reason":"Hamstring Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":30410,"name":"F. Chiesa","photo":"https:\/\/media.api-sports.io\/football\/players\/30410.png","type":"Missing Fixture","reason":"Back Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":19035,"name":"H. Elliott","photo":"https:\/\/media.api-sports.io\/football\/players\/19035.png","type":"Missing Fixture","reason":"Coach's decision"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":284,"name":"J. Gomez","photo":"https:\/\/media.api-sports.io\/football\/players\/284.png","type":"Missing Fixture","reason":"Muscle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557383,"timezone":"UTC","date":"2026-08-29T11:30:00+00:00","timestamp":1788003000},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557393,"timezone":"UTC","date":"2026-09-04T19:00:00+00:00","timestamp":1788548400},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":30410,"name":"F. Chiesa","photo":"https:\/\/media.api-sports.io\/football\/players\/30410.png","type":"Missing Fixture","reason":"Back Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557393,"timezone":"UTC","date":"2026-09-04T19:00:00+00:00","timestamp":1788548400},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557393,"timezone":"UTC","date":"2026-09-04T19:00:00+00:00","timestamp":1788548400},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":284,"name":"J. Gomez","photo":"https:\/\/media.api-sports.io\/football\/players\/284.png","type":"Missing Fixture","reason":"Muscle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557393,"timezone":"UTC","date":"2026-09-04T19:00:00+00:00","timestamp":1788548400},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557393,"timezone":"UTC","date":"2026-09-04T19:00:00+00:00","timestamp":1788548400},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":30410,"name":"F. Chiesa","photo":"https:\/\/media.api-sports.io\/football\/players\/30410.png","type":"Missing Fixture","reason":"Back Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":284,"name":"J. Gomez","photo":"https:\/\/media.api-sports.io\/football\/players\/284.png","type":"Missing Fixture","reason":"Muscle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":30410,"name":"F. Chiesa","photo":"https:\/\/media.api-sports.io\/football\/players\/30410.png","type":"Missing Fixture","reason":"Back Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":284,"name":"J. Gomez","photo":"https:\/\/media.api-sports.io\/football\/players\/284.png","type":"Missing Fixture","reason":"Muscle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557403,"timezone":"UTC","date":"2026-09-12T14:00:00+00:00","timestamp":1789221600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":247,"name":"C. Gakpo","photo":"https:\/\/media.api-sports.io\/football\/players\/247.png","type":"Missing Fixture","reason":"Ankle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":2864,"name":"A. Isak","photo":"https:\/\/media.api-sports.io\/football\/players\/2864.png","type":"Missing Fixture","reason":"Thigh Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":1096,"name":"D. Szoboszlai","photo":"https:\/\/media.api-sports.io\/football\/players\/1096.png","type":"Missing Fixture","reason":"Hamstring Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":30410,"name":"F. Chiesa","photo":"https:\/\/media.api-sports.io\/football\/players\/30410.png","type":"Missing Fixture","reason":"Back Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":247,"name":"C. Gakpo","photo":"https:\/\/media.api-sports.io\/football\/players\/247.png","type":"Missing Fixture","reason":"Ankle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":542,"name":"R. Gravenberch","photo":"https:\/\/media.api-sports.io\/football\/players\/542.png","type":"Missing Fixture","reason":"Red Card"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":2864,"name":"A. Isak","photo":"https:\/\/media.api-sports.io\/football\/players\/2864.png","type":"Missing Fixture","reason":"Thigh Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":1096,"name":"D. Szoboszlai","photo":"https:\/\/media.api-sports.io\/football\/players\/1096.png","type":"Missing Fixture","reason":"Hamstring Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":452685,"name":"R. Ngumoha","photo":"https:\/\/media.api-sports.io\/football\/players\/452685.png","type":"Questionable","reason":"Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":247,"name":"C. Gakpo","photo":"https:\/\/media.api-sports.io\/football\/players\/247.png","type":"Missing Fixture","reason":"Ankle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":2864,"name":"A. Isak","photo":"https:\/\/media.api-sports.io\/football\/players\/2864.png","type":"Missing Fixture","reason":"Thigh Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":1096,"name":"D. Szoboszlai","photo":"https:\/\/media.api-sports.io\/football\/players\/1096.png","type":"Missing Fixture","reason":"Hamstring Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557424,"timezone":"UTC","date":"2026-10-11T15:30:00+00:00","timestamp":1791732600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":30410,"name":"F. Chiesa","photo":"https:\/\/media.api-sports.io\/football\/players\/30410.png","type":"Missing Fixture","reason":"Back Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557407,"timezone":"UTC","date":"2026-09-20T13:00:00+00:00","timestamp":1789909200},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":180317,"name":"C. Bradley","photo":"https:\/\/media.api-sports.io\/football\/players\/180317.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":174565,"name":"H. Ekitike","photo":"https:\/\/media.api-sports.io\/football\/players\/174565.png","type":"Missing Fixture","reason":"Achilles Tendon Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":247,"name":"C. Gakpo","photo":"https:\/\/media.api-sports.io\/football\/players\/247.png","type":"Missing Fixture","reason":"Ankle Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":542,"name":"R. Gravenberch","photo":"https:\/\/media.api-sports.io\/football\/players\/542.png","type":"Missing Fixture","reason":"Red Card"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":2864,"name":"A. Isak","photo":"https:\/\/media.api-sports.io\/football\/players\/2864.png","type":"Missing Fixture","reason":"Thigh Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":409047,"name":"G. Leoni","photo":"https:\/\/media.api-sports.io\/football\/players\/409047.png","type":"Missing Fixture","reason":"Knee Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":1096,"name":"D. Szoboszlai","photo":"https:\/\/media.api-sports.io\/football\/players\/1096.png","type":"Missing Fixture","reason":"Hamstring Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}},{"player":{"id":452685,"name":"R. Ngumoha","photo":"https:\/\/media.api-sports.io\/football\/players\/452685.png","type":"Questionable","reason":"Injury"},"team":{"id":40,"name":"Liverpool","logo":"https:\/\/media.api-sports.io\/football\/teams\/40.png"},"fixture":{"id":1557428,"timezone":"UTC","date":"2026-10-17T14:00:00+00:00","timestamp":1792245600},"league":{"id":39,"season":2026,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg"}}]}
+{
+  "get": "injuries",
+  "parameters": {
+    "league": "39",
+    "season": "2026",
+    "team": "40"
+  },
+  "errors": [],
+  "results": 62,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557375,
+        "timezone": "UTC",
+        "date": "2026-08-23T15:30:00+00:00",
+        "timestamp": 1787499000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557375,
+        "timezone": "UTC",
+        "date": "2026-08-23T15:30:00+00:00",
+        "timestamp": 1787499000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 284,
+        "name": "J. Gomez",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/284.png",
+        "type": "Missing Fixture",
+        "reason": "Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557375,
+        "timezone": "UTC",
+        "date": "2026-08-23T15:30:00+00:00",
+        "timestamp": 1787499000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557375,
+        "timezone": "UTC",
+        "date": "2026-08-23T15:30:00+00:00",
+        "timestamp": 1787499000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 310187,
+        "name": "S. Bajcetic",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/310187.png",
+        "type": "Missing Fixture",
+        "reason": "Hamstring Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 30410,
+        "name": "F. Chiesa",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/30410.png",
+        "type": "Missing Fixture",
+        "reason": "Back Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 19035,
+        "name": "H. Elliott",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/19035.png",
+        "type": "Missing Fixture",
+        "reason": "Coach's decision"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 284,
+        "name": "J. Gomez",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/284.png",
+        "type": "Missing Fixture",
+        "reason": "Muscle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557383,
+        "timezone": "UTC",
+        "date": "2026-08-29T11:30:00+00:00",
+        "timestamp": 1788003000
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557393,
+        "timezone": "UTC",
+        "date": "2026-09-04T19:00:00+00:00",
+        "timestamp": 1788548400
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 30410,
+        "name": "F. Chiesa",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/30410.png",
+        "type": "Missing Fixture",
+        "reason": "Back Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557393,
+        "timezone": "UTC",
+        "date": "2026-09-04T19:00:00+00:00",
+        "timestamp": 1788548400
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557393,
+        "timezone": "UTC",
+        "date": "2026-09-04T19:00:00+00:00",
+        "timestamp": 1788548400
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 284,
+        "name": "J. Gomez",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/284.png",
+        "type": "Missing Fixture",
+        "reason": "Muscle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557393,
+        "timezone": "UTC",
+        "date": "2026-09-04T19:00:00+00:00",
+        "timestamp": 1788548400
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557393,
+        "timezone": "UTC",
+        "date": "2026-09-04T19:00:00+00:00",
+        "timestamp": 1788548400
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 30410,
+        "name": "F. Chiesa",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/30410.png",
+        "type": "Missing Fixture",
+        "reason": "Back Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 284,
+        "name": "J. Gomez",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/284.png",
+        "type": "Missing Fixture",
+        "reason": "Muscle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 30410,
+        "name": "F. Chiesa",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/30410.png",
+        "type": "Missing Fixture",
+        "reason": "Back Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 284,
+        "name": "J. Gomez",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/284.png",
+        "type": "Missing Fixture",
+        "reason": "Muscle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557403,
+        "timezone": "UTC",
+        "date": "2026-09-12T14:00:00+00:00",
+        "timestamp": 1789221600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 247,
+        "name": "C. Gakpo",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/247.png",
+        "type": "Missing Fixture",
+        "reason": "Ankle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 2864,
+        "name": "A. Isak",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/2864.png",
+        "type": "Missing Fixture",
+        "reason": "Thigh Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 1096,
+        "name": "D. Szoboszlai",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/1096.png",
+        "type": "Missing Fixture",
+        "reason": "Hamstring Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 30410,
+        "name": "F. Chiesa",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/30410.png",
+        "type": "Missing Fixture",
+        "reason": "Back Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 247,
+        "name": "C. Gakpo",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/247.png",
+        "type": "Missing Fixture",
+        "reason": "Ankle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 542,
+        "name": "R. Gravenberch",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/542.png",
+        "type": "Missing Fixture",
+        "reason": "Red Card"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 2864,
+        "name": "A. Isak",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/2864.png",
+        "type": "Missing Fixture",
+        "reason": "Thigh Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 1096,
+        "name": "D. Szoboszlai",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/1096.png",
+        "type": "Missing Fixture",
+        "reason": "Hamstring Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 452685,
+        "name": "R. Ngumoha",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/452685.png",
+        "type": "Questionable",
+        "reason": "Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 247,
+        "name": "C. Gakpo",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/247.png",
+        "type": "Missing Fixture",
+        "reason": "Ankle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 2864,
+        "name": "A. Isak",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/2864.png",
+        "type": "Missing Fixture",
+        "reason": "Thigh Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 1096,
+        "name": "D. Szoboszlai",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/1096.png",
+        "type": "Missing Fixture",
+        "reason": "Hamstring Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557424,
+        "timezone": "UTC",
+        "date": "2026-10-11T15:30:00+00:00",
+        "timestamp": 1791732600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 30410,
+        "name": "F. Chiesa",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/30410.png",
+        "type": "Missing Fixture",
+        "reason": "Back Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557407,
+        "timezone": "UTC",
+        "date": "2026-09-20T13:00:00+00:00",
+        "timestamp": 1789909200
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 180317,
+        "name": "C. Bradley",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/180317.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 174565,
+        "name": "H. Ekitike",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/174565.png",
+        "type": "Missing Fixture",
+        "reason": "Achilles Tendon Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 247,
+        "name": "C. Gakpo",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/247.png",
+        "type": "Missing Fixture",
+        "reason": "Ankle Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 542,
+        "name": "R. Gravenberch",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/542.png",
+        "type": "Missing Fixture",
+        "reason": "Red Card"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 2864,
+        "name": "A. Isak",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/2864.png",
+        "type": "Missing Fixture",
+        "reason": "Thigh Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 409047,
+        "name": "G. Leoni",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/409047.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 1096,
+        "name": "D. Szoboszlai",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/1096.png",
+        "type": "Missing Fixture",
+        "reason": "Hamstring Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    },
+    {
+      "player": {
+        "id": 452685,
+        "name": "R. Ngumoha",
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/452685.png",
+        "type": "Questionable",
+        "reason": "Injury"
+      },
+      "team": {
+        "id": 40,
+        "name": "Liverpool",
+        "logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+      },
+      "fixture": {
+        "id": 1557428,
+        "timezone": "UTC",
+        "date": "2026-10-17T14:00:00+00:00",
+        "timestamp": 1792245600
+      },
+      "league": {
+        "id": 39,
+        "season": 2026,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg"
+      }
+    }
+  ]
+}

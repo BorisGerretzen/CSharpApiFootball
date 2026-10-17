@@ -7,5 +7,3 @@ public sealed class ApiStatusResponse
     public ApiSubscriptionStatus? Subscription { get; init; }
     public ApiRequestStatus? Requests { get; init; }
 }
-
-

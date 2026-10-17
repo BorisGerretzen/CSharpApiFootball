@@ -1,5 +1,3 @@
-using ApiFootball.Models;
-
 namespace ApiFootball.IntegrationTests.Tests;
 
 [TestFixture]

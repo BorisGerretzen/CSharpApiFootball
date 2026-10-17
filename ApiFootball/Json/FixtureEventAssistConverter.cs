@@ -20,9 +20,7 @@ public sealed class FixtureEventAssistConverter : JsonConverter<FixtureEventPlay
             element.TryGetProperty("name", out var name) &&
             id.ValueKind == JsonValueKind.Null &&
             name.ValueKind == JsonValueKind.Null)
-        {
             return null;
-        }
 
         var player = element.Deserialize<FixtureEventPlayer>(options) ?? throw new JsonException("Invalid player.");
 

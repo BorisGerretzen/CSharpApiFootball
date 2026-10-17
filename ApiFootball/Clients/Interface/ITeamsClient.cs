@@ -3,9 +3,9 @@ namespace ApiFootball.Clients.Interface;
 public interface ITeamsClient
 {
     /// <summary>
-    /// Get the list of available teams.
-    /// This endpoint requires at least one parameter.
-    /// Recommended Calls: 1 call per day.
+    ///     Get the list of available teams.
+    ///     This endpoint requires at least one parameter.
+    ///     Recommended Calls: 1 call per day.
     /// </summary>
     /// <param name="id">The id of the team.</param>
     /// <param name="name">The name of the team.</param>
@@ -16,23 +16,25 @@ public interface ITeamsClient
     /// <param name="venue">The id of the venue.</param>
     /// <param name="search">The name or the country of the team (>= 3 characters).</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<PagedResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null, int? league = null, int? season = null, string? country = null, string? code = null,
+    public Task<PagedResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null,
+        int? league = null, int? season = null, string? country = null, string? code = null,
         int? venue = null, string? search = null, CancellationToken cancellationToken = default);
 
     /// <summary>Get a team's statistics for a league season.</summary>
-    public Task<ObjectResponse<TeamStatisticsResponse>> GetTeamStatistics(int league, int season, int team, DateOnly? date = null, CancellationToken cancellationToken = default);
+    public Task<ObjectResponse<TeamStatisticsResponse>> GetTeamStatistics(int league, int season, int team,
+        DateOnly? date = null, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Get the list of seasons available for a team.
-    /// Recommended Calls: 1 call per day.
+    ///     Get the list of seasons available for a team.
+    ///     Recommended Calls: 1 call per day.
     /// </summary>
     /// <param name="team">The team id.</param>
     /// <param name="cancellationToken">Cancellation token.</param>
     public Task<PagedResponse<int>> GetTeamsSeasons(int team, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Get the list of countries available for the teams endpoint.
-    /// Recommended Calls: 1 call per day.
+    ///     Get the list of countries available for the teams endpoint.
+    ///     Recommended Calls: 1 call per day.
     /// </summary>
     /// <param name="cancellationToken">Cancellation token.</param>
     public Task<PagedResponse<Country>> GetTeamsCountries(CancellationToken cancellationToken = default);

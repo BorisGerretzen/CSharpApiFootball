@@ -1,6 +1,4 @@
-﻿using ApiFootball.Quota;
-
-namespace ApiFootball.Models.Responses;
+﻿namespace ApiFootball.Models.Responses;
 
 public class PagedResponse<T> : BaseResponse
 {

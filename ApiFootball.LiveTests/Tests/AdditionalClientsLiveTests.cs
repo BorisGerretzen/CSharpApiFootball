@@ -39,7 +39,7 @@ public sealed class AdditionalClientsLiveTests : BaseLiveTest
     public async Task GetCoachs_ShouldReturnTeamCareerData()
     {
         var client = ServiceProvider.GetRequiredService<ICoachesClient>();
-        var response = await client.GetCoachs(team: 40);
+        var response = await client.GetCoaches(team: 40);
 
         Assert.That(response.Errors, Is.Empty);
         Assert.That(response.Response, Is.Not.Empty);
@@ -53,7 +53,9 @@ public sealed class AdditionalClientsLiveTests : BaseLiveTest
         var response = await client.GetProfiles(search: "Messi");
 
         Assert.That(response.Errors, Is.Empty);
-        Assert.That(response.Response.Any(item => item.Player?.Name?.Contains("Messi", StringComparison.OrdinalIgnoreCase) == true), Is.True);
+        Assert.That(
+            response.Response.Any(item =>
+                item.Player?.Name?.Contains("Messi", StringComparison.OrdinalIgnoreCase) == true), Is.True);
     }
 
     [Test]
@@ -74,9 +76,9 @@ public sealed class AdditionalClientsLiveTests : BaseLiveTest
         var response = await client.GetTeamStatistics(39, 2024, 40);
 
         Assert.That(response.Errors, Is.Empty);
-        Assert.That(response.Response.Team?.Id, Is.EqualTo(40));
-        Assert.That(response.Response.League?.Season, Is.EqualTo(2024));
-        Assert.That(response.Response.Fixtures?.Played?.Total, Is.GreaterThan(0));
+        Assert.That(response.GetResponse().Team?.Id, Is.EqualTo(40));
+        Assert.That(response.GetResponse().League?.Season, Is.EqualTo(2024));
+        Assert.That(response.GetResponse().Fixtures?.Played?.Total, Is.GreaterThan(0));
     }
 
     [Test]
@@ -85,7 +87,7 @@ public sealed class AdditionalClientsLiveTests : BaseLiveTest
         var now = DateTime.UtcNow;
         var season = now.Month >= 7 ? now.Year : now.Year - 1;
         var response = await ServiceProvider.GetRequiredService<IInjuriesClient>()
-            .GetInjuries(league: 39, season: season, team: 40);
+            .GetInjuries(39, season, team: 40);
 
         Assert.That(response.Errors, Is.Empty);
         Assert.That(response.Response.All(item => item.League?.Id == 39 && item.Team?.Id == 40), Is.True);
@@ -94,17 +96,19 @@ public sealed class AdditionalClientsLiveTests : BaseLiveTest
     [Test]
     public async Task PlayerHistory_ShouldReturnTransfersTrophiesAndSidelinedRecords()
     {
-        var transfers = await ServiceProvider.GetRequiredService<ITransfersClient>().GetTransfers(player: 276);
+        var transfers = await ServiceProvider.GetRequiredService<ITransfersClient>().GetTransfers(276);
         Assert.That(transfers.Errors, Is.Empty);
-        Assert.That(transfers.Response.Any(item => item.Player?.Id == 276 && item.Transfers is { Count: > 0 }), Is.True);
+        Assert.That(transfers.Response.Any(item => item.Player?.Id == 276 && item.Transfers is { Count: > 0 }),
+            Is.True);
 
-        var trophies = await ServiceProvider.GetRequiredService<ITrophiesClient>().GetTrophies(player: 276);
+        var trophies = await ServiceProvider.GetRequiredService<ITrophiesClient>().GetTrophies(276);
         Assert.That(trophies.Errors, Is.Empty);
         Assert.That(trophies.Response, Is.Not.Empty);
 
-        var sidelined = await ServiceProvider.GetRequiredService<ISidelinedClient>().GetSidelined(player: 276);
+        var sidelined = await ServiceProvider.GetRequiredService<ISidelinedClient>().GetSidelined(276);
         Assert.That(sidelined.Errors, Is.Empty);
-        Assert.That(sidelined.Response.Any(item => !string.IsNullOrWhiteSpace(item.Type) && item.Start.HasValue), Is.True);
+        Assert.That(sidelined.Response.Any(item => !string.IsNullOrWhiteSpace(item.Type) && item.Start.HasValue),
+            Is.True);
     }
 
     [Test]

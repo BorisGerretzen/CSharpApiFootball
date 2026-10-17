@@ -1,1 +1,18 @@
-{"get":"odds\/live\/bets","parameters":{"search":"Winner"},"errors":[],"results":1,"paging":{"current":1,"total":1},"response":[{"id":107,"name":"Penalties Shootout Winner"}]}
+{
+  "get": "odds\/live\/bets",
+  "parameters": {
+    "search": "Winner"
+  },
+  "errors": [],
+  "results": 1,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "id": 107,
+      "name": "Penalties Shootout Winner"
+    }
+  ]
+}

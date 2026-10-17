@@ -10,9 +10,9 @@ internal sealed class ControlledHttpMessageHandler : HttpMessageHandler
     private int _activeRequests;
     private int _maximumConcurrentRequests;
 
-    public int MaximumConcurrentRequests => Volatile.Read(ref _maximumConcurrentRequests);
-
     private int _requestsStarted;
+
+    public int MaximumConcurrentRequests => Volatile.Read(ref _maximumConcurrentRequests);
 
     public int RequestsStarted => Volatile.Read(ref _requestsStarted);
 
@@ -31,7 +31,8 @@ internal sealed class ControlledHttpMessageHandler : HttpMessageHandler
         }
     }
 
-    protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
+        CancellationToken cancellationToken)
     {
         var active = Interlocked.Increment(ref _activeRequests);
 
@@ -57,7 +58,8 @@ internal sealed class ControlledHttpMessageHandler : HttpMessageHandler
         while (true)
         {
             var maximum = Volatile.Read(ref _maximumConcurrentRequests);
-            if (active <= maximum || Interlocked.CompareExchange(ref _maximumConcurrentRequests, active, maximum) == maximum)
+            if (active <= maximum ||
+                Interlocked.CompareExchange(ref _maximumConcurrentRequests, active, maximum) == maximum)
                 return;
         }
     }
@@ -66,14 +68,20 @@ internal sealed class ControlledHttpMessageHandler : HttpMessageHandler
 internal sealed class PendingRequest(string path)
 {
     public string Path { get; } = path;
-    public TaskCompletionSource<HttpResponseMessage> Response { get; } = new(TaskCreationOptions.RunContinuationsAsynchronously);
 
-    public void Succeed(string responseJson = "{\"get\":\"test\",\"parameters\":[],\"errors\":[],\"results\":0,\"paging\":{\"current\":1,\"total\":1},\"response\":[]}")
+    public TaskCompletionSource<HttpResponseMessage> Response { get; } =
+        new(TaskCreationOptions.RunContinuationsAsynchronously);
+
+    public void Succeed(
+        string responseJson =
+            "{\"get\":\"test\",\"parameters\":[],\"errors\":[],\"results\":0,\"paging\":{\"current\":1,\"total\":1},\"response\":[]}")
     {
         Respond(HttpStatusCode.OK, responseJson);
     }
 
-    public void Respond(HttpStatusCode statusCode, string responseJson = "{\"get\":\"test\",\"parameters\":[],\"errors\":[],\"results\":0,\"paging\":{\"current\":1,\"total\":1},\"response\":[]}")
+    public void Respond(HttpStatusCode statusCode,
+        string responseJson =
+            "{\"get\":\"test\",\"parameters\":[],\"errors\":[],\"results\":0,\"paging\":{\"current\":1,\"total\":1},\"response\":[]}")
     {
         Response.TrySetResult(new HttpResponseMessage(statusCode)
         {

@@ -12,22 +12,22 @@ on:
     paths-ignore:
       - '*.md'
       - '.gitignore'
-  workflow_dispatch: 
-    
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-      
-    - name: Install .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          9.x
-          8.x
-          7.x
-      
-    - name: Test
-      run: dotnet test --verbosity normal ApiFootball.Test
+      - uses: actions/checkout@v4
+
+      - name: Install .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: |
+            10.x
+            9.x
+            8.x
+
+      - name: Test
+        run: dotnet test --verbosity normal ApiFootball.Test

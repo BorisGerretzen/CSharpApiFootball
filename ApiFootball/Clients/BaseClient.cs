@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Globalization;
+using System.Web;
 using ApiFootball.Options;
 using ApiFootball.Quota;
 using Microsoft.Extensions.Options;
@@ -7,59 +8,52 @@ namespace ApiFootball.Clients;
 
 public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options)
 {
-    private readonly HttpClient HttpClient = factory.CreateClient(ApiFootballGlobals.HttpClientName);
-
-    protected readonly JsonSerializerOptions SerializerOptions = new()
+    private static readonly JsonSerializerOptions SerializerOptions = new()
     {
         IncludeFields = false,
         PropertyNameCaseInsensitive = true
     };
 
+    private readonly HttpClient _httpClient = factory.CreateClient(ApiFootballGlobals.HttpClientName);
+
     protected abstract string Route { get; }
 
-    protected async Task<TResponse> DeserializeAsync<TResponse>(
-        Stream stream, 
+
+    protected async Task<TResponse> GetAsync<TResponse>(
+        string url,
         CancellationToken cancellationToken = default)
         where TResponse : BaseResponse
     {
-        var result = await JsonSerializer.DeserializeAsync<TResponse>(
-            stream, SerializerOptions, cancellationToken);
+        using var response = await _httpClient.GetAsync(
+            url, cancellationToken);
 
-        if (result is null)
-            throw new JsonException("Could not deserialize API response.");
+        var quota = ApiFootballQuota.FromHeaders(response.Headers);
+
+        TResponse result;
+
+        try
+        {
+            await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
+            result = await DeserializeAsync<TResponse>(stream, cancellationToken);
+        }
+        catch (JsonException) when (!response.IsSuccessStatusCode)
+        {
+            response.EnsureSuccessStatusCode();
+            throw;
+        }
+
+        result.Quota = quota;
+
+        if (!response.IsSuccessStatusCode)
+        {
+            result.EnsureSuccess(response.StatusCode);
+            response.EnsureSuccessStatusCode();
+        }
 
         if (options.Value.ThrowOnError)
-            result.EnsureSuccess();
+            result.EnsureSuccess(response.StatusCode);
 
         return result;
-    }
-    
-    protected async Task<TResponse> GetAsync<TResponse>(string url, CancellationToken cancellationToken = default)
-        where TResponse : BaseResponse
-    {
-        using var response = await HttpClient.GetAsync(
-            url,
-            HttpCompletionOption.ResponseHeadersRead,
-            cancellationToken);
-
-        var quota = ApiFootballQuota.FromHeaders(
-            response.Headers);
-
-        response.EnsureSuccessStatusCode();
-
-        await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
-
-        var result = await DeserializeAsync<TResponse>(stream, cancellationToken);
-        result.Quota = quota;
-        
-        return result;
-    }
-
-    protected async Task<string> GetContentAsync(string url, CancellationToken cancellationToken = default)
-    {
-        using var response = await HttpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
-        response.EnsureSuccessStatusCode();
-        return await response.Content.ReadAsStringAsync(cancellationToken);
     }
 
     protected string BuildQueryString(params (string key, object? value)[] args)
@@ -74,6 +68,16 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
         return string.IsNullOrEmpty(queryString) ? Route + path : $"{Route}{path}?{queryString}";
     }
 
+    private async Task<TResponse> DeserializeAsync<TResponse>(
+        Stream stream,
+        CancellationToken cancellationToken = default)
+        where TResponse : BaseResponse
+    {
+        return await JsonSerializer.DeserializeAsync<TResponse>(stream, SerializerOptions, cancellationToken)
+               ?? throw new JsonException(
+                   "Could not deserialize API-FOOTBALL response.");
+    }
+
     private static string BuildOnlyQueryString(params (string key, object? value)[] args)
     {
         var queryStringBuilder = HttpUtility.ParseQueryString(string.Empty);
@@ -85,18 +89,25 @@ public abstract class BaseClient(IHttpClientFactory factory, IOptions<ApiFootbal
             queryStringBuilder.Add(key, formattedValue);
         }
 
-        var queryString = queryStringBuilder.ToString() ?? throw new InvalidOperationException("Unable to build query string");
+        var queryString = queryStringBuilder.ToString() ??
+                          throw new InvalidOperationException("Unable to build query string");
         return queryString;
     }
-    
+
     private static string FormatQueryValue(object? value)
     {
         return value switch
         {
             null => string.Empty,
-            DateOnly dateOnly => dateOnly.ToString("yyyy-MM-dd"),
+            DateOnly dateOnly => dateOnly.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
             bool boolean => boolean ? "true" : "false",
-            IFormattable formattable => formattable.ToString(null, System.Globalization.CultureInfo.InvariantCulture),
+            LeagueType type => type switch
+            {
+                LeagueType.League => "league",
+                LeagueType.Cup => "cup",
+                _ => throw new ArgumentOutOfRangeException(nameof(value))
+            },
+            IFormattable formattable => formattable.ToString(null, CultureInfo.InvariantCulture),
             _ => value.ToString() ?? string.Empty
         };
     }

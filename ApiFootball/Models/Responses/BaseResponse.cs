@@ -1,8 +1,8 @@
+using System.Net;
 using ApiFootball.Json;
 using ApiFootball.Quota;
 
 namespace ApiFootball.Models.Responses;
-
 
 public abstract class BaseResponse
 {
@@ -16,21 +16,24 @@ public abstract class BaseResponse
 
     public required int Results { get; init; }
 
-    [JsonIgnore]
-    public bool IsSuccess => Errors.Count == 0;
+    [JsonIgnore] public bool IsSuccess => Errors.Count == 0;
 
-    [JsonIgnore]
-    public ApiFootballQuota? Quota { get; internal set; }
+    [JsonIgnore] public ApiFootballQuota? Quota { get; internal set; }
 
     /// <summary>
-    /// Throws an exception if the API response contains errors.
+    ///     Throws an exception if the API response contains errors.
     /// </summary>
-    public void EnsureSuccess()
+    internal void EnsureSuccess(HttpStatusCode? statusCode)
     {
         if (!IsSuccess)
         {
             var errors = Errors.Select(kvp => new ApiFootballError(kvp.Key, kvp.Value)).ToList();
-            throw new ApiFootballException(errors);
+            throw new ApiFootballException(errors, statusCode, Quota);
         }
+    }
+
+    public void EnsureSuccess()
+    {
+        EnsureSuccess(null);
     }
 }

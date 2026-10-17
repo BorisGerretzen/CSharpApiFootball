@@ -34,7 +34,8 @@ public static class DependencyInjectionExtensions
     /// <param name="services">DI service collection</param>
     /// <param name="apiKey">Your api-football api key</param>
     /// <param name="apiUrl">Base url of api-football, use the trailing slash</param>
-    public static IHttpClientBuilder AddApiFootball(this IServiceCollection services, string apiKey, string apiUrl = ApiFootballGlobals.ApiUrl)
+    public static IServiceCollection AddApiFootball(this IServiceCollection services, string apiKey,
+        string apiUrl = ApiFootballGlobals.ApiUrl)
     {
         return services.AddApiFootball(o =>
         {
@@ -62,35 +63,34 @@ public static class DependencyInjectionExtensions
     ///         <item><see cref="ITrophiesClient" /> to consume from the trophies endpoint</item>
     ///         <item><see cref="ISidelinedClient" /> to consume from the sidelined endpoint</item>
     ///         <item><see cref="IOddsClient" /> to consume from the odds endpoints</item>
-    ///         <item><see cref="IWidgetsClient" /> to consume from the widgets endpoints</item>
     ///     </list>
     /// </summary>
     /// <param name="services">DI service collection</param>
     /// <param name="configureOptions">Configurator for the <see cref="ApiFootballOptions" /></param>
-    public static IHttpClientBuilder AddApiFootball(this IServiceCollection services, Action<ApiFootballOptions> configureOptions)
+    public static IServiceCollection AddApiFootball(this IServiceCollection services,
+        Action<ApiFootballOptions> configureOptions)
     {
         var options = new ApiFootballOptions();
         configureOptions(options);
-        
-        services.Configure(configureOptions);
-        services.AddSingleton<IFixturesClient, FixturesClient>();
-        services.AddSingleton<ICountriesClient, CountriesClient>();
-        services.AddSingleton<ILeaguesClient, LeaguesClient>();
-        services.AddSingleton<ITimezoneClient, TimezoneClient>();
-        services.AddSingleton<ITeamsClient, TeamsClient>();
-        services.AddSingleton<IVenuesClient, VenuesClient>();
-        services.AddSingleton<IStandingsClient, StandingsClient>();
-        services.AddSingleton<IStatusClient, StatusClient>();
-        services.AddSingleton<IPlayersClient, PlayersClient>();
-        services.AddSingleton<ICoachesClient, CoachesClient>();
-        services.AddSingleton<IInjuriesClient, InjuriesClient>();
-        services.AddSingleton<IPredictionsClient, PredictionsClient>();
-        services.AddSingleton<ITransfersClient, TransfersClient>();
-        services.AddSingleton<ITrophiesClient, TrophiesClient>();
-        services.AddSingleton<ISidelinedClient, SidelinedClient>();
-        services.AddSingleton<IOddsClient, OddsClient>();
-        services.AddSingleton<IWidgetsClient, WidgetsClient>();
-        
+
+        services.AddSingleton(Microsoft.Extensions.Options.Options.Create(options));
+        services.AddTransient<IFixturesClient, FixturesClient>();
+        services.AddTransient<ICountriesClient, CountriesClient>();
+        services.AddTransient<ILeaguesClient, LeaguesClient>();
+        services.AddTransient<ITimezoneClient, TimezoneClient>();
+        services.AddTransient<ITeamsClient, TeamsClient>();
+        services.AddTransient<IVenuesClient, VenuesClient>();
+        services.AddTransient<IStandingsClient, StandingsClient>();
+        services.AddTransient<IStatusClient, StatusClient>();
+        services.AddTransient<IPlayersClient, PlayersClient>();
+        services.AddTransient<ICoachesClient, CoachesClient>();
+        services.AddTransient<IInjuriesClient, InjuriesClient>();
+        services.AddTransient<IPredictionsClient, PredictionsClient>();
+        services.AddTransient<ITransfersClient, TransfersClient>();
+        services.AddTransient<ITrophiesClient, TrophiesClient>();
+        services.AddTransient<ISidelinedClient, SidelinedClient>();
+        services.AddTransient<IOddsClient, OddsClient>();
+
         var typedApiUri = new Uri(options.ApiUrl);
         var httpClient = services.AddHttpClient(ApiFootballGlobals.HttpClientName, client =>
         {
@@ -108,7 +108,7 @@ public static class DependencyInjectionExtensions
         });
 
         options.ConfigureHttpClient?.Invoke(httpClient);
-        
+
         if (options.RateLimiterOptions != null)
         {
             services.AddSingleton<ApiFootballRateLimiter>(_ => new ApiFootballRateLimiter(options.RateLimiterOptions));
@@ -120,7 +120,7 @@ public static class DependencyInjectionExtensions
         services.AddSingleton<IApiFootballQuotaMonitor>(sp => sp.GetRequiredService<ApiFootballQuotaMonitor>());
         services.AddTransient<ApiFootballQuotaHandler>();
         httpClient.AddHttpMessageHandler<ApiFootballQuotaHandler>();
-        
-        return httpClient;
+
+        return services;
     }
 }

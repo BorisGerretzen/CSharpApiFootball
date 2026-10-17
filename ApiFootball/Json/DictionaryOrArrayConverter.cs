@@ -1,15 +1,17 @@
 ﻿namespace ApiFootball.Json;
 
 /// <summary>
-/// Inspired by the following StackOverflow post but modified for System.Text.Json.
-/// https://stackoverflow.com/questions/74762080/how-to-deserialize-json-which-is-sometimes-a-dictionary-and-sometimes-an-empty-a
+///     Inspired by the following StackOverflow post but modified for System.Text.Json.
+///     https://stackoverflow.com/questions/74762080/how-to-deserialize-json-which-is-sometimes-a-dictionary-and-sometimes-an-empty-a
 /// </summary>
 public class DictionaryOrArrayConverter<TKey, TValue> : JsonConverter<Dictionary<TKey, TValue>>
     where TKey : notnull
 {
-    public override Dictionary<TKey, TValue>? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    public override Dictionary<TKey, TValue>? Read(ref Utf8JsonReader reader, Type typeToConvert,
+        JsonSerializerOptions options)
     {
-        if (reader.TokenType == JsonTokenType.StartObject) return JsonSerializer.Deserialize<Dictionary<TKey, TValue>>(ref reader, options);
+        if (reader.TokenType == JsonTokenType.StartObject)
+            return JsonSerializer.Deserialize<Dictionary<TKey, TValue>>(ref reader, options);
 
         if (reader.TokenType == JsonTokenType.StartArray)
         {

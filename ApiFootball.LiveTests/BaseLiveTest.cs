@@ -15,7 +15,9 @@ public abstract class BaseLiveTest
             .AddJsonFile("appsettings.development.json", true)
             .Build();
         var apiKey = configuration["ApiFootball:ApiKey"];
-        if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("API key is not set. Please set the ApiFootball:ApiKey in the environment variables or appsettings.development.json.");
+        if (string.IsNullOrEmpty(apiKey))
+            throw new InvalidOperationException(
+                "API key is not set. Please set the ApiFootball:ApiKey in the environment variables or appsettings.development.json.");
 
         var services = new ServiceCollection();
         services.AddApiFootball(o =>

@@ -11,7 +11,7 @@ namespace ApiFootball.Test.RateLimiting;
 public sealed class RateLimitingIntegrationTests
 {
     private static readonly TimeSpan TestTimeout = TimeSpan.FromSeconds(5);
-    
+
     [TestCase(true)]
     [TestCase(false)]
     public async Task DisabledOrEmptyLimiter_AllowsConcurrentRequests(bool disableLimiter)
@@ -20,7 +20,9 @@ public sealed class RateLimitingIntegrationTests
         var calls = Enumerable.Range(0, 3)
             .Select(_ => StartTimezones(host))
             .ToArray();
-        var pending = await Task.WhenAll(Enumerable.Range(0, calls.Length).Select(_ => host.Handler.WaitForRequestAsync())).WaitAsync(TestTimeout);
+        var pending = await Task
+            .WhenAll(Enumerable.Range(0, calls.Length).Select(_ => host.Handler.WaitForRequestAsync()))
+            .WaitAsync(TestTimeout);
 
         Assert.That(host.Handler.MaximumConcurrentRequests, Is.EqualTo(3));
 
@@ -193,11 +195,9 @@ public sealed class RateLimitingIntegrationTests
         var queued = StartCountries(host);
         await queued.InvocationReturned.WaitAsync(TestTimeout);
         cancellation.Cancel();
-        
-        var exception = await Assert.CatchAsync<AggregateException>(async () => await activeCall.Task);
-        Assert.That(exception, Is.Not.Null);
-        Assert.That(exception.InnerExceptions, Has.Exactly(1).InstanceOf<OperationCanceledException>());
 
+        var exception = await Assert.CatchAsync<OperationCanceledException>(async () => await activeCall.Task);
+        Assert.That(exception, Is.Not.Null);
         var nextRequest = await host.Handler.WaitForRequestAsync(CancellationToken.None).WaitAsync(TestTimeout);
         Assert.That(nextRequest.Path, Is.EqualTo("/countries"));
         nextRequest.Succeed();
@@ -218,9 +218,9 @@ public sealed class RateLimitingIntegrationTests
         await next.InvocationReturned.WaitAsync(TestTimeout);
         failingRequest.Fail(new HttpRequestException("Simulated transport failure."));
 
-        var exception = await Assert.CatchAsync<AggregateException>(async () => await failed.Task);
+        var exception = await Assert.CatchAsync<HttpRequestException>(async () => await failed.Task);
         Assert.That(exception, Is.Not.Null);
-        Assert.That(exception.InnerExceptions, Has.Exactly(1).InstanceOf<HttpRequestException>());
+        Assert.That(exception.Message, Is.EqualTo("Simulated transport failure."));
         var succeedingRequest = await host.Handler.WaitForRequestAsync().WaitAsync(TestTimeout);
         succeedingRequest.Succeed();
         await next.Task.WaitAsync(TestTimeout);
@@ -305,7 +305,7 @@ public sealed class RateLimitingIntegrationTests
         secondRequest.Succeed();
         await queued.Task.WaitAsync(TestTimeout);
     }
-    
+
     [Test]
     public async Task ChainedLimits_ReleaseConcurrencyWhenTimeLimitRejectsRequest()
     {
@@ -320,7 +320,8 @@ public sealed class RateLimitingIntegrationTests
         request.Succeed();
         await first.Task.WaitAsync(TestTimeout);
         var rejectedFirst = StartCountries(host);
-        Assert.That(await Assert.ThrowsAsync<InvalidOperationException>(async () => await rejectedFirst.Task), Is.Not.Null);
+        Assert.That(await Assert.ThrowsAsync<InvalidOperationException>(async () => await rejectedFirst.Task),
+            Is.Not.Null);
         Assert.That(host.Handler.RequestsStarted, Is.EqualTo(1));
 
         await Task.Delay(TimeSpan.FromSeconds(1.1));
@@ -328,7 +329,7 @@ public sealed class RateLimitingIntegrationTests
         var secondRequest = await host.Handler.WaitForRequestAsync().WaitAsync(TestTimeout);
         secondRequest.Succeed();
         await acceptedSecond.Task;
-        
+
         Assert.That(host.Handler.RequestsStarted, Is.EqualTo(2));
     }
 
@@ -420,36 +421,74 @@ public sealed class RateLimitingIntegrationTests
             apiOptions.ApiKey = "test-key";
             apiOptions.ApiUrl = "https://api-football.test/";
             apiOptions.RateLimiterOptions = configure is null ? null : options;
-        }).ConfigurePrimaryHttpMessageHandler(() => handler);
+            apiOptions.ConfigureHttpClient = client => client.ConfigurePrimaryHttpMessageHandler(() => handler);
+        });
 
         return new TestHost(services.BuildServiceProvider(), handler);
     }
 
-    private static StartedRequest<PagedResponse<string>> StartTimezones(TestHost host, CancellationToken cancellationToken = default)
+    private static StartedRequest<PagedResponse<string>> StartTimezones(TestHost host,
+        CancellationToken cancellationToken = default)
     {
         var client = host.Get<ITimezoneClient>();
         return host.Start(client.GetTimezones, cancellationToken);
     }
 
-    private static StartedRequest<PagedResponse<Country>> StartCountries(TestHost host, CancellationToken cancellationToken = default)
+    private static StartedRequest<PagedResponse<Country>> StartCountries(TestHost host,
+        CancellationToken cancellationToken = default)
     {
         var client = host.Get<ICountriesClient>();
         return host.Start(token => client.GetCountries(cancellationToken: token), cancellationToken);
     }
 
-    private sealed class TestHost(ServiceProvider services, ControlledHttpMessageHandler handler) : IAsyncDisposable, IDisposable
+    private sealed class TestHost(ServiceProvider services, ControlledHttpMessageHandler handler)
+        : IAsyncDisposable, IDisposable
     {
-        private readonly CancellationTokenSource _shutdown = new();
-        private readonly List<Task> _operations = [];
         private readonly object _lock = new();
+        private readonly List<Task> _operations = [];
+        private readonly CancellationTokenSource _shutdown = new();
 
         public ControlledHttpMessageHandler Handler { get; } = handler;
 
-        public T Get<T>() where T : notnull => services.GetRequiredService<T>();
-
-        public StartedRequest<T> Start<T>(Func<CancellationToken, Task<T>> request, CancellationToken cancellationToken = default)
+        public async ValueTask DisposeAsync()
         {
-            var linkedCancellation = CancellationTokenSource.CreateLinkedTokenSource(_shutdown.Token, cancellationToken);
+            _shutdown.Cancel();
+            Task[] operations;
+            lock (_lock)
+            {
+                operations = _operations.ToArray();
+            }
+
+            try
+            {
+                await Task.WhenAll(operations).WaitAsync(TimeSpan.FromSeconds(5));
+            }
+            catch
+            {
+                // Cleanup must continue after expected cancellation or a failed assertion.
+            }
+
+            services.Dispose();
+            _shutdown.Dispose();
+        }
+
+        public void Dispose()
+        {
+            _shutdown.Cancel();
+            services.Dispose();
+            _shutdown.Dispose();
+        }
+
+        public T Get<T>() where T : notnull
+        {
+            return services.GetRequiredService<T>();
+        }
+
+        public StartedRequest<T> Start<T>(Func<CancellationToken, Task<T>> request,
+            CancellationToken cancellationToken = default)
+        {
+            var linkedCancellation =
+                CancellationTokenSource.CreateLinkedTokenSource(_shutdown.Token, cancellationToken);
             var invocationReturned = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
             var operation = Task.Run(async () =>
             {
@@ -471,36 +510,11 @@ public sealed class RateLimitingIntegrationTests
             }, CancellationToken.None);
 
             lock (_lock)
+            {
                 _operations.Add(operation);
+            }
 
             return new StartedRequest<T>(operation, invocationReturned.Task);
-        }
-
-        public void Dispose()
-        {
-            _shutdown.Cancel();
-            services.Dispose();
-            _shutdown.Dispose();
-        }
-
-        public async ValueTask DisposeAsync()
-        {
-            _shutdown.Cancel();
-            Task[] operations;
-            lock (_lock)
-                operations = _operations.ToArray();
-
-            try
-            {
-                await Task.WhenAll(operations).WaitAsync(TimeSpan.FromSeconds(5));
-            }
-            catch
-            {
-                // Cleanup must continue after expected cancellation or a failed assertion.
-            }
-
-            services.Dispose();
-            _shutdown.Dispose();
         }
     }
 

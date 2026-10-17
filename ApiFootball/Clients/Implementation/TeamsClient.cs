@@ -3,24 +3,29 @@ using Microsoft.Extensions.Options;
 
 namespace ApiFootball.Clients.Implementation;
 
-public class TeamsClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options) : BaseClient(factory, options), ITeamsClient
+public class TeamsClient(IHttpClientFactory factory, IOptions<ApiFootballOptions> options)
+    : BaseClient(factory, options), ITeamsClient
 {
     protected override string Route => "teams";
 
     /// <inheritdoc />
-    public async Task<PagedResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null, int? league = null, int? season = null, string? country = null,
+    public async Task<PagedResponse<TeamInformationResponse>> GetTeamsInformation(int? id = null, string? name = null,
+        int? league = null, int? season = null, string? country = null,
         string? code = null, int? venue = null, string? search = null, CancellationToken cancellationToken = default)
     {
-        var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(league), league), (nameof(season), season), (nameof(country), country), (nameof(code), code),
+        var queryString = BuildQueryString((nameof(id), id), (nameof(name), name), (nameof(league), league),
+            (nameof(season), season), (nameof(country), country), (nameof(code), code),
             (nameof(venue), venue), (nameof(search), search));
         return await GetAsync<PagedResponse<TeamInformationResponse>>(queryString, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<ObjectResponse<TeamStatisticsResponse>> GetTeamStatistics(int league, int season, int team, DateOnly? date = null,
+    public async Task<ObjectResponse<TeamStatisticsResponse>> GetTeamStatistics(int league, int season, int team,
+        DateOnly? date = null,
         CancellationToken cancellationToken = default)
     {
-        var queryString = BuildQueryString("/statistics", (nameof(league), league), (nameof(season), season), (nameof(team), team), (nameof(date), date));
+        var queryString = BuildQueryString("/statistics", (nameof(league), league), (nameof(season), season),
+            (nameof(team), team), (nameof(date), date));
         return await GetAsync<ObjectResponse<TeamStatisticsResponse>>(queryString, cancellationToken);
     }
 

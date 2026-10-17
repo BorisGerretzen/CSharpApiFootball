@@ -7,7 +7,7 @@ public sealed class FixturesLeague
     public string? Country { get; init; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
-    public LeagueType Type { get; init; }
+    public LeagueType? Type { get; init; }
 
     public required string Logo { get; init; }
     public string? Flag { get; init; }

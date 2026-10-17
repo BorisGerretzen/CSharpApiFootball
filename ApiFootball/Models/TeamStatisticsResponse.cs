@@ -9,10 +9,11 @@ public sealed class TeamStatisticsResponse
     public TeamStatisticsFixtures? Fixtures { get; init; }
     public TeamStatisticsGoals? Goals { get; init; }
     public TeamStatisticsBiggest? Biggest { get; init; }
-    [JsonPropertyName("clean_sheet")]
-    public TeamStatisticsCount? CleanSheet { get; init; }
-    [JsonPropertyName("failed_to_score")]
-    public TeamStatisticsCount? FailedToScore { get; init; }
+
+    [JsonPropertyName("clean_sheet")] public TeamStatisticsCount? CleanSheet { get; init; }
+
+    [JsonPropertyName("failed_to_score")] public TeamStatisticsCount? FailedToScore { get; init; }
+
     public TeamStatisticsPenalty? Penalty { get; init; }
     public List<TeamStatisticsLineup>? Lineups { get; init; }
     public Dictionary<string, Dictionary<string, TeamStatisticsCardCount>>? Cards { get; init; }

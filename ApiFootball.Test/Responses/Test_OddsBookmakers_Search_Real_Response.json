@@ -1,1 +1,18 @@
-{"get":"odds\/bookmakers","parameters":{"search":"Bet365"},"errors":[],"results":1,"paging":{"current":1,"total":1},"response":[{"id":8,"name":"Bet365"}]}
+{
+  "get": "odds\/bookmakers",
+  "parameters": {
+    "search": "Bet365"
+  },
+  "errors": [],
+  "results": 1,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "id": 8,
+      "name": "Bet365"
+    }
+  ]
+}

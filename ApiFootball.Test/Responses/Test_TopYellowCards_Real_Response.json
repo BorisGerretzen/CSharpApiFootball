@@ -1,1 +1,1915 @@
-{"get":"players\/topyellowcards","parameters":{"league":"39","season":"2024"},"errors":[],"results":20,"paging":{"current":1,"total":1},"response":[{"player":{"id":2823,"name":"S. Luki\u0107","firstname":"Sa\u0161a","lastname":"Luki\u0107","age":29,"birth":{"date":"1996-08-13","place":"\u0160abac","country":"Serbia"},"nationality":"Serbia","height":"183","weight":"76","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/2823.png"},"statistics":[{"team":{"id":36,"name":"Fulham","logo":"https:\/\/media.api-sports.io\/football\/teams\/36.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":30,"lineups":29,"minutes":2356,"number":null,"position":"Midfielder","rating":"6.910000","captain":false},"substitutes":{"in":1,"out":null,"bench":null},"shots":{"total":11,"on":3},"goals":{"total":null,"conceded":0,"assists":2,"saves":null},"passes":{"total":1195,"key":27,"accuracy":null},"tackles":{"total":68,"blocks":7,"interceptions":28},"duels":{"total":256,"won":121},"dribbles":{"attempts":13,"success":8,"past":null},"fouls":{"drawn":26,"committed":66},"cards":{"yellow":12,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":19733,"name":"F. Downes","firstname":"Flynn","lastname":"Downes","age":26,"birth":{"date":"1999-01-20","place":"Brentwood","country":"England"},"nationality":"England","height":"173","weight":"70","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/19733.png"},"statistics":[{"team":{"id":41,"name":"Southampton","logo":"https:\/\/media.api-sports.io\/football\/teams\/41.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":27,"lineups":25,"minutes":2156,"number":null,"position":"Midfielder","rating":"6.722222","captain":false},"substitutes":{"in":2,"out":7,"bench":4},"shots":{"total":6,"on":3},"goals":{"total":1,"conceded":0,"assists":0,"saves":null},"passes":{"total":1105,"key":15,"accuracy":null},"tackles":{"total":49,"blocks":9,"interceptions":32},"duels":{"total":224,"won":114},"dribbles":{"attempts":16,"success":8,"past":null},"fouls":{"drawn":39,"committed":50},"cards":{"yellow":12,"yellowred":0,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":195103,"name":"Jo\u00e3o Gomes","firstname":"Jo\u00e3o Victor","lastname":"Gomes da Silva","age":24,"birth":{"date":"2001-02-12","place":"Rio de Janeiro","country":"Brazil"},"nationality":"Brazil","height":"176","weight":"74","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/195103.png"},"statistics":[{"team":{"id":39,"name":"Wolves","logo":"https:\/\/media.api-sports.io\/football\/teams\/39.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":36,"lineups":36,"minutes":2987,"number":null,"position":"Midfielder","rating":"6.861111","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":24,"on":7},"goals":{"total":3,"conceded":0,"assists":1,"saves":null},"passes":{"total":1571,"key":23,"accuracy":null},"tackles":{"total":117,"blocks":4,"interceptions":25},"duels":{"total":441,"won":205},"dribbles":{"attempts":58,"success":30,"past":null},"fouls":{"drawn":47,"committed":70},"cards":{"yellow":11,"yellowred":null,"red":1},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":18746,"name":"M. Gibbs-White","firstname":"Morgan Anthony","lastname":"Gibbs-White","age":25,"birth":{"date":"2000-01-27","place":"Stafford","country":"England"},"nationality":"England","height":"171","weight":"66","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/18746.png"},"statistics":[{"team":{"id":65,"name":"Nottingham Forest","logo":"https:\/\/media.api-sports.io\/football\/teams\/65.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":34,"lineups":34,"minutes":2822,"number":null,"position":"Midfielder","rating":"7.264705","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":48,"on":22},"goals":{"total":7,"conceded":0,"assists":8,"saves":null},"passes":{"total":1214,"key":52,"accuracy":null},"tackles":{"total":43,"blocks":5,"interceptions":21},"duels":{"total":344,"won":155},"dribbles":{"attempts":67,"success":32,"past":null},"fouls":{"drawn":40,"committed":38},"cards":{"yellow":11,"yellowred":null,"red":1},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":116117,"name":"M. Caicedo","firstname":"Mois\u00e9s Isaac","lastname":"Caicedo Corozo","age":24,"birth":{"date":"2001-11-02","place":"Santo Domingo","country":"Ecuador"},"nationality":"Ecuador","height":"178","weight":"73","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/116117.png"},"statistics":[{"team":{"id":49,"name":"Chelsea","logo":"https:\/\/media.api-sports.io\/football\/teams\/49.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":38,"lineups":38,"minutes":3356,"number":null,"position":"Midfielder","rating":"7.236842","captain":false},"substitutes":{"in":0,"out":5,"bench":0},"shots":{"total":11,"on":3},"goals":{"total":1,"conceded":0,"assists":2,"saves":null},"passes":{"total":2153,"key":30,"accuracy":51},"tackles":{"total":114,"blocks":10,"interceptions":48},"duels":{"total":401,"won":236},"dribbles":{"attempts":51,"success":29,"past":null},"fouls":{"drawn":58,"committed":70},"cards":{"yellow":11,"yellowred":0,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":161948,"name":"L. Delap","firstname":"Liam Rory","lastname":"Delap","age":22,"birth":{"date":"2003-02-08","place":"Winchester","country":"England"},"nationality":"England","height":"186","weight":"72","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/161948.png"},"statistics":[{"team":{"id":57,"name":"Ipswich","logo":"https:\/\/media.api-sports.io\/football\/teams\/57.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":37,"lineups":35,"minutes":2612,"number":null,"position":"Attacker","rating":"6.878378","captain":false},"substitutes":{"in":2,"out":null,"bench":null},"shots":{"total":53,"on":32},"goals":{"total":12,"conceded":0,"assists":2,"saves":null},"passes":{"total":346,"key":20,"accuracy":null},"tackles":{"total":11,"blocks":null,"interceptions":2},"duels":{"total":414,"won":158},"dribbles":{"attempts":76,"success":40,"past":null},"fouls":{"drawn":51,"committed":72},"cards":{"yellow":11,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":2,"missed":0,"saved":null}}]},{"player":{"id":18961,"name":"D. Burn","firstname":"Daniel Johnson","lastname":"Burn","age":33,"birth":{"date":"1992-05-09","place":"Blyth","country":"England"},"nationality":"England","height":"198","weight":"87","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/18961.png"},"statistics":[{"team":{"id":34,"name":"Newcastle","logo":"https:\/\/media.api-sports.io\/football\/teams\/34.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":37,"lineups":37,"minutes":3330,"number":null,"position":"Defender","rating":"6.978378","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":20,"on":7},"goals":{"total":1,"conceded":0,"assists":1,"saves":null},"passes":{"total":1993,"key":9,"accuracy":47},"tackles":{"total":39,"blocks":26,"interceptions":27},"duels":{"total":328,"won":200},"dribbles":{"attempts":4,"success":3,"past":null},"fouls":{"drawn":12,"committed":34},"cards":{"yellow":11,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":18806,"name":"W. Hughes","firstname":"William James","lastname":"Hughes","age":30,"birth":{"date":"1995-04-17","place":"Surrey","country":"England"},"nationality":"England","height":"185","weight":"74","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/18806.png"},"statistics":[{"team":{"id":52,"name":"Crystal Palace","logo":"https:\/\/media.api-sports.io\/football\/teams\/52.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":33,"lineups":27,"minutes":2118,"number":null,"position":"Midfielder","rating":"6.775000","captain":false},"substitutes":{"in":6,"out":null,"bench":null},"shots":{"total":9,"on":1},"goals":{"total":null,"conceded":0,"assists":3,"saves":null},"passes":{"total":890,"key":33,"accuracy":null},"tackles":{"total":66,"blocks":14,"interceptions":22},"duels":{"total":274,"won":121},"dribbles":{"attempts":12,"success":5,"past":null},"fouls":{"drawn":31,"committed":65},"cards":{"yellow":11,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":51494,"name":"M. Ugarte","firstname":"Manuel","lastname":"Ugarte Ribeiro","age":25,"birth":{"date":"2001-04-11","place":"Montevideo","country":"Uruguay"},"nationality":"Uruguay","height":"182","weight":"77","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/51494.png"},"statistics":[{"team":{"id":33,"name":"Manchester United","logo":"https:\/\/media.api-sports.io\/football\/teams\/33.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":29,"lineups":27,"minutes":1796,"number":null,"position":"Midfielder","rating":"6.824137","captain":false},"substitutes":{"in":2,"out":null,"bench":null},"shots":{"total":12,"on":4},"goals":{"total":1,"conceded":0,"assists":2,"saves":null},"passes":{"total":897,"key":10,"accuracy":null},"tackles":{"total":77,"blocks":4,"interceptions":27},"duels":{"total":277,"won":146},"dribbles":{"attempts":28,"success":18,"past":null},"fouls":{"drawn":33,"committed":41},"cards":{"yellow":11,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":361497,"name":"D. Huijsen","firstname":"Dean Donny","lastname":"Huijsen","age":20,"birth":{"date":"2005-04-14","place":"Amsterdam","country":"Netherlands"},"nationality":"Netherlands","height":"195","weight":"87","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/361497.png"},"statistics":[{"team":{"id":35,"name":"Bournemouth","logo":"https:\/\/media.api-sports.io\/football\/teams\/35.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":38,"lineups":31,"minutes":2422,"number":null,"position":"Defender","rating":"7.229032","captain":false},"substitutes":{"in":7,"out":null,"bench":null},"shots":{"total":12,"on":4},"goals":{"total":3,"conceded":0,"assists":2,"saves":null},"passes":{"total":1601,"key":15,"accuracy":42},"tackles":{"total":36,"blocks":29,"interceptions":51},"duels":{"total":206,"won":116},"dribbles":{"attempts":5,"success":2,"past":null},"fouls":{"drawn":10,"committed":31},"cards":{"yellow":10,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":138908,"name":"E. Anderson","firstname":"Elliot","lastname":"Anderson","age":23,"birth":{"date":"2002-11-06","place":"Whitley Bay","country":"England"},"nationality":"Scotland","height":"179","weight":"69","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/138908.png"},"statistics":[{"team":{"id":65,"name":"Nottingham Forest","logo":"https:\/\/media.api-sports.io\/football\/teams\/65.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":37,"lineups":34,"minutes":2742,"number":null,"position":"Midfielder","rating":"7.027027","captain":false},"substitutes":{"in":3,"out":null,"bench":null},"shots":{"total":20,"on":7},"goals":{"total":2,"conceded":0,"assists":6,"saves":null},"passes":{"total":1287,"key":37,"accuracy":null},"tackles":{"total":91,"blocks":9,"interceptions":31},"duels":{"total":462,"won":242},"dribbles":{"attempts":69,"success":37,"past":null},"fouls":{"drawn":58,"committed":48},"cards":{"yellow":10,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":19170,"name":"M. Rogers","firstname":"Morgan Elliot","lastname":"Rogers","age":23,"birth":{"date":"2002-07-26","place":"Halesowen","country":"England"},"nationality":"England","height":"187","weight":"80","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/19170.png"},"statistics":[{"team":{"id":66,"name":"Aston Villa","logo":"https:\/\/media.api-sports.io\/football\/teams\/66.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":37,"lineups":37,"minutes":3129,"number":null,"position":"Attacker","rating":"6.989189","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":34,"on":20},"goals":{"total":8,"conceded":0,"assists":10,"saves":null},"passes":{"total":865,"key":52,"accuracy":null},"tackles":{"total":43,"blocks":7,"interceptions":6},"duels":{"total":445,"won":173},"dribbles":{"attempts":140,"success":66,"past":null},"fouls":{"drawn":51,"committed":50},"cards":{"yellow":10,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":13736,"name":"D. Mu\u00f1oz","firstname":"Daniel","lastname":"Mu\u00f1oz Mej\u00eda","age":29,"birth":{"date":"1996-05-26","place":"Amalfi","country":"Colombia"},"nationality":"Colombia","height":"180","weight":"73","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/13736.png"},"statistics":[{"team":{"id":52,"name":"Crystal Palace","logo":"https:\/\/media.api-sports.io\/football\/teams\/52.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":37,"lineups":37,"minutes":3233,"number":null,"position":"Defender","rating":"7.086486","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":31,"on":18},"goals":{"total":4,"conceded":0,"assists":5,"saves":null},"passes":{"total":1135,"key":47,"accuracy":null},"tackles":{"total":123,"blocks":6,"interceptions":44},"duels":{"total":446,"won":220},"dribbles":{"attempts":54,"success":21,"past":null},"fouls":{"drawn":19,"committed":56},"cards":{"yellow":10,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":19305,"name":"R. Yates","firstname":"Ryan James","lastname":"Yates","age":28,"birth":{"date":"1997-11-21","place":"Nottingham","country":"England"},"nationality":"England","height":"190","weight":"87","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/19305.png"},"statistics":[{"team":{"id":65,"name":"Nottingham Forest","logo":"https:\/\/media.api-sports.io\/football\/teams\/65.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":35,"lineups":18,"minutes":1905,"number":null,"position":"Midfielder","rating":"6.782857","captain":false},"substitutes":{"in":17,"out":5,"bench":19},"shots":{"total":22,"on":9},"goals":{"total":2,"conceded":0,"assists":1,"saves":null},"passes":{"total":747,"key":18,"accuracy":null},"tackles":{"total":42,"blocks":10,"interceptions":25},"duels":{"total":268,"won":145},"dribbles":{"attempts":14,"success":9,"past":null},"fouls":{"drawn":49,"committed":53},"cards":{"yellow":10,"yellowred":0,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":1646,"name":"Lucas Paquet\u00e1","firstname":"Lucas","lastname":"Tolentino Coelho de Lima","age":28,"birth":{"date":"1997-08-27","place":"Rio de Janeiro","country":"Brazil"},"nationality":"Brazil","height":"180","weight":"72","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/1646.png"},"statistics":[{"team":{"id":48,"name":"West Ham","logo":"https:\/\/media.api-sports.io\/football\/teams\/48.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":33,"lineups":27,"minutes":2384,"number":null,"position":"Midfielder","rating":"6.890909","captain":false},"substitutes":{"in":6,"out":11,"bench":7},"shots":{"total":27,"on":6},"goals":{"total":4,"conceded":0,"assists":0,"saves":null},"passes":{"total":1408,"key":36,"accuracy":null},"tackles":{"total":66,"blocks":4,"interceptions":18},"duels":{"total":407,"won":197},"dribbles":{"attempts":42,"success":21,"past":null},"fouls":{"drawn":62,"committed":53},"cards":{"yellow":10,"yellowred":0,"red":0},"penalty":{"won":null,"commited":null,"scored":2,"missed":0,"saved":null}}]},{"player":{"id":19558,"name":"Sam Morsy","firstname":"Samy Sayed","lastname":"Morsy","age":34,"birth":{"date":"1991-09-10","place":"Wolverhampton","country":"England"},"nationality":"Egypt","height":"175 cm","weight":"70 kg","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/19558.png"},"statistics":[{"team":{"id":57,"name":"Ipswich","logo":"https:\/\/media.api-sports.io\/football\/teams\/57.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":33,"lineups":31,"minutes":2755,"number":null,"position":"Midfielder","rating":"6.754545","captain":false},"substitutes":{"in":2,"out":8,"bench":4},"shots":{"total":9,"on":3},"goals":{"total":1,"conceded":0,"assists":1,"saves":null},"passes":{"total":1421,"key":24,"accuracy":null},"tackles":{"total":68,"blocks":13,"interceptions":29},"duels":{"total":256,"won":130},"dribbles":{"attempts":26,"success":17,"past":null},"fouls":{"drawn":27,"committed":48},"cards":{"yellow":10,"yellowred":0,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":723,"name":"Joelinton","firstname":"Joelinton C\u00e1ssio","lastname":"Apolin\u00e1rio de Lira","age":29,"birth":{"date":"1996-08-14","place":"Alian\u00e7a","country":"Brazil"},"nationality":"Brazil","height":"186","weight":"81","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/723.png"},"statistics":[{"team":{"id":34,"name":"Newcastle","logo":"https:\/\/media.api-sports.io\/football\/teams\/34.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":29,"lineups":29,"minutes":2404,"number":null,"position":"Midfielder","rating":"6.937931","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":32,"on":14},"goals":{"total":4,"conceded":0,"assists":3,"saves":null},"passes":{"total":1008,"key":24,"accuracy":null},"tackles":{"total":57,"blocks":7,"interceptions":22},"duels":{"total":369,"won":165},"dribbles":{"attempts":43,"success":15,"past":null},"fouls":{"drawn":35,"committed":58},"cards":{"yellow":10,"yellowred":null,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":47380,"name":"Marc Cucurella","firstname":"Marc","lastname":"Cucurella Saseta","age":27,"birth":{"date":"1998-07-22","place":"Alella","country":"Spain"},"nationality":"Spain","height":"174","weight":"66","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/47380.png"},"statistics":[{"team":{"id":49,"name":"Chelsea","logo":"https:\/\/media.api-sports.io\/football\/teams\/49.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":36,"lineups":33,"minutes":2990,"number":null,"position":"Defender","rating":"7.033333","captain":false},"substitutes":{"in":3,"out":5,"bench":3},"shots":{"total":19,"on":12},"goals":{"total":5,"conceded":0,"assists":1,"saves":null},"passes":{"total":1632,"key":19,"accuracy":40},"tackles":{"total":67,"blocks":16,"interceptions":28},"duels":{"total":278,"won":141},"dribbles":{"attempts":13,"success":4,"past":null},"fouls":{"drawn":38,"committed":37},"cards":{"yellow":9,"yellowred":1,"red":0},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":2806,"name":"F. Sch\u00e4r","firstname":"Fabian Lukas","lastname":"Sch\u00e4r","age":34,"birth":{"date":"1991-12-20","place":"Wil","country":"Switzerland"},"nationality":"Switzerland","height":"186","weight":"84","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/2806.png"},"statistics":[{"team":{"id":34,"name":"Newcastle","logo":"https:\/\/media.api-sports.io\/football\/teams\/34.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":34,"lineups":33,"minutes":2937,"number":null,"position":"Defender","rating":"6.964705","captain":false},"substitutes":{"in":1,"out":null,"bench":null},"shots":{"total":28,"on":11},"goals":{"total":4,"conceded":0,"assists":0,"saves":null},"passes":{"total":1941,"key":5,"accuracy":48},"tackles":{"total":36,"blocks":25,"interceptions":45},"duels":{"total":251,"won":115},"dribbles":{"attempts":11,"success":8,"past":null},"fouls":{"drawn":15,"committed":35},"cards":{"yellow":9,"yellowred":null,"red":1},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]},{"player":{"id":67971,"name":"M. Gu\u00e9hi","firstname":"Addji Keaninkin Marc-Israel","lastname":"Gu\u00e9hi","age":25,"birth":{"date":"2000-07-13","place":"Abidjan","country":"C\u00f4te d'Ivoire"},"nationality":"England","height":"182","weight":"80","injured":false,"photo":"https:\/\/media.api-sports.io\/football\/players\/67971.png"},"statistics":[{"team":{"id":52,"name":"Crystal Palace","logo":"https:\/\/media.api-sports.io\/football\/teams\/52.png"},"league":{"id":39,"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb-eng.svg","season":2024},"games":{"appearences":34,"lineups":34,"minutes":3060,"number":null,"position":"Defender","rating":"7.091176","captain":false},"substitutes":{"in":0,"out":null,"bench":null},"shots":{"total":9,"on":7},"goals":{"total":3,"conceded":0,"assists":2,"saves":null},"passes":{"total":1731,"key":16,"accuracy":42},"tackles":{"total":62,"blocks":23,"interceptions":28},"duels":{"total":285,"won":169},"dribbles":{"attempts":14,"success":12,"past":null},"fouls":{"drawn":27,"committed":24},"cards":{"yellow":9,"yellowred":null,"red":1},"penalty":{"won":null,"commited":null,"scored":0,"missed":0,"saved":null}}]}]}
+{
+  "get": "players\/topyellowcards",
+  "parameters": {
+    "league": "39",
+    "season": "2024"
+  },
+  "errors": [],
+  "results": 20,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "player": {
+        "id": 2823,
+        "name": "S. Luki\u0107",
+        "firstname": "Sa\u0161a",
+        "lastname": "Luki\u0107",
+        "age": 29,
+        "birth": {
+          "date": "1996-08-13",
+          "place": "\u0160abac",
+          "country": "Serbia"
+        },
+        "nationality": "Serbia",
+        "height": "183",
+        "weight": "76",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/2823.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 36,
+            "name": "Fulham",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/36.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 30,
+            "lineups": 29,
+            "minutes": 2356,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.910000",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 11,
+            "on": 3
+          },
+          "goals": {
+            "total": null,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 1195,
+            "key": 27,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 68,
+            "blocks": 7,
+            "interceptions": 28
+          },
+          "duels": {
+            "total": 256,
+            "won": 121
+          },
+          "dribbles": {
+            "attempts": 13,
+            "success": 8,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 26,
+            "committed": 66
+          },
+          "cards": {
+            "yellow": 12,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 19733,
+        "name": "F. Downes",
+        "firstname": "Flynn",
+        "lastname": "Downes",
+        "age": 26,
+        "birth": {
+          "date": "1999-01-20",
+          "place": "Brentwood",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "173",
+        "weight": "70",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/19733.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 41,
+            "name": "Southampton",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 27,
+            "lineups": 25,
+            "minutes": 2156,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.722222",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 7,
+            "bench": 4
+          },
+          "shots": {
+            "total": 6,
+            "on": 3
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 1105,
+            "key": 15,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 49,
+            "blocks": 9,
+            "interceptions": 32
+          },
+          "duels": {
+            "total": 224,
+            "won": 114
+          },
+          "dribbles": {
+            "attempts": 16,
+            "success": 8,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 39,
+            "committed": 50
+          },
+          "cards": {
+            "yellow": 12,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 195103,
+        "name": "Jo\u00e3o Gomes",
+        "firstname": "Jo\u00e3o Victor",
+        "lastname": "Gomes da Silva",
+        "age": 24,
+        "birth": {
+          "date": "2001-02-12",
+          "place": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "176",
+        "weight": "74",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/195103.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 36,
+            "lineups": 36,
+            "minutes": 2987,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.861111",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 24,
+            "on": 7
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 1571,
+            "key": 23,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 117,
+            "blocks": 4,
+            "interceptions": 25
+          },
+          "duels": {
+            "total": 441,
+            "won": 205
+          },
+          "dribbles": {
+            "attempts": 58,
+            "success": 30,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 47,
+            "committed": 70
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": null,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 18746,
+        "name": "M. Gibbs-White",
+        "firstname": "Morgan Anthony",
+        "lastname": "Gibbs-White",
+        "age": 25,
+        "birth": {
+          "date": "2000-01-27",
+          "place": "Stafford",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "171",
+        "weight": "66",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/18746.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/65.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 34,
+            "lineups": 34,
+            "minutes": 2822,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "7.264705",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 48,
+            "on": 22
+          },
+          "goals": {
+            "total": 7,
+            "conceded": 0,
+            "assists": 8,
+            "saves": null
+          },
+          "passes": {
+            "total": 1214,
+            "key": 52,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 43,
+            "blocks": 5,
+            "interceptions": 21
+          },
+          "duels": {
+            "total": 344,
+            "won": 155
+          },
+          "dribbles": {
+            "attempts": 67,
+            "success": 32,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 40,
+            "committed": 38
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": null,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 116117,
+        "name": "M. Caicedo",
+        "firstname": "Mois\u00e9s Isaac",
+        "lastname": "Caicedo Corozo",
+        "age": 24,
+        "birth": {
+          "date": "2001-11-02",
+          "place": "Santo Domingo",
+          "country": "Ecuador"
+        },
+        "nationality": "Ecuador",
+        "height": "178",
+        "weight": "73",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/116117.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 38,
+            "lineups": 38,
+            "minutes": 3356,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "7.236842",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 5,
+            "bench": 0
+          },
+          "shots": {
+            "total": 11,
+            "on": 3
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 2153,
+            "key": 30,
+            "accuracy": 51
+          },
+          "tackles": {
+            "total": 114,
+            "blocks": 10,
+            "interceptions": 48
+          },
+          "duels": {
+            "total": 401,
+            "won": 236
+          },
+          "dribbles": {
+            "attempts": 51,
+            "success": 29,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 58,
+            "committed": 70
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 161948,
+        "name": "L. Delap",
+        "firstname": "Liam Rory",
+        "lastname": "Delap",
+        "age": 22,
+        "birth": {
+          "date": "2003-02-08",
+          "place": "Winchester",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "186",
+        "weight": "72",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/161948.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 57,
+            "name": "Ipswich",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/57.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 37,
+            "lineups": 35,
+            "minutes": 2612,
+            "number": null,
+            "position": "Attacker",
+            "rating": "6.878378",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 53,
+            "on": 32
+          },
+          "goals": {
+            "total": 12,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 346,
+            "key": 20,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 414,
+            "won": 158
+          },
+          "dribbles": {
+            "attempts": 76,
+            "success": 40,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 51,
+            "committed": 72
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 2,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 18961,
+        "name": "D. Burn",
+        "firstname": "Daniel Johnson",
+        "lastname": "Burn",
+        "age": 33,
+        "birth": {
+          "date": "1992-05-09",
+          "place": "Blyth",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "198",
+        "weight": "87",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/18961.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 37,
+            "lineups": 37,
+            "minutes": 3330,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.978378",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 20,
+            "on": 7
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 1993,
+            "key": 9,
+            "accuracy": 47
+          },
+          "tackles": {
+            "total": 39,
+            "blocks": 26,
+            "interceptions": 27
+          },
+          "duels": {
+            "total": 328,
+            "won": 200
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 12,
+            "committed": 34
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 18806,
+        "name": "W. Hughes",
+        "firstname": "William James",
+        "lastname": "Hughes",
+        "age": 30,
+        "birth": {
+          "date": "1995-04-17",
+          "place": "Surrey",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "185",
+        "weight": "74",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/18806.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 33,
+            "lineups": 27,
+            "minutes": 2118,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.775000",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 6,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 9,
+            "on": 1
+          },
+          "goals": {
+            "total": null,
+            "conceded": 0,
+            "assists": 3,
+            "saves": null
+          },
+          "passes": {
+            "total": 890,
+            "key": 33,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 66,
+            "blocks": 14,
+            "interceptions": 22
+          },
+          "duels": {
+            "total": 274,
+            "won": 121
+          },
+          "dribbles": {
+            "attempts": 12,
+            "success": 5,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 31,
+            "committed": 65
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 51494,
+        "name": "M. Ugarte",
+        "firstname": "Manuel",
+        "lastname": "Ugarte Ribeiro",
+        "age": 25,
+        "birth": {
+          "date": "2001-04-11",
+          "place": "Montevideo",
+          "country": "Uruguay"
+        },
+        "nationality": "Uruguay",
+        "height": "182",
+        "weight": "77",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/51494.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 29,
+            "lineups": 27,
+            "minutes": 1796,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.824137",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 12,
+            "on": 4
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 897,
+            "key": 10,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 77,
+            "blocks": 4,
+            "interceptions": 27
+          },
+          "duels": {
+            "total": 277,
+            "won": 146
+          },
+          "dribbles": {
+            "attempts": 28,
+            "success": 18,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 33,
+            "committed": 41
+          },
+          "cards": {
+            "yellow": 11,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 361497,
+        "name": "D. Huijsen",
+        "firstname": "Dean Donny",
+        "lastname": "Huijsen",
+        "age": 20,
+        "birth": {
+          "date": "2005-04-14",
+          "place": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "195",
+        "weight": "87",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/361497.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 35,
+            "name": "Bournemouth",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 38,
+            "lineups": 31,
+            "minutes": 2422,
+            "number": null,
+            "position": "Defender",
+            "rating": "7.229032",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 7,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 12,
+            "on": 4
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 1601,
+            "key": 15,
+            "accuracy": 42
+          },
+          "tackles": {
+            "total": 36,
+            "blocks": 29,
+            "interceptions": 51
+          },
+          "duels": {
+            "total": 206,
+            "won": 116
+          },
+          "dribbles": {
+            "attempts": 5,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 10,
+            "committed": 31
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 138908,
+        "name": "E. Anderson",
+        "firstname": "Elliot",
+        "lastname": "Anderson",
+        "age": 23,
+        "birth": {
+          "date": "2002-11-06",
+          "place": "Whitley Bay",
+          "country": "England"
+        },
+        "nationality": "Scotland",
+        "height": "179",
+        "weight": "69",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/138908.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/65.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 37,
+            "lineups": 34,
+            "minutes": 2742,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "7.027027",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 20,
+            "on": 7
+          },
+          "goals": {
+            "total": 2,
+            "conceded": 0,
+            "assists": 6,
+            "saves": null
+          },
+          "passes": {
+            "total": 1287,
+            "key": 37,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 91,
+            "blocks": 9,
+            "interceptions": 31
+          },
+          "duels": {
+            "total": 462,
+            "won": 242
+          },
+          "dribbles": {
+            "attempts": 69,
+            "success": 37,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 58,
+            "committed": 48
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 19170,
+        "name": "M. Rogers",
+        "firstname": "Morgan Elliot",
+        "lastname": "Rogers",
+        "age": 23,
+        "birth": {
+          "date": "2002-07-26",
+          "place": "Halesowen",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "187",
+        "weight": "80",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/19170.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 66,
+            "name": "Aston Villa",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 37,
+            "lineups": 37,
+            "minutes": 3129,
+            "number": null,
+            "position": "Attacker",
+            "rating": "6.989189",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 34,
+            "on": 20
+          },
+          "goals": {
+            "total": 8,
+            "conceded": 0,
+            "assists": 10,
+            "saves": null
+          },
+          "passes": {
+            "total": 865,
+            "key": 52,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 43,
+            "blocks": 7,
+            "interceptions": 6
+          },
+          "duels": {
+            "total": 445,
+            "won": 173
+          },
+          "dribbles": {
+            "attempts": 140,
+            "success": 66,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 51,
+            "committed": 50
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 13736,
+        "name": "D. Mu\u00f1oz",
+        "firstname": "Daniel",
+        "lastname": "Mu\u00f1oz Mej\u00eda",
+        "age": 29,
+        "birth": {
+          "date": "1996-05-26",
+          "place": "Amalfi",
+          "country": "Colombia"
+        },
+        "nationality": "Colombia",
+        "height": "180",
+        "weight": "73",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/13736.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 37,
+            "lineups": 37,
+            "minutes": 3233,
+            "number": null,
+            "position": "Defender",
+            "rating": "7.086486",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 31,
+            "on": 18
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 5,
+            "saves": null
+          },
+          "passes": {
+            "total": 1135,
+            "key": 47,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 123,
+            "blocks": 6,
+            "interceptions": 44
+          },
+          "duels": {
+            "total": 446,
+            "won": 220
+          },
+          "dribbles": {
+            "attempts": 54,
+            "success": 21,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 19,
+            "committed": 56
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 19305,
+        "name": "R. Yates",
+        "firstname": "Ryan James",
+        "lastname": "Yates",
+        "age": 28,
+        "birth": {
+          "date": "1997-11-21",
+          "place": "Nottingham",
+          "country": "England"
+        },
+        "nationality": "England",
+        "height": "190",
+        "weight": "87",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/19305.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/65.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 35,
+            "lineups": 18,
+            "minutes": 1905,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.782857",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 17,
+            "out": 5,
+            "bench": 19
+          },
+          "shots": {
+            "total": 22,
+            "on": 9
+          },
+          "goals": {
+            "total": 2,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 747,
+            "key": 18,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 42,
+            "blocks": 10,
+            "interceptions": 25
+          },
+          "duels": {
+            "total": 268,
+            "won": 145
+          },
+          "dribbles": {
+            "attempts": 14,
+            "success": 9,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 49,
+            "committed": 53
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1646,
+        "name": "Lucas Paquet\u00e1",
+        "firstname": "Lucas",
+        "lastname": "Tolentino Coelho de Lima",
+        "age": 28,
+        "birth": {
+          "date": "1997-08-27",
+          "place": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "180",
+        "weight": "72",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/1646.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 48,
+            "name": "West Ham",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 33,
+            "lineups": 27,
+            "minutes": 2384,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.890909",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 6,
+            "out": 11,
+            "bench": 7
+          },
+          "shots": {
+            "total": 27,
+            "on": 6
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 1408,
+            "key": 36,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 66,
+            "blocks": 4,
+            "interceptions": 18
+          },
+          "duels": {
+            "total": 407,
+            "won": 197
+          },
+          "dribbles": {
+            "attempts": 42,
+            "success": 21,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 62,
+            "committed": 53
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 2,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 19558,
+        "name": "Sam Morsy",
+        "firstname": "Samy Sayed",
+        "lastname": "Morsy",
+        "age": 34,
+        "birth": {
+          "date": "1991-09-10",
+          "place": "Wolverhampton",
+          "country": "England"
+        },
+        "nationality": "Egypt",
+        "height": "175 cm",
+        "weight": "70 kg",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/19558.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 57,
+            "name": "Ipswich",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/57.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 33,
+            "lineups": 31,
+            "minutes": 2755,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.754545",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 8,
+            "bench": 4
+          },
+          "shots": {
+            "total": 9,
+            "on": 3
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 1421,
+            "key": 24,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 68,
+            "blocks": 13,
+            "interceptions": 29
+          },
+          "duels": {
+            "total": 256,
+            "won": 130
+          },
+          "dribbles": {
+            "attempts": 26,
+            "success": 17,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 27,
+            "committed": 48
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 723,
+        "name": "Joelinton",
+        "firstname": "Joelinton C\u00e1ssio",
+        "lastname": "Apolin\u00e1rio de Lira",
+        "age": 29,
+        "birth": {
+          "date": "1996-08-14",
+          "place": "Alian\u00e7a",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "186",
+        "weight": "81",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/723.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 29,
+            "lineups": 29,
+            "minutes": 2404,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.937931",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 32,
+            "on": 14
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 3,
+            "saves": null
+          },
+          "passes": {
+            "total": 1008,
+            "key": 24,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": 57,
+            "blocks": 7,
+            "interceptions": 22
+          },
+          "duels": {
+            "total": 369,
+            "won": 165
+          },
+          "dribbles": {
+            "attempts": 43,
+            "success": 15,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 35,
+            "committed": 58
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": null,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 47380,
+        "name": "Marc Cucurella",
+        "firstname": "Marc",
+        "lastname": "Cucurella Saseta",
+        "age": 27,
+        "birth": {
+          "date": "1998-07-22",
+          "place": "Alella",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "174",
+        "weight": "66",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/47380.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 36,
+            "lineups": 33,
+            "minutes": 2990,
+            "number": null,
+            "position": "Defender",
+            "rating": "7.033333",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 5,
+            "bench": 3
+          },
+          "shots": {
+            "total": 19,
+            "on": 12
+          },
+          "goals": {
+            "total": 5,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 1632,
+            "key": 19,
+            "accuracy": 40
+          },
+          "tackles": {
+            "total": 67,
+            "blocks": 16,
+            "interceptions": 28
+          },
+          "duels": {
+            "total": 278,
+            "won": 141
+          },
+          "dribbles": {
+            "attempts": 13,
+            "success": 4,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 38,
+            "committed": 37
+          },
+          "cards": {
+            "yellow": 9,
+            "yellowred": 1,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2806,
+        "name": "F. Sch\u00e4r",
+        "firstname": "Fabian Lukas",
+        "lastname": "Sch\u00e4r",
+        "age": 34,
+        "birth": {
+          "date": "1991-12-20",
+          "place": "Wil",
+          "country": "Switzerland"
+        },
+        "nationality": "Switzerland",
+        "height": "186",
+        "weight": "84",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/2806.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 34,
+            "lineups": 33,
+            "minutes": 2937,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.964705",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 28,
+            "on": 11
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 1941,
+            "key": 5,
+            "accuracy": 48
+          },
+          "tackles": {
+            "total": 36,
+            "blocks": 25,
+            "interceptions": 45
+          },
+          "duels": {
+            "total": 251,
+            "won": 115
+          },
+          "dribbles": {
+            "attempts": 11,
+            "success": 8,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 15,
+            "committed": 35
+          },
+          "cards": {
+            "yellow": 9,
+            "yellowred": null,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 67971,
+        "name": "M. Gu\u00e9hi",
+        "firstname": "Addji Keaninkin Marc-Israel",
+        "lastname": "Gu\u00e9hi",
+        "age": 25,
+        "birth": {
+          "date": "2000-07-13",
+          "place": "Abidjan",
+          "country": "C\u00f4te d'Ivoire"
+        },
+        "nationality": "England",
+        "height": "182",
+        "weight": "80",
+        "injured": false,
+        "photo": "https:\/\/media.api-sports.io\/football\/players\/67971.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024
+          },
+          "games": {
+            "appearences": 34,
+            "lineups": 34,
+            "minutes": 3060,
+            "number": null,
+            "position": "Defender",
+            "rating": "7.091176",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": null,
+            "bench": null
+          },
+          "shots": {
+            "total": 9,
+            "on": 7
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 1731,
+            "key": 16,
+            "accuracy": 42
+          },
+          "tackles": {
+            "total": 62,
+            "blocks": 23,
+            "interceptions": 28
+          },
+          "duels": {
+            "total": 285,
+            "won": 169
+          },
+          "dribbles": {
+            "attempts": 14,
+            "success": 12,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 27,
+            "committed": 24
+          },
+          "cards": {
+            "yellow": 9,
+            "yellowred": null,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    }
+  ]
+}

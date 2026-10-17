@@ -20,19 +20,19 @@ public class ApiFootballOptions
     public bool ThrowOnError { get; set; } = false;
 
     /// <summary>
-    /// Rate limiter options for the api-football clients. Set to null to disable rate limiting.
-    /// Use one of the predefined options for the plans of api-football, or create your own. The predefined options are:
-    /// <ul>
-    ///   <li><see cref="ApiFootballRateLimiterOptions.FreePlan"/>; </li>
-    ///   <li><see cref="ApiFootballRateLimiterOptions.ProPlan"/>; </li>
-    ///   <li><see cref="ApiFootballRateLimiterOptions.UltraPlan"/>; </li>
-    ///   <li><see cref="ApiFootballRateLimiterOptions.MegaPlan"/>; </li>
-    /// </ul>
+    ///     Rate limiter options for the api-football clients. Set to null to disable rate limiting.
+    ///     Use one of the predefined options for the plans of api-football, or create your own. The predefined options are:
+    ///     <ul>
+    ///         <li><see cref="ApiFootballRateLimiterOptions.FreePlan" />; </li>
+    ///         <li><see cref="ApiFootballRateLimiterOptions.ProPlan" />; </li>
+    ///         <li><see cref="ApiFootballRateLimiterOptions.UltraPlan" />; </li>
+    ///         <li><see cref="ApiFootballRateLimiterOptions.MegaPlan" />; </li>
+    ///     </ul>
     /// </summary>
-    public ApiFootballRateLimiterOptions? RateLimiterOptions { get; set; } = ApiFootballRateLimiterOptions.FreePlan;
-    
+    public ApiFootballRateLimiterOptions? RateLimiterOptions { get; set; } = null;
+
     /// <summary>
-    /// Optional action to configure the HttpClient used by the api-football clients.
+    ///     Optional action to configure the HttpClient used by the api-football clients.
     /// </summary>
     public Action<IHttpClientBuilder>? ConfigureHttpClient { get; set; }
 }

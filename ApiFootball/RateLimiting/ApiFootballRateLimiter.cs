@@ -5,8 +5,8 @@ namespace ApiFootball.RateLimiting;
 
 internal sealed class ApiFootballRateLimiter : IDisposable
 {
-    private readonly List<RateLimiter> _limiters = [];
     private readonly RateLimiter? _combined;
+    private readonly List<RateLimiter> _limiters = [];
 
     public ApiFootballRateLimiter(ApiFootballRateLimiterOptions options)
     {
@@ -16,7 +16,6 @@ internal sealed class ApiFootballRateLimiter : IDisposable
         const QueueProcessingOrder order = QueueProcessingOrder.OldestFirst;
 
         if (options.MaxConcurrentRequests is { } concurrent)
-        {
             _limiters.Add(new ConcurrencyLimiter(
                 new ConcurrencyLimiterOptions
                 {
@@ -24,10 +23,8 @@ internal sealed class ApiFootballRateLimiter : IDisposable
                     QueueLimit = queueLimit,
                     QueueProcessingOrder = order
                 }));
-        }
 
         if (options.RequestsPerSecond is { } perSecond)
-        {
             _limiters.Add(new SlidingWindowRateLimiter(
                 new SlidingWindowRateLimiterOptions
                 {
@@ -38,10 +35,8 @@ internal sealed class ApiFootballRateLimiter : IDisposable
                     QueueProcessingOrder = order,
                     AutoReplenishment = true
                 }));
-        }
 
         if (options.RequestsPerMinute is { } perMinute)
-        {
             _limiters.Add(new SlidingWindowRateLimiter(
                 new SlidingWindowRateLimiterOptions
                 {
@@ -52,7 +47,6 @@ internal sealed class ApiFootballRateLimiter : IDisposable
                     QueueProcessingOrder = order,
                     AutoReplenishment = true
                 }));
-        }
 
         _combined = _limiters.Count switch
         {
@@ -60,6 +54,15 @@ internal sealed class ApiFootballRateLimiter : IDisposable
             1 => _limiters[0],
             _ => RateLimiter.CreateChained(_limiters.ToArray())
         };
+    }
+
+    public void Dispose()
+    {
+        if (_limiters.Count > 1)
+            _combined?.Dispose();
+
+        foreach (var limiter in _limiters)
+            limiter.Dispose();
     }
 
     public async ValueTask<RateLimitLease?> AcquireAsync(
@@ -70,14 +73,5 @@ internal sealed class ApiFootballRateLimiter : IDisposable
 
         return await _combined.AcquireAsync(
             1, cancellationToken);
-    }
-
-    public void Dispose()
-    {
-        if (_limiters.Count > 1)
-            _combined?.Dispose();
-
-        foreach (var limiter in _limiters)
-            limiter.Dispose();
     }
 }

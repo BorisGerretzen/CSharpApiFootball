@@ -2,6 +2,10 @@ namespace ApiFootball.Quota;
 
 public interface IApiFootballQuotaMonitor
 {
+    /// <summary>
+    ///     Shows the last received quota information.
+    ///     Note that out of order responses may cause this value to be inaccurate.
+    /// </summary>
     ApiFootballQuota? Current { get; }
 }
 

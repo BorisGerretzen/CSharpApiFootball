@@ -8,6 +8,8 @@ public sealed class StatusClient(IHttpClientFactory factory, IOptions<ApiFootbal
 {
     protected override string Route => "status";
 
-    public Task<ObjectResponse<ApiStatusResponse>> GetStatus(CancellationToken cancellationToken = default) =>
-        GetAsync<ObjectResponse<ApiStatusResponse>>(BuildQueryString(), cancellationToken);
+    public Task<ObjectResponse<ApiStatusResponse>> GetStatus(CancellationToken cancellationToken = default)
+    {
+        return GetAsync<ObjectResponse<ApiStatusResponse>>(BuildQueryString(), cancellationToken);
+    }
 }

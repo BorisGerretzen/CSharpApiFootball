@@ -1,0 +1,6 @@
+<Solution>
+    <Project Path="ApiFootball.LiveTests/ApiFootball.LiveTests.csproj"/>
+    <Project Path="ApiFootball.Test/ApiFootball.Test.csproj"/>
+    <Project Path="ApiFootball/ApiFootball.csproj"/>
+    <Project Path="DemoApp/DemoApp.csproj"/>
+</Solution>
