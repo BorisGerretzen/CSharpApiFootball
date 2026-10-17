@@ -9,7 +9,7 @@ public sealed class Standing
     public required string Group { get; init; }
     public required string Form { get; init; }
     public required string Status { get; init; }
-    public required string Description { get; init; }
+    public string? Description { get; init; }
     public required StandingGames All { get; init; }
     public required StandingGames Home { get; init; }
     public required StandingGames Away { get; init; }

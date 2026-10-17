@@ -1,0 +1,22 @@
+﻿name: Integration tests
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  live_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Test
+        env:
+          ApiFootball__ApiKey: ${{ secrets.ApiFootball_ApiKey }}
+        run: dotnet test --verbosity normal ApiFootball.LiveTests

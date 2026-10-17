@@ -1,33 +1,31 @@
 name: Build and publish
-on: 
+on:
   workflow_dispatch:
     inputs:
       PackageVersion:
         description: "Package Version"
         required: true
-  
+
 jobs:
-  build:
+  publish:
     env:
       BUILD_CONFIG: 'Release'
       SOLUTION: 'ApiFootball'
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Install .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          9.x
-          8.x
-          7.x
+      - name: Install .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: |
+            8.x
 
-    - name: Build
-      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=${{ github.event.inputs.PackageVersion }}
-      
-    - name: Publish
-      run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json' -k ${{secrets.NUGET_API_KEY}}
+      - name: Build
+        run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=${{ github.event.inputs.PackageVersion }}
+
+      - name: Publish
+        run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json' -k ${{secrets.NUGET_API_KEY}}

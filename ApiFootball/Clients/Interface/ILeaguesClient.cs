@@ -3,8 +3,8 @@ namespace ApiFootball.Clients.Interface;
 public interface ILeaguesClient
 {
     /// <summary>
-    /// Get the list of available leagues and cups.
-    /// Recommended Calls: 1 call per hour.
+    ///     Get the list of available leagues and cups.
+    ///     Recommended Calls: 1 call per hour.
     /// </summary>
     /// <param name="id">The id of the league</param>
     /// <param name="name">The name of the league</param>
@@ -17,12 +17,14 @@ public interface ILeaguesClient
     /// <param name="search">The name or the country of the league</param>
     /// <param name="last">The X last leagues/cups added in the API</param>
     /// <param name="cancellationToken">Cancellation token.</param>
-    public Task<BaseResponse<LeaguesResponse>> GetLeagues(int? id = null, string? name = null, string? country = null, string? code = null, int? season = null, int? team = null,
-        LeagueType? type = null, bool? current = null, string? search = null, int? last = null, CancellationToken cancellationToken = default);
+    public Task<PagedResponse<LeaguesResponse>> GetLeagues(int? id = null, string? name = null, string? country = null,
+        string? code = null, int? season = null, int? team = null,
+        LeagueType? type = null, bool? current = null, string? search = null, int? last = null,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Get the list of available seasons.
-    /// Recommended Calls: 1 call per day.
+    ///     Get the list of available seasons.
+    ///     Recommended Calls: 1 call per day.
     /// </summary>
-    public Task<BaseResponse<int>> GetSeasons(CancellationToken cancellationToken = default);
+    public Task<PagedResponse<int>> GetSeasons(CancellationToken cancellationToken = default);
 }

@@ -17,15 +17,18 @@ public class TimezoneClientTests : BaseEndpointTest
         Assert.That(response.Parameters, Has.Count.EqualTo(0));
         Assert.That(response.Results, Is.EqualTo(4));
         Assert.That(response.Response, Has.Count.EqualTo(4));
+        Assert.That(response.Response, Is.EqualTo(new[]
+        {
+            "Africa/Abidjan", "Africa/Accra", "Africa/Addis_Ababa", "Africa/Algiers"
+        }));
     }
 
     [Test]
-    public void GetTimezones_WhenError_ThrowsIfEnabled()
+    public async Task GetTimezones_WhenError_ThrowsIfEnabled()
     {
         var factory = MockFactory(Route, GetExpected(DefaultErrorResponse));
         var client = new TimezoneClient(factory, MockOptions(o => o.ThrowOnError = true));
-
-        var exception = Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTimezones());
+        var exception = await Assert.ThrowsAsync<ApiFootballException>(async () => await client.GetTimezones());
         AssertDefaultException(exception);
     }
 }

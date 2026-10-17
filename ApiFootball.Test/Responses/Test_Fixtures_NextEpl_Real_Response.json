@@ -1,0 +1,86 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "league": "39",
+    "season": "2026",
+    "next": "1"
+  },
+  "errors": [],
+  "results": 1,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "fixture": {
+        "id": 1557430,
+        "referee": "Paul Tierney",
+        "timezone": "UTC",
+        "date": "2026-10-17T11:30:00+00:00",
+        "timestamp": 1792236600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 22033,
+          "name": "Hill Dickinson Stadium",
+          "city": "Liverpool"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+        "season": 2026,
+        "round": "Regular Season - 7",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 45,
+          "name": "Everton",
+          "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+          "winner": null
+        },
+        "away": {
+          "id": 49,
+          "name": "Chelsea",
+          "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ]
+}

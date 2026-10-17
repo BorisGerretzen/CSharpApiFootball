@@ -1,0 +1,1397 @@
+{
+  "get": "predictions",
+  "parameters": {
+    "fixture": "1557430"
+  },
+  "errors": [],
+  "results": 1,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "predictions": {
+        "winner": {
+          "id": 49,
+          "name": "Chelsea",
+          "comment": "Win or draw"
+        },
+        "win_or_draw": true,
+        "under_over": null,
+        "goals": {
+          "home": "-2.5",
+          "away": "-2.5"
+        },
+        "advice": "Double chance : draw or Chelsea",
+        "percent": {
+          "home": "10%",
+          "draw": "45%",
+          "away": "45%"
+        }
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+        "season": 2026
+      },
+      "teams": {
+        "home": {
+          "id": 45,
+          "name": "Everton",
+          "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+          "last_5": {
+            "played": 5,
+            "form": "47%",
+            "att": "33%",
+            "def": "72%",
+            "goals": {
+              "for": {
+                "total": 6,
+                "average": "1.2"
+              },
+              "against": {
+                "total": 5,
+                "average": "1.0"
+              }
+            }
+          },
+          "league": {
+            "form": "WDDDWD",
+            "fixtures": {
+              "played": {
+                "home": 3,
+                "away": 3,
+                "total": 6
+              },
+              "wins": {
+                "home": 2,
+                "away": 0,
+                "total": 2
+              },
+              "draws": {
+                "home": 1,
+                "away": 3,
+                "total": 4
+              },
+              "loses": {
+                "home": 0,
+                "away": 0,
+                "total": 0
+              }
+            },
+            "goals": {
+              "for": {
+                "total": {
+                  "home": 5,
+                  "away": 3,
+                  "total": 8
+                },
+                "average": {
+                  "home": "1.7",
+                  "away": "1.0",
+                  "total": "1.3"
+                },
+                "minute": {
+                  "0-15": {
+                    "total": 1,
+                    "percentage": "12.50%"
+                  },
+                  "16-30": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "31-45": {
+                    "total": 1,
+                    "percentage": "12.50%"
+                  },
+                  "46-60": {
+                    "total": 2,
+                    "percentage": "25.00%"
+                  },
+                  "61-75": {
+                    "total": 1,
+                    "percentage": "12.50%"
+                  },
+                  "76-90": {
+                    "total": 3,
+                    "percentage": "37.50%"
+                  },
+                  "91-105": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "106-120": {
+                    "total": null,
+                    "percentage": null
+                  }
+                },
+                "under_over": {
+                  "0.5": {
+                    "over": 5,
+                    "under": 1
+                  },
+                  "1.5": {
+                    "over": 3,
+                    "under": 3
+                  },
+                  "2.5": {
+                    "over": 0,
+                    "under": 6
+                  },
+                  "3.5": {
+                    "over": 0,
+                    "under": 6
+                  },
+                  "4.5": {
+                    "over": 0,
+                    "under": 6
+                  }
+                }
+              },
+              "against": {
+                "total": {
+                  "home": 2,
+                  "away": 3,
+                  "total": 5
+                },
+                "average": {
+                  "home": "0.7",
+                  "away": "1.0",
+                  "total": "0.8"
+                },
+                "minute": {
+                  "0-15": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "16-30": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "31-45": {
+                    "total": 1,
+                    "percentage": "20.00%"
+                  },
+                  "46-60": {
+                    "total": 2,
+                    "percentage": "40.00%"
+                  },
+                  "61-75": {
+                    "total": 1,
+                    "percentage": "20.00%"
+                  },
+                  "76-90": {
+                    "total": 1,
+                    "percentage": "20.00%"
+                  },
+                  "91-105": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "106-120": {
+                    "total": null,
+                    "percentage": null
+                  }
+                },
+                "under_over": {
+                  "0.5": {
+                    "over": 3,
+                    "under": 3
+                  },
+                  "1.5": {
+                    "over": 2,
+                    "under": 4
+                  },
+                  "2.5": {
+                    "over": 0,
+                    "under": 6
+                  },
+                  "3.5": {
+                    "over": 0,
+                    "under": 6
+                  },
+                  "4.5": {
+                    "over": 0,
+                    "under": 6
+                  }
+                }
+              }
+            },
+            "biggest": {
+              "streak": {
+                "wins": 1,
+                "draws": 3,
+                "loses": 0
+              },
+              "wins": {
+                "home": "2-0",
+                "away": null
+              },
+              "loses": {
+                "home": null,
+                "away": null
+              },
+              "goals": {
+                "for": {
+                  "home": 2,
+                  "away": 2
+                },
+                "against": {
+                  "home": 2,
+                  "away": 2
+                }
+              }
+            },
+            "clean_sheet": {
+              "home": 2,
+              "away": 1,
+              "total": 3
+            },
+            "failed_to_score": {
+              "home": 0,
+              "away": 1,
+              "total": 1
+            },
+            "penalty": {
+              "scored": {
+                "total": 0,
+                "percentage": "0%"
+              },
+              "missed": {
+                "total": 0,
+                "percentage": "0%"
+              },
+              "total": 0
+            },
+            "lineups": [
+              {
+                "formation": "4-2-3-1",
+                "played": 5
+              },
+              {
+                "formation": "4-1-4-1",
+                "played": 1
+              }
+            ],
+            "cards": {
+              "yellow": {
+                "0-15": {
+                  "total": 1,
+                  "percentage": "11.11%"
+                },
+                "16-30": {
+                  "total": null,
+                  "percentage": null
+                },
+                "31-45": {
+                  "total": 2,
+                  "percentage": "22.22%"
+                },
+                "46-60": {
+                  "total": 1,
+                  "percentage": "11.11%"
+                },
+                "61-75": {
+                  "total": 2,
+                  "percentage": "22.22%"
+                },
+                "76-90": {
+                  "total": 1,
+                  "percentage": "11.11%"
+                },
+                "91-105": {
+                  "total": 2,
+                  "percentage": "22.22%"
+                },
+                "106-120": {
+                  "total": null,
+                  "percentage": null
+                }
+              },
+              "red": {
+                "0-15": {
+                  "total": null,
+                  "percentage": null
+                },
+                "16-30": {
+                  "total": null,
+                  "percentage": null
+                },
+                "31-45": {
+                  "total": null,
+                  "percentage": null
+                },
+                "46-60": {
+                  "total": null,
+                  "percentage": null
+                },
+                "61-75": {
+                  "total": null,
+                  "percentage": null
+                },
+                "76-90": {
+                  "total": null,
+                  "percentage": null
+                },
+                "91-105": {
+                  "total": null,
+                  "percentage": null
+                },
+                "106-120": {
+                  "total": null,
+                  "percentage": null
+                }
+              }
+            }
+          }
+        },
+        "away": {
+          "id": 49,
+          "name": "Chelsea",
+          "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+          "last_5": {
+            "played": 5,
+            "form": "47%",
+            "att": "67%",
+            "def": "39%",
+            "goals": {
+              "for": {
+                "total": 12,
+                "average": "2.4"
+              },
+              "against": {
+                "total": 11,
+                "average": "2.2"
+              }
+            }
+          },
+          "league": {
+            "form": "WWLDLW",
+            "fixtures": {
+              "played": {
+                "home": 3,
+                "away": 3,
+                "total": 6
+              },
+              "wins": {
+                "home": 2,
+                "away": 1,
+                "total": 3
+              },
+              "draws": {
+                "home": 1,
+                "away": 0,
+                "total": 1
+              },
+              "loses": {
+                "home": 0,
+                "away": 2,
+                "total": 2
+              }
+            },
+            "goals": {
+              "for": {
+                "total": {
+                  "home": 11,
+                  "away": 4,
+                  "total": 15
+                },
+                "average": {
+                  "home": "3.7",
+                  "away": "1.3",
+                  "total": "2.5"
+                },
+                "minute": {
+                  "0-15": {
+                    "total": 7,
+                    "percentage": "43.75%"
+                  },
+                  "16-30": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "31-45": {
+                    "total": 2,
+                    "percentage": "12.50%"
+                  },
+                  "46-60": {
+                    "total": 2,
+                    "percentage": "12.50%"
+                  },
+                  "61-75": {
+                    "total": 5,
+                    "percentage": "31.25%"
+                  },
+                  "76-90": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "91-105": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "106-120": {
+                    "total": null,
+                    "percentage": null
+                  }
+                },
+                "under_over": {
+                  "0.5": {
+                    "over": 5,
+                    "under": 1
+                  },
+                  "1.5": {
+                    "over": 4,
+                    "under": 2
+                  },
+                  "2.5": {
+                    "over": 3,
+                    "under": 3
+                  },
+                  "3.5": {
+                    "over": 2,
+                    "under": 4
+                  },
+                  "4.5": {
+                    "over": 1,
+                    "under": 5
+                  }
+                }
+              },
+              "against": {
+                "total": {
+                  "home": 6,
+                  "away": 7,
+                  "total": 13
+                },
+                "average": {
+                  "home": "2.0",
+                  "away": "2.3",
+                  "total": "2.2"
+                },
+                "minute": {
+                  "0-15": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "16-30": {
+                    "total": 3,
+                    "percentage": "25.00%"
+                  },
+                  "31-45": {
+                    "total": 2,
+                    "percentage": "16.67%"
+                  },
+                  "46-60": {
+                    "total": 3,
+                    "percentage": "25.00%"
+                  },
+                  "61-75": {
+                    "total": 1,
+                    "percentage": "8.33%"
+                  },
+                  "76-90": {
+                    "total": 3,
+                    "percentage": "25.00%"
+                  },
+                  "91-105": {
+                    "total": null,
+                    "percentage": null
+                  },
+                  "106-120": {
+                    "total": null,
+                    "percentage": null
+                  }
+                },
+                "under_over": {
+                  "0.5": {
+                    "over": 6,
+                    "under": 0
+                  },
+                  "1.5": {
+                    "over": 5,
+                    "under": 1
+                  },
+                  "2.5": {
+                    "over": 2,
+                    "under": 4
+                  },
+                  "3.5": {
+                    "over": 0,
+                    "under": 6
+                  },
+                  "4.5": {
+                    "over": 0,
+                    "under": 6
+                  }
+                }
+              }
+            },
+            "biggest": {
+              "streak": {
+                "wins": 2,
+                "draws": 1,
+                "loses": 1
+              },
+              "wins": {
+                "home": "5-1",
+                "away": "2-3"
+              },
+              "loses": {
+                "home": null,
+                "away": "3-0"
+              },
+              "goals": {
+                "for": {
+                  "home": 5,
+                  "away": 3
+                },
+                "against": {
+                  "home": 3,
+                  "away": 3
+                }
+              }
+            },
+            "clean_sheet": {
+              "home": 0,
+              "away": 0,
+              "total": 0
+            },
+            "failed_to_score": {
+              "home": 0,
+              "away": 1,
+              "total": 1
+            },
+            "penalty": {
+              "scored": {
+                "total": 0,
+                "percentage": "0%"
+              },
+              "missed": {
+                "total": 0,
+                "percentage": "0%"
+              },
+              "total": 0
+            },
+            "lineups": [
+              {
+                "formation": "3-4-2-1",
+                "played": 5
+              },
+              {
+                "formation": "4-2-3-1",
+                "played": 1
+              }
+            ],
+            "cards": {
+              "yellow": {
+                "0-15": {
+                  "total": 3,
+                  "percentage": "33.33%"
+                },
+                "16-30": {
+                  "total": null,
+                  "percentage": null
+                },
+                "31-45": {
+                  "total": 1,
+                  "percentage": "11.11%"
+                },
+                "46-60": {
+                  "total": 2,
+                  "percentage": "22.22%"
+                },
+                "61-75": {
+                  "total": 1,
+                  "percentage": "11.11%"
+                },
+                "76-90": {
+                  "total": 2,
+                  "percentage": "22.22%"
+                },
+                "91-105": {
+                  "total": null,
+                  "percentage": null
+                },
+                "106-120": {
+                  "total": null,
+                  "percentage": null
+                }
+              },
+              "red": {
+                "0-15": {
+                  "total": null,
+                  "percentage": null
+                },
+                "16-30": {
+                  "total": null,
+                  "percentage": null
+                },
+                "31-45": {
+                  "total": null,
+                  "percentage": null
+                },
+                "46-60": {
+                  "total": null,
+                  "percentage": null
+                },
+                "61-75": {
+                  "total": null,
+                  "percentage": null
+                },
+                "76-90": {
+                  "total": null,
+                  "percentage": null
+                },
+                "91-105": {
+                  "total": null,
+                  "percentage": null
+                },
+                "106-120": {
+                  "total": null,
+                  "percentage": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "comparison": {
+        "form": {
+          "home": "50%",
+          "away": "50%"
+        },
+        "att": {
+          "home": "33%",
+          "away": "67%"
+        },
+        "def": {
+          "home": "69%",
+          "away": "31%"
+        },
+        "poisson_distribution": {
+          "home": "78%",
+          "away": "22%"
+        },
+        "h2h": {
+          "home": "29%",
+          "away": "71%"
+        },
+        "goals": {
+          "home": "25%",
+          "away": "75%"
+        },
+        "total": {
+          "home": "47.3%",
+          "away": "52.7%"
+        }
+      },
+      "h2h": [
+        {
+          "fixture": {
+            "id": 1379272,
+            "referee": "S. Barrott",
+            "timezone": "UTC",
+            "date": "2026-03-21T17:30:00+00:00",
+            "timestamp": 1774114200,
+            "periods": {
+              "first": 1774114200,
+              "second": 1774117800
+            },
+            "venue": {
+              "id": 22033,
+              "name": "Hill Dickinson Stadium",
+              "city": "Liverpool"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": 6
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2025,
+            "round": "Regular Season - 31",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": true
+            },
+            "away": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 3,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 1,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 3,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 1379122,
+            "referee": "T. Bramall",
+            "timezone": "UTC",
+            "date": "2025-12-13T15:00:00+00:00",
+            "timestamp": 1765638000,
+            "periods": {
+              "first": 1765638000,
+              "second": 1765641600
+            },
+            "venue": {
+              "id": 519,
+              "name": "Stamford Bridge",
+              "city": "London"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": 5
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2025,
+            "round": "Regular Season - 16",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": true
+            },
+            "away": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 2,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 2,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 2,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 1208356,
+            "referee": "C. Kavanagh",
+            "timezone": "UTC",
+            "date": "2025-04-26T11:30:00+00:00",
+            "timestamp": 1745667000,
+            "periods": {
+              "first": 1745667000,
+              "second": 1745670600
+            },
+            "venue": {
+              "id": 519,
+              "name": "Stamford Bridge",
+              "city": "London"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": 5
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024,
+            "round": "Regular Season - 34",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": true
+            },
+            "away": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 1,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 1,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 1,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 1208186,
+            "referee": "C. Kavanagh",
+            "timezone": "UTC",
+            "date": "2024-12-22T14:00:00+00:00",
+            "timestamp": 1734876000,
+            "periods": {
+              "first": 1734876000,
+              "second": 1734879600
+            },
+            "venue": {
+              "id": 8560,
+              "name": "Goodison Park",
+              "city": "Liverpool"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": 3
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2024,
+            "round": "Regular Season - 17",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": null
+            },
+            "away": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": null
+            }
+          },
+          "goals": {
+            "home": 0,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 0,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 1035498,
+            "referee": "P. Tierney",
+            "timezone": "UTC",
+            "date": "2024-04-15T19:00:00+00:00",
+            "timestamp": 1713207600,
+            "periods": {
+              "first": 1713207600,
+              "second": 1713211200
+            },
+            "venue": {
+              "id": 519,
+              "name": "Stamford Bridge",
+              "city": "London"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": null
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2023,
+            "round": "Regular Season - 33",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": true
+            },
+            "away": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 6,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 4,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 6,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 1035327,
+            "referee": "M. Oliver",
+            "timezone": "UTC",
+            "date": "2023-12-10T14:00:00+00:00",
+            "timestamp": 1702216800,
+            "periods": {
+              "first": 1702216800,
+              "second": 1702220400
+            },
+            "venue": {
+              "id": 8560,
+              "name": "Goodison Park",
+              "city": "Liverpool"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": null
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2023,
+            "round": "Regular Season - 16",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": true
+            },
+            "away": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 2,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 2,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 868220,
+            "referee": "D. England",
+            "timezone": "UTC",
+            "date": "2023-03-18T17:30:00+00:00",
+            "timestamp": 1679160600,
+            "periods": {
+              "first": 1679160600,
+              "second": 1679164200
+            },
+            "venue": {
+              "id": 519,
+              "name": "Stamford Bridge",
+              "city": "London"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": null
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2022,
+            "round": "Regular Season - 28",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": null
+            },
+            "away": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": null
+            }
+          },
+          "goals": {
+            "home": 2,
+            "away": 2
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 2,
+              "away": 2
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 867953,
+            "referee": "C. Pawson",
+            "timezone": "UTC",
+            "date": "2022-08-06T16:30:00+00:00",
+            "timestamp": 1659803400,
+            "periods": {
+              "first": 1659803400,
+              "second": 1659807000
+            },
+            "venue": {
+              "id": 8560,
+              "name": "Goodison Park",
+              "city": "Liverpool"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": null
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2022,
+            "round": "Regular Season - 1",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": false
+            },
+            "away": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": true
+            }
+          },
+          "goals": {
+            "home": 0,
+            "away": 1
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 1
+            },
+            "fulltime": {
+              "home": 0,
+              "away": 1
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 710897,
+            "referee": "K. Friend",
+            "timezone": "UTC",
+            "date": "2022-05-01T13:00:00+00:00",
+            "timestamp": 1651410000,
+            "periods": {
+              "first": 1651410000,
+              "second": 1651413600
+            },
+            "venue": {
+              "id": 8560,
+              "name": "Goodison Park",
+              "city": "Liverpool"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": null
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2021,
+            "round": "Regular Season - 35",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": true
+            },
+            "away": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 1,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 1,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 710723,
+            "referee": "M. Oliver",
+            "timezone": "UTC",
+            "date": "2021-12-16T19:45:00+00:00",
+            "timestamp": 1639683900,
+            "periods": {
+              "first": 1639683900,
+              "second": 1639687500
+            },
+            "venue": {
+              "id": 519,
+              "name": "Stamford Bridge",
+              "city": "London"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90,
+              "extra": null
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+            "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+            "season": 2021,
+            "round": "Regular Season - 17",
+            "standings": true
+          },
+          "teams": {
+            "home": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png",
+              "winner": null
+            },
+            "away": {
+              "id": 45,
+              "name": "Everton",
+              "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png",
+              "winner": null
+            }
+          },
+          "goals": {
+            "home": 1,
+            "away": 1
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 1,
+              "away": 1
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

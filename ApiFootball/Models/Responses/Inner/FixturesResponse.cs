@@ -7,4 +7,9 @@ public sealed class FixturesResponse
     public required Teams Teams { get; init; }
     public required Goals Goals { get; init; }
     public required Score Score { get; init; }
+
+    public List<FixtureEvent>? Events { get; init; }
+    public List<FixtureLineup>? Lineups { get; init; }
+    public List<FixtureEventStatistics>? Statistics { get; init; }
+    public List<FixturePlayers>? Players { get; init; }
 }
